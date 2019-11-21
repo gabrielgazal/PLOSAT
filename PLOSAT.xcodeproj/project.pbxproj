@@ -13,6 +13,8 @@
 		563EF3462387069900684647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563EF3442387069900684647 /* Main.storyboard */; };
 		563EF3482387069A00684647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563EF3472387069A00684647 /* Assets.xcassets */; };
 		563EF34B2387069A00684647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563EF3492387069A00684647 /* LaunchScreen.storyboard */; };
+		56EC810C23871F2B007DCFF2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810B23871F2B007DCFF2 /* Model.swift */; };
+		56EC810E23871F7C007DCFF2 /* PLOSAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810D23871F7C007DCFF2 /* PLOSAT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		563EF3472387069A00684647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		563EF34A2387069A00684647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563EF34C2387069A00684647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56EC810B23871F2B007DCFF2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		56EC810D23871F7C007DCFF2 /* PLOSAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLOSAT.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		563EF33D2387069900684647 /* PLOSAT */ = {
 			isa = PBXGroup;
 			children = (
-				563EF33E2387069900684647 /* AppDelegate.swift */,
-				563EF3402387069900684647 /* SceneDelegate.swift */,
-				563EF3422387069900684647 /* ViewController.swift */,
-				563EF3442387069900684647 /* Main.storyboard */,
+				563EF35223871DD700684647 /* Model */,
+				563EF35323871DDE00684647 /* View */,
+				563EF35423871DE900684647 /* Controller */,
 				563EF3472387069A00684647 /* Assets.xcassets */,
-				563EF3492387069A00684647 /* LaunchScreen.storyboard */,
 				563EF34C2387069A00684647 /* Info.plist */,
 			);
 			path = PLOSAT;
+			sourceTree = "<group>";
+		};
+		563EF35223871DD700684647 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56EC810B23871F2B007DCFF2 /* Model.swift */,
+				56EC810D23871F7C007DCFF2 /* PLOSAT.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		563EF35323871DDE00684647 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				563EF3442387069900684647 /* Main.storyboard */,
+				563EF3492387069A00684647 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		563EF35423871DE900684647 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				563EF33E2387069900684647 /* AppDelegate.swift */,
+				563EF3402387069900684647 /* SceneDelegate.swift */,
+				563EF3422387069900684647 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +171,8 @@
 				563EF3432387069900684647 /* ViewController.swift in Sources */,
 				563EF33F2387069900684647 /* AppDelegate.swift in Sources */,
 				563EF3412387069900684647 /* SceneDelegate.swift in Sources */,
+				56EC810E23871F7C007DCFF2 /* PLOSAT.swift in Sources */,
+				56EC810C23871F2B007DCFF2 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
