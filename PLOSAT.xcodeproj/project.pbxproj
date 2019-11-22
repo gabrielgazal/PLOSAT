@@ -15,6 +15,7 @@
 		563EF34B2387069A00684647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563EF3492387069A00684647 /* LaunchScreen.storyboard */; };
 		56EC810C23871F2B007DCFF2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810B23871F2B007DCFF2 /* Model.swift */; };
 		56EC810E23871F7C007DCFF2 /* PLOSAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810D23871F7C007DCFF2 /* PLOSAT.swift */; };
+		56F631D723885093008B7A25 /* Jogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F631D623885093008B7A25 /* Jogador.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		563EF34C2387069A00684647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56EC810B23871F2B007DCFF2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56EC810D23871F7C007DCFF2 /* PLOSAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLOSAT.swift; sourceTree = "<group>"; };
+		56F631D623885093008B7A25 /* Jogador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jogador.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				56EC810B23871F2B007DCFF2 /* Model.swift */,
+				56F631D623885093008B7A25 /* Jogador.swift */,
 				56EC810D23871F7C007DCFF2 /* PLOSAT.swift */,
 			);
 			path = Model;
@@ -172,6 +175,7 @@
 				563EF33F2387069900684647 /* AppDelegate.swift in Sources */,
 				563EF3412387069900684647 /* SceneDelegate.swift in Sources */,
 				56EC810E23871F7C007DCFF2 /* PLOSAT.swift in Sources */,
+				56F631D723885093008B7A25 /* Jogador.swift in Sources */,
 				56EC810C23871F2B007DCFF2 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
