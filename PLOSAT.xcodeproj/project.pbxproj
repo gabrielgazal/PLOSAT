@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F31B4C2388611C00276E09 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F31B4B2388611C00276E09 /* Game.swift */; };
 		563EF33F2387069900684647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF33E2387069900684647 /* AppDelegate.swift */; };
 		563EF3412387069900684647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3402387069900684647 /* SceneDelegate.swift */; };
 		563EF3432387069900684647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3422387069900684647 /* ViewController.swift */; };
@@ -14,11 +15,12 @@
 		563EF3482387069A00684647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 563EF3472387069A00684647 /* Assets.xcassets */; };
 		563EF34B2387069A00684647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563EF3492387069A00684647 /* LaunchScreen.storyboard */; };
 		56EC810C23871F2B007DCFF2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810B23871F2B007DCFF2 /* Model.swift */; };
-		56EC810E23871F7C007DCFF2 /* PLOSAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810D23871F7C007DCFF2 /* PLOSAT.swift */; };
-		56F631D723885093008B7A25 /* Jogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F631D623885093008B7A25 /* Jogador.swift */; };
+		56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810D23871F7C007DCFF2 /* Plosat.swift */; };
+		56F631D723885093008B7A25 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F631D623885093008B7A25 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12F31B4B2388611C00276E09 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		563EF33B2387069900684647 /* PLOSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLOSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563EF33E2387069900684647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563EF3402387069900684647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +30,8 @@
 		563EF34A2387069A00684647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563EF34C2387069A00684647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56EC810B23871F2B007DCFF2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		56EC810D23871F7C007DCFF2 /* PLOSAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLOSAT.swift; sourceTree = "<group>"; };
-		56F631D623885093008B7A25 /* Jogador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jogador.swift; sourceTree = "<group>"; };
+		56EC810D23871F7C007DCFF2 /* Plosat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plosat.swift; sourceTree = "<group>"; };
+		56F631D623885093008B7A25 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				56EC810B23871F2B007DCFF2 /* Model.swift */,
-				56F631D623885093008B7A25 /* Jogador.swift */,
-				56EC810D23871F7C007DCFF2 /* PLOSAT.swift */,
+				56F631D623885093008B7A25 /* Player.swift */,
+				56EC810D23871F7C007DCFF2 /* Plosat.swift */,
+				12F31B4B2388611C00276E09 /* Game.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,9 +176,10 @@
 			files = (
 				563EF3432387069900684647 /* ViewController.swift in Sources */,
 				563EF33F2387069900684647 /* AppDelegate.swift in Sources */,
+				12F31B4C2388611C00276E09 /* Game.swift in Sources */,
 				563EF3412387069900684647 /* SceneDelegate.swift in Sources */,
-				56EC810E23871F7C007DCFF2 /* PLOSAT.swift in Sources */,
-				56F631D723885093008B7A25 /* Jogador.swift in Sources */,
+				56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */,
+				56F631D723885093008B7A25 /* Player.swift in Sources */,
 				56EC810C23871F2B007DCFF2 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

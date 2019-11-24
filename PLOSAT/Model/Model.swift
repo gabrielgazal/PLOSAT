@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+class Model{
+    static let instance = Model()
+    
+    var personagem : [String]!
+    var lugar : [String]!
+    var objeto : [String]!
+    var situacao : [String]!
+    var acao : [String]!
+    var tema : [String]!
+    
+    private init (){
+        
+    }
+    
+    func shufle(){
+        self.personagem.shuffle()
+        self.lugar.shuffle()
+        self.objeto.shuffle()
+        self.situacao.shuffle()
+        self.acao.shuffle()
+        self.tema.shuffle()
+    }
+}
