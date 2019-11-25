@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12F31B4C2388611C00276E09 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F31B4B2388611C00276E09 /* Game.swift */; };
+		562400AF238B78080053DE6F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AD238B78080053DE6F /* DesignableView.swift */; };
+		562400B0238B78080053DE6F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AE238B78080053DE6F /* DesignableButton.swift */; };
 		563EF33F2387069900684647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF33E2387069900684647 /* AppDelegate.swift */; };
 		563EF3412387069900684647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3402387069900684647 /* SceneDelegate.swift */; };
 		563EF3432387069900684647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3422387069900684647 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		12F31B4B2388611C00276E09 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		562400AD238B78080053DE6F /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		562400AE238B78080053DE6F /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		563EF33B2387069900684647 /* PLOSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLOSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563EF33E2387069900684647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563EF3402387069900684647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		562400AC238B77930053DE6F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				562400AE238B78080053DE6F /* DesignableButton.swift */,
+				562400AD238B78080053DE6F /* DesignableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		563EF3322387069900684647 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +77,7 @@
 		563EF33D2387069900684647 /* PLOSAT */ = {
 			isa = PBXGroup;
 			children = (
+				562400AC238B77930053DE6F /* Extensions */,
 				563EF35223871DD700684647 /* Model */,
 				563EF35323871DDE00684647 /* View */,
 				563EF35423871DE900684647 /* Controller */,
@@ -174,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562400AF238B78080053DE6F /* DesignableView.swift in Sources */,
 				563EF3432387069900684647 /* ViewController.swift in Sources */,
 				563EF33F2387069900684647 /* AppDelegate.swift in Sources */,
 				12F31B4C2388611C00276E09 /* Game.swift in Sources */,
@@ -181,6 +196,7 @@
 				56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */,
 				56F631D723885093008B7A25 /* Player.swift in Sources */,
 				56EC810C23871F2B007DCFF2 /* Model.swift in Sources */,
+				562400B0238B78080053DE6F /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
