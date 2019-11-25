@@ -110,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="2078.2608695652175" y="591.96428571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Players View Controller-->
         <scene sceneID="T64-Qc-1GT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cls-Bf-buB" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cls-Bf-buB" customClass="AddPlayersViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fY-QA-q9x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="2095.6521739130435" y="-199.55357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Story View Controller-->
         <scene sceneID="Mxh-xi-Udb">
             <objects>
-                <viewController id="Oz9-1R-oqD" sceneMemberID="viewController">
+                <viewController id="Oz9-1R-oqD" customClass="StoryViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Us-DF-Fg3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="2992.753623188406" y="-200.22321428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Player Functions View Controller-->
         <scene sceneID="REa-gx-K3E">
             <objects>
-                <viewController id="0R4-Fo-qgL" sceneMemberID="viewController">
+                <viewController id="0R4-Fo-qgL" customClass="PlayerFunctionsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gRZ-Km-Mc1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -452,10 +452,10 @@
             </objects>
             <point key="canvasLocation" x="3884" y="-200"/>
         </scene>
-        <!--View Controller-->
+        <!--Story Timer View Controller-->
         <scene sceneID="dBh-Bq-7QT">
             <objects>
-                <viewController id="rxV-aH-5Je" sceneMemberID="viewController">
+                <viewController id="rxV-aH-5Je" customClass="StoryTimerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Nj-WL-ZQ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -646,10 +646,10 @@
             </objects>
             <point key="canvasLocation" x="5625" y="-200"/>
         </scene>
-        <!--View Controller-->
+        <!--Discussion Timer View Controller-->
         <scene sceneID="q5u-AO-URb">
             <objects>
-                <viewController id="OLK-7h-nhN" sceneMemberID="viewController">
+                <viewController id="OLK-7h-nhN" customClass="DiscussionTimerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5f-FJ-HkN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -810,10 +810,10 @@
             </objects>
             <point key="canvasLocation" x="7323" y="-200"/>
         </scene>
-        <!--View Controller-->
+        <!--Voting Screen View Controller-->
         <scene sceneID="VnO-gZ-SIv">
             <objects>
-                <viewController id="3Ne-uc-CQQ" sceneMemberID="viewController">
+                <viewController id="3Ne-uc-CQQ" customClass="VotingScreenViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sjP-d6-OHP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -911,10 +911,10 @@
             </objects>
             <point key="canvasLocation" x="8122" y="-200"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="hNt-gD-VpD">
             <objects>
-                <viewController id="bfW-pe-3kY" sceneMemberID="viewController">
+                <viewController id="bfW-pe-3kY" customClass="ResultsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gMp-Rb-A8s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
