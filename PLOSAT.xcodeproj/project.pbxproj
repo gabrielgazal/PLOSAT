@@ -17,6 +17,8 @@
 		562400BA238B99360053DE6F /* DiscussionTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400B9238B99360053DE6F /* DiscussionTimerViewController.swift */; };
 		562400BC238B995A0053DE6F /* VotingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400BB238B995A0053DE6F /* VotingScreenViewController.swift */; };
 		562400BE238B99760053DE6F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400BD238B99760053DE6F /* ResultsViewController.swift */; };
+		562400C1238C53B20053DE6F /* JogadoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */; };
+		562400C3238C56100053DE6F /* AddPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */; };
 		563EF33F2387069900684647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF33E2387069900684647 /* AppDelegate.swift */; };
 		563EF3412387069900684647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3402387069900684647 /* SceneDelegate.swift */; };
 		563EF3432387069900684647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3422387069900684647 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 		562400B9238B99360053DE6F /* DiscussionTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionTimerViewController.swift; sourceTree = "<group>"; };
 		562400BB238B995A0053DE6F /* VotingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingScreenViewController.swift; sourceTree = "<group>"; };
 		562400BD238B99760053DE6F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogadoresTableViewCell.swift; sourceTree = "<group>"; };
+		562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerTableViewCell.swift; sourceTree = "<group>"; };
 		563EF33B2387069900684647 /* PLOSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLOSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563EF33E2387069900684647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563EF3402387069900684647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 				562400AD238B78080053DE6F /* DesignableView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		562400BF238C53970053DE6F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */,
+				562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		563EF3322387069900684647 = {
@@ -134,6 +147,7 @@
 				562400B7238B99140053DE6F /* StoryTimerViewController.swift */,
 				562400B9238B99360053DE6F /* DiscussionTimerViewController.swift */,
 				562400BD238B99760053DE6F /* ResultsViewController.swift */,
+				562400BF238C53970053DE6F /* Cells */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,7 +233,9 @@
 				562400BE238B99760053DE6F /* ResultsViewController.swift in Sources */,
 				56F631D723885093008B7A25 /* Player.swift in Sources */,
 				562400BC238B995A0053DE6F /* VotingScreenViewController.swift in Sources */,
+				562400C3238C56100053DE6F /* AddPlayerTableViewCell.swift in Sources */,
 				56EC810C23871F2B007DCFF2 /* Model.swift in Sources */,
+				562400C1238C53B20053DE6F /* JogadoresTableViewCell.swift in Sources */,
 				562400B4238B98E00053DE6F /* StoryViewController.swift in Sources */,
 				562400B0238B78080053DE6F /* DesignableButton.swift in Sources */,
 				562400B2238B98CA0053DE6F /* AddPlayersViewController.swift in Sources */,

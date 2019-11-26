@@ -9,22 +9,17 @@
 import UIKit
 
 class StoryViewController: UIViewController {
-
+    @IBOutlet weak var imagemHistoria: UIImageView!
+    @IBOutlet weak var HistoriaTitulo: UILabel!
+    @IBOutlet weak var HistoriaDescricao: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        HistoriaTitulo.text = Model.instance.game.plosat.card[6][0]
+//        HistoriaDescricao.text = Model.instance.game.plosat.card[6][1]
 
         // Do any additional setup after loading the view.
     }
+   
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
