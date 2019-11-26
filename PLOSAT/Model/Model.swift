@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Model{
     static let instance = Model()

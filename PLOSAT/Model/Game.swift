@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Game {
     
@@ -28,11 +29,11 @@ class Game {
 
     }
     
-    func newPlayer(name: String){
+    func newPlayer(name: String,  foto: UIImage){
         let newPlosat = Plosat.init(personagem: "", lugar: "", objeto: "", situacao:  "", acao: "", tema: "")
         let n = Int.random(in: 1 ... 5)
         newPlosat.card[n] = [self.plosat.card[n][Int.random(in: 0...1)]]
-        let newPlayer = Player(name: name, plosat: plosat)
+        let newPlayer = Player(name: name, plosat: plosat, foto: foto)
         players.append(newPlayer)
     }
 }

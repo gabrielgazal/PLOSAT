@@ -16,7 +16,7 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return Model.instance.game.players.count  + 1
+        return Model.instance.game.players.count
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -24,20 +24,16 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
-        switch Model.instance.game.players.count {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "addPlayerCell") as! AddPlayerTableViewCell
-
-            return cell
-            
-        default:
+       
+        
             let cell = tableView.dequeueReusableCell(withIdentifier: "jogadorCell") as! JogadoresTableViewCell
-
+            cell.playerImage.image = Model.instance.game.players[indexPath.row].foto
+            cell.playerName.text = Model.instance.game.players[indexPath.row].name
             return cell
-        }
+        
         
             
-}
+    }
 
 
 override func viewDidLoad() {
@@ -46,12 +42,20 @@ override func viewDidLoad() {
     Model.instance.game  = Game(players: [])
     print( Model.instance.game.players.count)
     
-    
-    
+    NotificationCenter.default.addObserver(self, selector: #selector(performUpdate), name: NSNotification.Name("atualizaJogadores"), object: nil)
+  
 }
     
+    @objc func performUpdate(_ notification: Notification){
+        self.tableview.reloadData()
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-
+        tableview.reloadData()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        tableview.reloadData()
     }
 
 

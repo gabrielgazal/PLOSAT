@@ -19,6 +19,7 @@
 		562400BE238B99760053DE6F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400BD238B99760053DE6F /* ResultsViewController.swift */; };
 		562400C1238C53B20053DE6F /* JogadoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */; };
 		562400C3238C56100053DE6F /* AddPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */; };
+		562400C5238D9DBB0053DE6F /* NewPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400C4238D9DBA0053DE6F /* NewPlayerViewController.swift */; };
 		563EF33F2387069900684647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF33E2387069900684647 /* AppDelegate.swift */; };
 		563EF3412387069900684647 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3402387069900684647 /* SceneDelegate.swift */; };
 		563EF3432387069900684647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EF3422387069900684647 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		562400BD238B99760053DE6F /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogadoresTableViewCell.swift; sourceTree = "<group>"; };
 		562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		562400C4238D9DBA0053DE6F /* NewPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerViewController.swift; sourceTree = "<group>"; };
 		563EF33B2387069900684647 /* PLOSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLOSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		563EF33E2387069900684647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563EF3402387069900684647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				562400B1238B98CA0053DE6F /* AddPlayersViewController.swift */,
 				562400B3238B98E00053DE6F /* StoryViewController.swift */,
 				562400B7238B99140053DE6F /* StoryTimerViewController.swift */,
+				562400C4238D9DBA0053DE6F /* NewPlayerViewController.swift */,
 				562400B9238B99360053DE6F /* DiscussionTimerViewController.swift */,
 				562400BD238B99760053DE6F /* ResultsViewController.swift */,
 				562400BF238C53970053DE6F /* Cells */,
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562400C5238D9DBB0053DE6F /* NewPlayerViewController.swift in Sources */,
 				562400AF238B78080053DE6F /* DesignableView.swift in Sources */,
 				563EF3432387069900684647 /* ViewController.swift in Sources */,
 				563EF33F2387069900684647 /* AppDelegate.swift in Sources */,

@@ -110,20 +110,102 @@
             </objects>
             <point key="canvasLocation" x="2078.2608695652175" y="591.96428571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--New Player View Controller-->
         <scene sceneID="9Wv-Lh-AWu">
             <objects>
-                <viewController id="fQi-Ow-wVA" sceneMemberID="viewController">
+                <viewController id="fQi-Ow-wVA" customClass="NewPlayerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qZe-bo-KD5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUm-pq-aQe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-9A-kcl">
+                                        <rect key="frame" x="343" y="25" width="46" height="46"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0qQ-9A-kcl" secondAttribute="height" multiplier="1:1" id="Atr-fr-AXF"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="DismissModal:" destination="fQi-Ow-wVA" eventType="touchUpInside" id="BGf-ti-KBv"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do  jogador" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGD-VZ-SFI">
+                                        <rect key="frame" x="83" y="395" width="248" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-7b-8nM" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                        <rect key="frame" x="83" y="470" width="248" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="e3a-J3-L5T"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="SavePlayer:" destination="fQi-Ow-wVA" eventType="touchUpInside" id="EUz-hk-1g6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ym-Dr-nSz">
+                                        <rect key="frame" x="83" y="125" width="248" height="248.5"/>
+                                        <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5Ym-Dr-nSz" secondAttribute="height" multiplier="1:1" id="AUX-wz-kdw"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="IMG_2416 2"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addPhoto:" destination="fQi-Ow-wVA" eventType="touchUpInside" id="E2J-Kb-2sL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5Ym-Dr-nSz" firstAttribute="centerX" secondItem="ZUm-pq-aQe" secondAttribute="centerX" id="00k-qV-GKB"/>
+                                    <constraint firstAttribute="trailing" secondItem="0qQ-9A-kcl" secondAttribute="trailing" constant="25" id="517-gm-f2w"/>
+                                    <constraint firstItem="vXB-7b-8nM" firstAttribute="width" secondItem="VGD-VZ-SFI" secondAttribute="width" id="Cbs-k7-exZ"/>
+                                    <constraint firstItem="VGD-VZ-SFI" firstAttribute="width" secondItem="5Ym-Dr-nSz" secondAttribute="width" id="EIo-ED-IXP"/>
+                                    <constraint firstItem="vXB-7b-8nM" firstAttribute="top" secondItem="VGD-VZ-SFI" secondAttribute="bottom" constant="41" id="FxZ-sB-4tE"/>
+                                    <constraint firstItem="0qQ-9A-kcl" firstAttribute="top" secondItem="ZUm-pq-aQe" secondAttribute="top" constant="25" id="IxN-7t-mfq"/>
+                                    <constraint firstItem="5Ym-Dr-nSz" firstAttribute="width" secondItem="ZUm-pq-aQe" secondAttribute="width" multiplier="0.6" id="Nsp-ET-er4"/>
+                                    <constraint firstItem="5Ym-Dr-nSz" firstAttribute="top" secondItem="ZUm-pq-aQe" secondAttribute="top" constant="125" id="abu-qT-ayg"/>
+                                    <constraint firstItem="VGD-VZ-SFI" firstAttribute="top" secondItem="5Ym-Dr-nSz" secondAttribute="bottom" constant="21.5" id="h9X-9E-6Y7"/>
+                                    <constraint firstItem="vXB-7b-8nM" firstAttribute="centerX" secondItem="VGD-VZ-SFI" secondAttribute="centerX" id="oQS-8g-DFF"/>
+                                    <constraint firstItem="VGD-VZ-SFI" firstAttribute="centerX" secondItem="5Ym-Dr-nSz" secondAttribute="centerX" id="ryv-X3-mgu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4bP-NE-Ai8" firstAttribute="trailing" secondItem="ZUm-pq-aQe" secondAttribute="trailing" id="3sP-of-mki"/>
+                            <constraint firstItem="ZUm-pq-aQe" firstAttribute="leading" secondItem="4bP-NE-Ai8" secondAttribute="leading" id="GL3-rP-PyA"/>
+                            <constraint firstAttribute="bottom" secondItem="ZUm-pq-aQe" secondAttribute="bottom" id="NBU-s5-RA4"/>
+                            <constraint firstItem="ZUm-pq-aQe" firstAttribute="top" secondItem="4bP-NE-Ai8" secondAttribute="top" id="XMK-tn-s6A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4bP-NE-Ai8"/>
                     </view>
+                    <connections>
+                        <outlet property="AddPhotoButtobn" destination="5Ym-Dr-nSz" id="TQd-pq-SBr"/>
+                        <outlet property="dismissButton" destination="0qQ-9A-kcl" id="v1D-BD-9ZI"/>
+                        <outlet property="nameFiekd" destination="VGD-VZ-SFI" id="3Ep-9F-bMV"/>
+                        <outlet property="saveButton" destination="vXB-7b-8nM" id="nLX-Tn-rcc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4F-3t-AvX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2078" y="-978"/>
+            <point key="canvasLocation" x="2992.753623188406" y="591.96428571428567"/>
         </scene>
         <!--Add Players View Controller-->
         <scene sceneID="T64-Qc-1GT">
