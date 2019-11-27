@@ -22,10 +22,19 @@ class Model{
     var tema : [Tema]!
     
     private init (){
-            
+        
+        querys()
     }
     
-    
+    func querys(){
+        personagemQuery()
+        lugarQuery()
+        objetoQuery()
+        situacaoQuery()
+        acaoQuery()
+        temaQuery()
+
+    }
     func personagemQuery(){
         var predicate = NSPredicate(format: "")
         predicate = NSPredicate(value: true)
