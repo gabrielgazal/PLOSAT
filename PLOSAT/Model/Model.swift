@@ -19,7 +19,7 @@ class Model{
     var tema : [String]!
     
     private init (){
-        
+            
     }
     
     func shufle(){

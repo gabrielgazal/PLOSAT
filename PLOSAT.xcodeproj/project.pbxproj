@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1259A444238DB62A001CD989 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1259A443238DB62A001CD989 /* CloudKit.framework */; };
 		12F31B4C2388611C00276E09 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F31B4B2388611C00276E09 /* Game.swift */; };
 		562400AF238B78080053DE6F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AD238B78080053DE6F /* DesignableView.swift */; };
 		562400B0238B78080053DE6F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AE238B78080053DE6F /* DesignableButton.swift */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1259A441238DB604001CD989 /* PLOSAT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PLOSAT.entitlements; sourceTree = "<group>"; };
+		1259A443238DB62A001CD989 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		12F31B4B2388611C00276E09 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		562400AD238B78080053DE6F /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		562400AE238B78080053DE6F /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -57,12 +60,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1259A444238DB62A001CD989 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1259A442238DB62A001CD989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1259A443238DB62A001CD989 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		562400AC238B77930053DE6F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +89,7 @@
 			children = (
 				563EF33D2387069900684647 /* PLOSAT */,
 				563EF33C2387069900684647 /* Products */,
+				1259A442238DB62A001CD989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +104,7 @@
 		563EF33D2387069900684647 /* PLOSAT */ = {
 			isa = PBXGroup;
 			children = (
+				1259A441238DB604001CD989 /* PLOSAT.entitlements */,
 				562400AC238B77930053DE6F /* Extensions */,
 				563EF35223871DD700684647 /* Model */,
 				563EF35323871DDE00684647 /* View */,
@@ -368,8 +382,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PLOSAT/PLOSAT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7994PXZY59;
+				DEVELOPMENT_TEAM = 3ULBAUPW8A;
 				INFOPLIST_FILE = PLOSAT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomaisbonitodacidade.PLOSAT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,8 +401,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PLOSAT/PLOSAT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7994PXZY59;
+				DEVELOPMENT_TEAM = 3ULBAUPW8A;
 				INFOPLIST_FILE = PLOSAT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomaisbonitodacidade.PLOSAT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
