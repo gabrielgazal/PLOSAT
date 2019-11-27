@@ -15,8 +15,8 @@ class StoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        HistoriaTitulo.text = Model.instance.game.plosat.card[6][0]
-//        HistoriaDescricao.text = Model.instance.game.plosat.card[6][1]
+        HistoriaTitulo.text = Model.instance.game.tema.titulo
+        HistoriaDescricao.text = Model.instance.game.tema.descricao
 
         // Do any additional setup after loading the view.
     }
