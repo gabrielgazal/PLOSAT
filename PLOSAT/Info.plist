@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RobotoCondensed-Regular</string>
+		<string>RobotoCondensed-Bold</string>
+		<string>RobotoCondensed-BoldItalic</string>
+		<string>RobotoCondensed-Light</string>
+		<string>RobotoCondensed-LightItalic</string>
+		<string>RobotoCondensed-Italic</string>
+	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>O app requer o usod a câmera</string>
 	<key>UIUserInterfaceStyle</key>

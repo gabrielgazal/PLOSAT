@@ -102,7 +102,10 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
     @IBAction func SavePlayer(_ sender: Any) {
         //FAZER SAFE UNWRAP!!!
         Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
-//        print(Model.instance.game.players.count)
+        if (Model.instance.game.players.count) >= 2{
+            Model.instance.enoughPlayers = true
+        }
+        
         NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
         dismiss(animated: true, completion: nil)
         

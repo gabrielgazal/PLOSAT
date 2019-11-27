@@ -8,23 +8,39 @@
 
 import UIKit
 
-class PlayerFunctionsViewController: UIViewController {
-
+class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    
+    @IBOutlet weak var PlayersTableView: UITableView!
+    @IBOutlet weak var nextPageButton: DesignableButton!
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return Model.instance.game.players.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell") as! DetailTableViewCell
+        cell.playerImage.image = Model.instance.game.players[indexPath.row].foto
+        cell.playerName.text = Model.instance.game.players[indexPath.row].name
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Model.instance.jogadorSelecionado = indexPath.row
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }

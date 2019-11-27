@@ -30,6 +30,7 @@ class Model{
     }
     
     var enoughPlayers = false
+    var jogadorSelecionado = 0
     
 
     

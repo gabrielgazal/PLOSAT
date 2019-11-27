@@ -14,6 +14,7 @@ class JogadoresTableViewCell: UITableViewCell {
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var RemoveButotn: UIButton!
     
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
