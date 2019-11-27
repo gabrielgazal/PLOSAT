@@ -13,12 +13,12 @@ class Game {
     
     var players: [Player]!
     var plosat: Plosat!
-    
+    var tema: Tema!
     internal init(players: [Player]) {
         Model.instance.shufle()
         self.players = players
-        self.plosat = Plosat(personagem: Model.instance.personagem.randomElement()!, lugar: Model.instance.lugar.randomElement()!, objeto: Model.instance.objeto.randomElement()!, situacao: Model.instance.situacao.randomElement()!, acao: Model.instance.acao.randomElement()!, tema: Model.instance.tema.randomElement()!)
-        
+        self.plosat = Plosat(personagem: Model.instance.personagem.randomElement()!, lugar: Model.instance.lugar.randomElement()!, objeto: Model.instance.objeto.randomElement()!, situacao: Model.instance.situacao.randomElement()!, acao: Model.instance.acao.randomElement()!)
+        self.tema = Model.instance.tema.randomElement()
         //Ajeitar para adicionar infos extras \/
         self.plosat.card[1].append("personagem")
         self.plosat.card[2].append("lugar")

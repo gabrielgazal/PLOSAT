@@ -12,16 +12,14 @@ class Plosat{
     
 
     var card = [[""]]
-    
-    internal init(personagem: String, lugar: String, objeto: String, situacao: String, acao: String, tema: String) {
+    var tema:  Tema!
+    internal init(personagem: String, lugar: String, objeto: String, situacao: String, acao: String){
         
         self.card.append([personagem])
         self.card.append([lugar])
         self.card.append([objeto])
         self.card.append([situacao])
         self.card.append([acao])
-        self.card.append([tema])
-        
     }
 
 }
