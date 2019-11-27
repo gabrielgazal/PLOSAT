@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1259A444238DB62A001CD989 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1259A443238DB62A001CD989 /* CloudKit.framework */; };
+		1259A446238EF031001CD989 /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259A445238EF031001CD989 /* Tema.swift */; };
 		12F31B4C2388611C00276E09 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F31B4B2388611C00276E09 /* Game.swift */; };
 		562400AF238B78080053DE6F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AD238B78080053DE6F /* DesignableView.swift */; };
 		562400B0238B78080053DE6F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AE238B78080053DE6F /* DesignableButton.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		1259A441238DB604001CD989 /* PLOSAT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PLOSAT.entitlements; sourceTree = "<group>"; };
 		1259A443238DB62A001CD989 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1259A445238EF031001CD989 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
 		12F31B4B2388611C00276E09 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		562400AD238B78080053DE6F /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		562400AE238B78080053DE6F /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				56F631D623885093008B7A25 /* Player.swift */,
 				56EC810D23871F7C007DCFF2 /* Plosat.swift */,
 				12F31B4B2388611C00276E09 /* Game.swift */,
+				1259A445238EF031001CD989 /* Tema.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				562400AF238B78080053DE6F /* DesignableView.swift in Sources */,
 				563EF3432387069900684647 /* ViewController.swift in Sources */,
 				563EF33F2387069900684647 /* AppDelegate.swift in Sources */,
+				1259A446238EF031001CD989 /* Tema.swift in Sources */,
 				12F31B4C2388611C00276E09 /* Game.swift in Sources */,
 				562400B8238B99140053DE6F /* StoryTimerViewController.swift in Sources */,
 				563EF3412387069900684647 /* SceneDelegate.swift in Sources */,
