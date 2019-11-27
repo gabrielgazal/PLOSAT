@@ -20,7 +20,7 @@ extension UIViewController {
     }
 }
 
-class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
+class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate, UITextFieldDelegate{
 
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var nameFiekd: UITextField!
@@ -100,17 +100,23 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
   
     
     @IBAction func SavePlayer(_ sender: Any) {
+        //FAZER SAFE UNWRAP!!!
         Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
 //        print(Model.instance.game.players.count)
         NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
         dismiss(animated: true, completion: nil)
         
-        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        self.nameFiekd.delegate = self
 
         // Do any additional setup after loading the view.
     }

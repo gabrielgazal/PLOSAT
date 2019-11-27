@@ -29,6 +29,8 @@ class Model{
         tema = ["Descoberta do amor","Roubo do protótipo","Envenenamento do presidente"]
     }
     
+    var enoughPlayers = false
+    
 
     
     func shufle(){
