@@ -44,43 +44,60 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        
         fotodojos = sepiaFilter(image, intensity: 0.8)
+        
+        
         
         AddPhotoButtobn.setImage(fotodojos, for: .normal)
         AddPhotoButtobn.imageView?.contentMode = .scaleAspectFill
         dismiss(animated:true, completion: nil)
         
     }
-//    func filtroSepia(inputImage: UIImage) -> UIImage{
-//        let context = CIContext(options: nil)
-//
-//        if let currentFilter = CIFilter(name: "CISepiaTone") {
-//            let beginImage = CIImage(image: inputImage)
-//            currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
-//            currentFilter.setValue(0.8, forKey: kCIInputIntensityKey)
-//
-//            if let output = currentFilter.outputImage {
-//                if let cgimg = context.createCGImage(output, from: output.extent) {
-//                    let processedImage = UIImage(cgImage: cgimg)
-////                    AddPhotoButtobn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
-//                    return processedImage
-//                    // do something interesting with the processed image
-//                }
-//            }
-//        }
-//        return inputImage
-//    }
+
+//                    AddPhotoButtobn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
+
     
     func sepiaFilter(_ input: UIImage, intensity: Double) -> UIImage?
     {
-        let image = CIImage(image: input)
+//        let rotation = CIImage(image: input)?.imageByApplyingOrientation(imageOrientationToTiffOrientation(value: input.imageOrientation))
+
+        let image = CIImage(image: input)?.oriented(forExifOrientation: imageOrientationToTiffOrientation(value: input.imageOrientation))
+//        let transform = CGAffineTransform(rotationAngle: .pi/2)
+//        image?.transformed(by: transform)
         let sepiaFilter = CIFilter(name:"CISepiaTone")
         sepiaFilter?.setValue(image, forKey: kCIInputImageKey)
         sepiaFilter?.setValue(intensity, forKey: kCIInputIntensityKey)
         
+
+                
         return UIImage(ciImage: sepiaFilter!.outputImage!)
-        
+
     }
+    func imageOrientationToTiffOrientation(value: UIImage.Orientation) -> Int32
+    {
+        switch (value)
+        {
+        case UIImageOrientation.up:
+            return 1
+        case UIImageOrientation.down:
+            return 3
+        case UIImageOrientation.left:
+            return 8
+        case UIImageOrientation.right:
+            return 6
+        case UIImageOrientation.upMirrored:
+            return 2
+        case UIImageOrientation.downMirrored:
+            return 4
+        case UIImageOrientation.leftMirrored:
+            return 5
+        case UIImageOrientation.rightMirrored:
+            return 7
+        }
+    }
+
+  
     
     @IBAction func SavePlayer(_ sender: Any) {
         Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
