@@ -13,10 +13,12 @@ class Player{
     
     var name: String
     var plosat: Plosat
+    var foto: UIImage
     
-    internal init(name: String, plosat:Plosat) {
+    internal init(name: String, plosat:Plosat, foto: UIImage) {
         self.name = name
         self.plosat = plosat
+        self.foto = foto
     }
 
     
