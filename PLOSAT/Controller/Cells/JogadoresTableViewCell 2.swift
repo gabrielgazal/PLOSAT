@@ -13,13 +13,10 @@ class JogadoresTableViewCell: UITableViewCell {
     @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var RemoveButotn: UIButton!
-    @IBOutlet weak var seloImage: UIImageView!
     
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
-        playerImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
         // Initialization code
     }
 

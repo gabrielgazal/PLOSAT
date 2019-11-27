@@ -1,5 +1,5 @@
 //
-//  JogadoresTableViewCell.swift
+//  AddPlayerTableViewCell.swift
 //  PLOSAT
 //
 //  Created by Gabriel Gazal on 25/11/19.
@@ -8,18 +8,14 @@
 
 import UIKit
 
-class JogadoresTableViewCell: UITableViewCell {
+class AddPlayerTableViewCell: UITableViewCell, UITextFieldDelegate {
 
-    @IBOutlet weak var playerImage: UIImageView!
-    @IBOutlet weak var playerName: UILabel!
-    @IBOutlet weak var RemoveButotn: UIButton!
-    @IBOutlet weak var seloImage: UIImageView!
     
-
+    @IBOutlet weak var NewPlayerField: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
-        playerImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+        NewPlayerField.delegate = self
         // Initialization code
     }
 
@@ -28,5 +24,5 @@ class JogadoresTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+  
 }

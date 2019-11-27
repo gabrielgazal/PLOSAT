@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "IMG_2416 2.HEIC",
+      "filename" : "selo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "selo@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "selo@3x.png",
       "scale" : "3x"
     }
   ],
