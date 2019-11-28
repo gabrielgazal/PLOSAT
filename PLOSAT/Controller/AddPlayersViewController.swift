@@ -8,7 +8,13 @@
 
 import UIKit
 
-class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ExcluirJogador {
+    
+    func delete(at: IndexPath) {
+        Model.instance.game.players.remove(at: at.section)
+        tableview.reloadData()
+    }
+    
     
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var addPlayer: DesignableButton!
@@ -31,12 +37,13 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "jogadorCell") as! JogadoresTableViewCell
-            cell.playerImage.image = Model.instance.game.players[indexPath.section].foto
-            cell.playerName.text = Model.instance.game.players[indexPath.section].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "jogadorCell") as! JogadoresTableViewCell
+        cell.playerImage.image = Model.instance.game.players[indexPath.section].foto
+        cell.playerName.text = Model.instance.game.players[indexPath.section].name
         cell.backgroundColor = .clear
-            return cell
-        
+        cell.index = indexPath
+        cell.delegate = self
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
