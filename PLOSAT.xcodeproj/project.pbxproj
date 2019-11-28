@@ -140,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				1259A441238DB604001CD989 /* PLOSAT.entitlements */,
+				563EF33E2387069900684647 /* AppDelegate.swift */,
 				562400AC238B77930053DE6F /* Extensions */,
 				563EF35223871DD700684647 /* Model */,
 				563EF35323871DDE00684647 /* View */,
@@ -176,7 +177,6 @@
 		563EF35423871DE900684647 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				563EF33E2387069900684647 /* AppDelegate.swift */,
 				562400BB238B995A0053DE6F /* VotingScreenViewController.swift */,
 				562400B5238B98FE0053DE6F /* PlayerFunctionsViewController.swift */,
 				563EF3402387069900684647 /* SceneDelegate.swift */,

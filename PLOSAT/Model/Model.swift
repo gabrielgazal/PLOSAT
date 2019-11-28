@@ -30,7 +30,10 @@ class Model{
         situacao = ["Sequestro relâmpago","Ataque alienígena","Briga com facas","Show da Billie Eillish"]
         acao = ["Rasgar cartas","Lavar um caixão","Roer um cadeado"]
         tema = [Tema(titulo: "Descoberta do amor", descricao: "aadasfdasfdsgfdsafgadgfagadgd"),Tema(titulo: "Roubo do protótipo", descricao: "aadasfdasfdsgfdsafgadgfagadgd"),Tema(titulo: "Envenenamento do presidente", descricao: "aadasfdasfdsgfdsafgadgfagadgd")]
+        lugarQuery()
        // querys()
+        
+        //publicDataBaase.
     }
     
     func querys(){
@@ -43,14 +46,15 @@ class Model{
 
     }
     func personagemQuery(){
-        var predicate = NSPredicate(format: "")
-        predicate = NSPredicate(value: true)
-        let query = CKQuery(recordType: "personagem", predicate: predicate)
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: "Personagem", predicate: predicate)
+        
         publicDataBaase.perform(query, inZoneWith: nil){ (records, error) in
             guard let recs = records else{
                 print(error!.localizedDescription)
                 return
             }
+            print (records ?? "deu ruim")
             for record in recs {
                 self.personagem.append(record["personagem"]!)
                 print(record["personagem"]!)
@@ -58,22 +62,22 @@ class Model{
         }
     }
     func lugarQuery(){
-        var predicate = NSPredicate(format: "")
-        predicate = NSPredicate(value: true)
+        let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "lugar", predicate: predicate)
         publicDataBaase.perform(query, inZoneWith: nil){ (records, error) in
             guard let recs = records else{
                 print(error!.localizedDescription)
                 return
             }
+            print (records ?? "deu ruim")
             for record in recs {
                 self.lugar.append(record["lugar"]!)
+                print(record["lugar"]!)
             }
         }
     }
     func objetoQuery(){
-        var predicate = NSPredicate(format: "")
-        predicate = NSPredicate(value: true)
+        let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "objeto", predicate: predicate)
         publicDataBaase.perform(query, inZoneWith: nil){ (records, error) in
             guard let recs = records else{
@@ -86,8 +90,7 @@ class Model{
         }
     }
     func situacaoQuery(){
-        var predicate = NSPredicate(format: "")
-        predicate = NSPredicate(value: true)
+        let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "situacao", predicate: predicate)
         publicDataBaase.perform(query, inZoneWith: nil){ (records, error) in
             guard let recs = records else{
@@ -100,8 +103,7 @@ class Model{
         }
     }
     func acaoQuery(){
-        var predicate = NSPredicate(format: "")
-        predicate = NSPredicate(value: true)
+        let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "acao", predicate: predicate)
         publicDataBaase.perform(query, inZoneWith: nil){ (records, error) in
             guard let recs = records else{
@@ -114,8 +116,7 @@ class Model{
         }
     }
     func temaQuery(){
-        var predicate = NSPredicate(format: "")
-        predicate = NSPredicate(value: true)
+        let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "tema", predicate: predicate)
         publicDataBaase.perform(query, inZoneWith: nil){ (records, error) in
             guard let recs = records else{
