@@ -102,7 +102,7 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
     @IBAction func SavePlayer(_ sender: Any) {
         //FAZER SAFE UNWRAP!!!
         Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
-        if (Model.instance.game.players.count) >= 2{
+        if (Model.instance.game.players.count) >= 1 {
             Model.instance.enoughPlayers = true
         }
         

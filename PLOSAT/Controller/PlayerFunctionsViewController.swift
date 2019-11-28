@@ -29,6 +29,8 @@ class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITa
         
         cell.playerImage.image = Model.instance.game.players[indexPath.section].foto
         cell.playerName.text = Model.instance.game.players[indexPath.section].name
+        cell.contagem.text = String(Model.instance.game.players[indexPath.section].visoes)
+        
         return cell
     }
     
@@ -45,11 +47,22 @@ class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITa
     }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         view.tintColor = .clear
-
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Model.instance.jogadorSelecionado = indexPath.section
+        Model.instance.game.players[Model.instance.jogadorSelecionado].visoes += 1
+        tableView.reloadData()
+        if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") {
+            DispatchQueue.main.async {
+                self.present(vc, animated: true)
+                
+            }
+            
+        }
+        
+        //        performSegue(withIdentifier: "showDetail", sender: nil)
     }
     
     override func viewDidLoad() {
