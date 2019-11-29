@@ -14,8 +14,10 @@ class Player{
     var name: String
     var plosat: Plosat
     var foto: UIImage
+    var culpado = false
+    var visoes = 0
     
-    internal init(name: String, plosat:Plosat, foto: UIImage) {
+    internal init(name: String, plosat:Plosat, foto: UIImage, culpado: Bool, visoes: Int) {
         self.name = name
         self.plosat = plosat
         let g = Int.random(in: 1 ... 5)
@@ -29,6 +31,8 @@ class Player{
             }
         }
         self.foto = foto
+        self.culpado = culpado
+        self.visoes = visoes
     }
 
     

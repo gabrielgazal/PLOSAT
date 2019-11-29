@@ -9,22 +9,120 @@
 import UIKit
 
 class StoryTimerViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    
+    
+    @IBOutlet weak var timerCounter: UILabel!
+    @IBOutlet weak var secondsLabel: UILabel!
+    @IBOutlet weak var espiearAlibi: DesignableButton!
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var nextPLayerLabel: UILabel!
+    @IBOutlet weak var nextPage: DesignableButton!
+    @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var seloImage: UIImageView!
+    
+    var timer : Timer!
+    var endGame: Bool = false
+    var createdTimer = false
+    
+    @IBAction func espiarAlibi(_ sender: Any) {
+        
+        if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") as? PapeisViewController {
+            vc.player = currentPlayer
+            DispatchQueue.main.async {
+                self.present(vc, animated: true)
+            }
+        }
+        
+    }
+    @IBAction func nextScreen(_ sender: Any) {
+        performSegue(withIdentifier: "startDebate", sender: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func resetScreen(_ sender: Any) {
+        
     }
-    */
+    @IBAction func startTempo(_ sender: Any) {
+        guard !endGame else { return }
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+    }
+    
+    var count = 5 {
+        didSet {
+            let minutos = count/60
+            let segundos = count % 60
+            
+            timerCounter.text = String(format: "%02d",minutos)
+            secondsLabel.text = String(format: "%02d",segundos)
+            createdTimer = false
+        }
+    }
+    
+    var ordenacao: [Player] = []
+    var currentPlayer : Player?
+    
+    
+    
+    fileprivate func round() {
+       
+            if ordenacao.count > 0 {
+                currentPlayer = ordenacao.remove(at: 0)
+                playerImage.image = currentPlayer?.foto
+                seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+                playerImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+                
+                let nome = currentPlayer!.name.uppercased()
+                let contentString = "\(nome),\nDEFENDA-SE"
+                
+                nomeLabel.text? = contentString
+            }
+            
+            if let next = ordenacao.first {
+                nextPLayerLabel.isHidden = true
+//                nextPLayerLabel.text = "\(next.name)"
+            } else {
+                nextPLayerLabel.isHidden = true
+                //Mostra botao de continuar
+                //Esconde ver alibi
+                //Escon
+                //Fim da rodada
+            }
+    
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        nextPage.isHidden = true
+        ordenacao = Model.instance.game.players
+        ordenacao.shuffle()
+        
+        round()
+        
+        count = 5
+        Model.instance.timerUniversal = count
+    }
+    
+    @objc func update(){
+        if (count > 0){
+            count -= 1
+            Model.instance.timerUniversal = count
+        } else {
+            count = 5
+            Model.instance.timerUniversal = count
 
+            timer.invalidate()
+            if ordenacao.count > 0 {
+                round()
+            } else {
+                espiearAlibi.isHidden = true
+                nextPage.isHidden = false
+                nextPLayerLabel.isHidden = false
+                endGame = true
+            }
+        }
+    }
+    
+    
+    
 }

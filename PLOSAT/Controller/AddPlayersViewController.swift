@@ -8,7 +8,13 @@
 
 import UIKit
 
-class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ExcluirJogador {
+    
+    func delete(at: IndexPath) {
+        Model.instance.game.players.remove(at: at.section)
+        tableview.reloadData()
+    }
+    
     
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var addPlayer: DesignableButton!
@@ -24,19 +30,38 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return Model.instance.game.players.count
+        return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return Model.instance.game.players.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "jogadorCell") as! JogadoresTableViewCell
-            cell.playerImage.image = Model.instance.game.players[indexPath.row].foto
-            cell.playerName.text = Model.instance.game.players[indexPath.row].name
-            return cell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "jogadorCell") as! JogadoresTableViewCell
+        cell.playerImage.image = Model.instance.game.players[indexPath.section].foto
+        cell.playerName.text = Model.instance.game.players[indexPath.section].name
+        cell.backgroundColor = .clear
+        cell.index = indexPath
+        cell.delegate = self
+        return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        view.tintColor = .clear
+    }
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = .clear
+
+    }
+   
     
 
 

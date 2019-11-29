@@ -21,10 +21,18 @@ class Model{
     var situacao : [String]!
     var acao : [String]!
     var tema : [Tema]!
+    var viuModal = false
+    var timerUniversal = 90 {
+        didSet {
+            timeObservers.forEach( { $0.notify() } )
+        }
+    }
+    
+    var timeObservers = [TimeObserver]()
     
     private init (){
         
-        personagem = ["Cabral","Walace","Gazal","Mari","Rodrigo"]
+        personagem = ["Cabral","Adonay","Pedro","Tiririca","ET Bilu"]
         lugar = ["Boate LGBT","Cassino clandestino","Deserto do Saara"]
         objeto = ["Peruca Loira","Gravação VHS","Dentadura com dente de ouro","Selo da copa de 1970"]
         situacao = ["Sequestro relâmpago","Ataque alienígena","Briga com facas","Show da Billie Eillish"]
@@ -144,4 +152,8 @@ class Model{
     }
     
     var game: Game!
+}
+
+protocol TimeObserver {
+    func notify()
 }

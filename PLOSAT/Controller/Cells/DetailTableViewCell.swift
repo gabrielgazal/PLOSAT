@@ -12,9 +12,13 @@ class DetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var playerName: UILabel!
+    @IBOutlet weak var seloImage: UIImageView!
+    @IBOutlet weak var contagem: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+        playerImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
         // Initialization code
     }
 
