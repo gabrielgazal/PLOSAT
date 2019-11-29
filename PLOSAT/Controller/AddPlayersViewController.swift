@@ -23,7 +23,7 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var StartGame: DesignableButton!
     
     @IBAction func StartPLaying(_ sender: Any) {
-        if Model.instance.enoughPlayers{
+        if Model.instance.enoughPlayers >= 1{
             performSegue(withIdentifier: "startGame", sender: self)
         }
     }

@@ -15,7 +15,7 @@ class Plosat{
     var tema:  Tema!
     internal init(personagem: String, lugar: String, objeto: String, situacao: String, acao: String){
         
-        self.card.append([personagem])
+        self.card[0] = [personagem]
         self.card.append([lugar])
         self.card.append([objeto])
         self.card.append([situacao])

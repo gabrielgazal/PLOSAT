@@ -17,7 +17,7 @@ class StoryViewController: UIViewController {
         super.viewDidLoad()
         HistoriaTitulo.text = Model.instance.game.tema.titulo
         HistoriaDescricao.text = Model.instance.game.tema.descricao
-//        Model.instance.game.declareGuilty()
+        Model.instance.game.declareGuilty()
         // Do any additional setup after loading the view.
     }
    

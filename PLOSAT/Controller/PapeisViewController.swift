@@ -44,14 +44,19 @@ class PapeisViewController: UIViewController, TimeObserver {
         
         if let player = player {
             NomeJogador.text = player.name.uppercased()
-            personagemLabel.attributedText = formatLabel(title: "PERSONAGEM(S)", subtitle: "\(player.plosat.card[1][0])")
-            LugarLabel.attributedText = formatLabel(title: "LUGAR(S)", subtitle: "\(player.plosat.card[2][0])")
-            ObjetoLabel.attributedText = formatLabel(title: "OBJETOS(S)", subtitle: "\(player.plosat.card[3][0])")
-            SituacaoLabel.attributedText = formatLabel(title: "SITUAÇÃO", subtitle: "\(player.plosat.card[4][0])")
-            AcaoLabel.attributedText = formatLabel(title: "AÇÃO", subtitle: "\(player.plosat.card[5][0])")
+            personagemLabel.attributedText = formatLabel(title: "PERSONAGEM(S)", subtitle: "\(player.plosat.card[0][0])")
+            LugarLabel.attributedText = formatLabel(title: "LUGAR(S)", subtitle: "\(player.plosat.card[1][0])")
+            ObjetoLabel.attributedText = formatLabel(title: "OBJETOS(S)", subtitle: "\(player.plosat.card[2][0])")
+            SituacaoLabel.attributedText = formatLabel(title: "SITUAÇÃO", subtitle: "\(player.plosat.card[3][0])")
+            AcaoLabel.attributedText = formatLabel(title: "AÇÃO", subtitle: "\(player.plosat.card[4][0])")
             
             if player.culpado {
                 inocCulpImage.image = UIImage(named: "culpado")
+                personagemLabel.attributedText = formatLabel(title: "PERSONAGEM(S)", subtitle: "")
+                LugarLabel.attributedText = formatLabel(title: "LUGAR(S)", subtitle: "")
+                ObjetoLabel.attributedText = formatLabel(title: "OBJETOS(S)", subtitle: "")
+                SituacaoLabel.attributedText = formatLabel(title: "SITUAÇÃO", subtitle: "")
+                AcaoLabel.attributedText = formatLabel(title: "AÇÃO", subtitle: "")
             } else{
                 inocCulpImage.image = UIImage(named: "inocente")
                 
