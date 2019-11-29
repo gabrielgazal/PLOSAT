@@ -63,13 +63,12 @@ class Model{
     }
     func lugarQuery(){
         let predicate = NSPredicate(value: true)
-        let query = CKQuery(recordType: "lugar", predicate: predicate)
+        let query = CKQuery(recordType: "Lugar", predicate: predicate)
         publicDataBaase.perform(query, inZoneWith: nil){ (records, error) in
             guard let recs = records else{
                 print(error!.localizedDescription)
                 return
             }
-            print (records ?? "deu ruim")
             for record in recs {
                 self.lugar.append(record["lugar"]!)
                 print(record["lugar"]!)

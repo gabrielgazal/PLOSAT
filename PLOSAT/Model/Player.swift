@@ -18,6 +18,16 @@ class Player{
     internal init(name: String, plosat:Plosat, foto: UIImage) {
         self.name = name
         self.plosat = plosat
+        let g = Int.random(in: 1 ... 5)
+        var h = Int.random(in: 1 ... 5)
+        while(g==h){
+            h = Int.random(in: 1 ... 5)
+        }
+        for pos in 1 ... 5{
+            if(pos != g && pos != h){
+                self.plosat.card[pos] = [""]
+            }
+        }
         self.foto = foto
     }
 
