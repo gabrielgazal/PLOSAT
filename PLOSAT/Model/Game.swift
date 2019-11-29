@@ -33,7 +33,7 @@ class Game {
         let newPlosat = Plosat.init(personagem: "", lugar: "", objeto: "", situacao:  "", acao: "")
         let n = Int.random(in: 1 ... 5)
         newPlosat.card[n] = [self.plosat.card[n][Int.random(in: 0...1)]]
-        let newPlayer = Player(name: name, plosat: plosat, foto: foto)
+        let newPlayer = Player(name: name, plosat: plosat, foto: foto, culpado: false, visoes: 0)
         players.append(newPlayer)
     }
     func declareGuilty(){

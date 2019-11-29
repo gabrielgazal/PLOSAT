@@ -1,18 +1,19 @@
 //
-//  DesignableView.swift
-//  Brasunia
+//  EditableViewFile.swift
+//  PLOSAT
 //
-//  Created by Gabriel Gazal on 28/08/19.
-//  Copyright © 2019 Brasunia. All rights reserved.
+//  Created by Gabriel Gazal on 28/11/19.
+//  Copyright © 2019 OGrupoMaisBonitoDaCidade. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-@IBDesignable class DesignableView: UIView {
+@IBDesignable class EditableView: UIView {
 
     @IBInspectable var cornerRadius: CGFloat = 0{
         didSet{
-            self.layer.cornerRadius = cornerRadius
+            self.layer.cornerRadius = self.frame.width/2.0
         }
     }
     @IBInspectable var borderWidht: CGFloat = 0{

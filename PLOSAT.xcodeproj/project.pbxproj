@@ -35,7 +35,11 @@
 		5640BC25238EFFD100C75855 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5640BC1F238EFFA700C75855 /* RobotoCondensed-Light.ttf */; };
 		5640BC26238EFFD100C75855 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5640BC1E238EFFA700C75855 /* RobotoCondensed-LightItalic.ttf */; };
 		5640BC27238EFFD100C75855 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5640BC1C238EFFA700C75855 /* RobotoCondensed-Regular.ttf */; };
+		56BD1DF52391637A007DE382 /* PrepareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD1DF42391637A007DE382 /* PrepareViewController.swift */; };
+		56BD1DF723916F2D007DE382 /* MODALViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD1DF623916F2D007DE382 /* MODALViewController.swift */; };
 		56C36F66238EDFE40090E1F0 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */; };
+		56E95F4C23902C5500EE4C45 /* EditableViewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */; };
+		56E95F4E2390331B00EE4C45 /* PapeisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E95F4D2390331B00EE4C45 /* PapeisViewController.swift */; };
 		56EC810C23871F2B007DCFF2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810B23871F2B007DCFF2 /* Model.swift */; };
 		56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810D23871F7C007DCFF2 /* Plosat.swift */; };
 		56F631D723885093008B7A25 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F631D623885093008B7A25 /* Player.swift */; };
@@ -73,7 +77,11 @@
 		5640BC1D238EFFA700C75855 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		5640BC1E238EFFA700C75855 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		5640BC1F238EFFA700C75855 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		56BD1DF42391637A007DE382 /* PrepareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareViewController.swift; sourceTree = "<group>"; };
+		56BD1DF623916F2D007DE382 /* MODALViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODALViewController.swift; sourceTree = "<group>"; };
 		56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableViewFile.swift; sourceTree = "<group>"; };
+		56E95F4D2390331B00EE4C45 /* PapeisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapeisViewController.swift; sourceTree = "<group>"; };
 		56EC810B23871F2B007DCFF2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56EC810D23871F7C007DCFF2 /* Plosat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plosat.swift; sourceTree = "<group>"; };
 		56F631D623885093008B7A25 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 			children = (
 				562400AE238B78080053DE6F /* DesignableButton.swift */,
 				562400AD238B78080053DE6F /* DesignableView.swift */,
+				56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */,
 				560C18FC238EF1BE00F44CD2 /* EditableButton.swift */,
 			);
 			path = Extensions;
@@ -185,8 +194,11 @@
 				562400B3238B98E00053DE6F /* StoryViewController.swift */,
 				562400B7238B99140053DE6F /* StoryTimerViewController.swift */,
 				562400C4238D9DBA0053DE6F /* NewPlayerViewController.swift */,
+				56BD1DF623916F2D007DE382 /* MODALViewController.swift */,
 				562400B9238B99360053DE6F /* DiscussionTimerViewController.swift */,
 				562400BD238B99760053DE6F /* ResultsViewController.swift */,
+				56BD1DF42391637A007DE382 /* PrepareViewController.swift */,
+				56E95F4D2390331B00EE4C45 /* PapeisViewController.swift */,
 				562400BF238C53970053DE6F /* Cells */,
 			);
 			path = Controller;
@@ -290,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				562400C5238D9DBB0053DE6F /* NewPlayerViewController.swift in Sources */,
+				56E95F4C23902C5500EE4C45 /* EditableViewFile.swift in Sources */,
 				562400AF238B78080053DE6F /* DesignableView.swift in Sources */,
 				563EF3432387069900684647 /* ViewController.swift in Sources */,
 				563EF33F2387069900684647 /* AppDelegate.swift in Sources */,
@@ -299,9 +312,11 @@
 				563EF3412387069900684647 /* SceneDelegate.swift in Sources */,
 				56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */,
 				562400BE238B99760053DE6F /* ResultsViewController.swift in Sources */,
+				56BD1DF52391637A007DE382 /* PrepareViewController.swift in Sources */,
 				56F631D723885093008B7A25 /* Player.swift in Sources */,
 				562400BC238B995A0053DE6F /* VotingScreenViewController.swift in Sources */,
 				562400C3238C56100053DE6F /* AddPlayerTableViewCell.swift in Sources */,
+				56E95F4E2390331B00EE4C45 /* PapeisViewController.swift in Sources */,
 				56EC810C23871F2B007DCFF2 /* Model.swift in Sources */,
 				562400C1238C53B20053DE6F /* JogadoresTableViewCell.swift in Sources */,
 				562400B4238B98E00053DE6F /* StoryViewController.swift in Sources */,
@@ -310,6 +325,7 @@
 				560C18FD238EF1BE00F44CD2 /* EditableButton.swift in Sources */,
 				562400BA238B99360053DE6F /* DiscussionTimerViewController.swift in Sources */,
 				56C36F66238EDFE40090E1F0 /* DetailTableViewCell.swift in Sources */,
+				56BD1DF723916F2D007DE382 /* MODALViewController.swift in Sources */,
 				562400B6238B98FE0053DE6F /* PlayerFunctionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
