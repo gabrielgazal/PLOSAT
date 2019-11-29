@@ -36,7 +36,7 @@ class Player{
     }
     
     func setGuilty(){
-        self.guilty = true
+        self.culpado = true
         for pos in 0 ... 4{
                 self.plosat.card[pos] = [""]
             }
