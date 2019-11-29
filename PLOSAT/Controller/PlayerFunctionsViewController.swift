@@ -51,10 +51,10 @@ class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Model.instance.jogadorSelecionado = indexPath.section
-        Model.instance.game.players[Model.instance.jogadorSelecionado].visoes += 1
+        Model.instance.game.players[indexPath.section].visoes += 1
         tableView.reloadData()
-        if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") {
+        if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") as? PapeisViewController {
+            vc.player = Model.instance.game.players[indexPath.section]
             DispatchQueue.main.async {
                 self.present(vc, animated: true)
                 

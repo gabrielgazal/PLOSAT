@@ -8,7 +8,17 @@
 
 import UIKit
 
-class PapeisViewController: UIViewController {
+class PapeisViewController: UIViewController, TimeObserver {
+    func notify() {
+        let minutos = Model.instance.timerUniversal/60
+        let segundos = Model.instance.timerUniversal % 60
+        timerLabel.text = String(format: "%02d:%02d",minutos,segundos)
+        if Model.instance.timerUniversal == 0{
+            dismiss(animated: true, completion: nil)
+        }
+        
+    }
+    
     
     @IBAction func DismissAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -20,28 +30,46 @@ class PapeisViewController: UIViewController {
     @IBOutlet weak var ObjetoLabel: UILabel!
     @IBOutlet weak var SituacaoLabel: UILabel!
     @IBOutlet weak var AcaoLabel: UILabel!
+    @IBOutlet weak var timerView: DesignableView!
+    @IBOutlet weak var timerIcon: UIImageView!
+    @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var inocCulpImage: UIImageView!
     
+    var player: Player?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Model.instance.timeObservers.append(self)////
         
-        NomeJogador.text = Model.instance.game.players[Model.instance.jogadorSelecionado].name
-        
-        personagemLabel.attributedText = formatLabel(title: "PERSONAGEM(S)", subtitle: "\(Model.instance.game.players[Model.instance.jogadorSelecionado].plosat.card[1][0])")
-        LugarLabel.attributedText = formatLabel(title: "LUGAR(S)", subtitle: "\(Model.instance.game.players[Model.instance.jogadorSelecionado].plosat.card[2][0])")
-        ObjetoLabel.attributedText = formatLabel(title: "OBJETOS(S)", subtitle: "\(Model.instance.game.players[Model.instance.jogadorSelecionado].plosat.card[3][0])")
-        SituacaoLabel.attributedText = formatLabel(title: "SITUAÇÃO", subtitle: "\(Model.instance.game.players[Model.instance.jogadorSelecionado].plosat.card[4][0])")
-        AcaoLabel.attributedText = formatLabel(title: "AÇÃO", subtitle: "\(Model.instance.game.players[Model.instance.jogadorSelecionado].plosat.card[5][0])")
-        
-        if Model.instance.game.players[Model.instance.jogadorSelecionado].culpado{
-            inocCulpImage.image = UIImage(named: "culpado")
+        if let player = player {
+            NomeJogador.text = player.name.uppercased()
+            personagemLabel.attributedText = formatLabel(title: "PERSONAGEM(S)", subtitle: "\(player.plosat.card[1][0])")
+            LugarLabel.attributedText = formatLabel(title: "LUGAR(S)", subtitle: "\(player.plosat.card[2][0])")
+            ObjetoLabel.attributedText = formatLabel(title: "OBJETOS(S)", subtitle: "\(player.plosat.card[3][0])")
+            SituacaoLabel.attributedText = formatLabel(title: "SITUAÇÃO", subtitle: "\(player.plosat.card[4][0])")
+            AcaoLabel.attributedText = formatLabel(title: "AÇÃO", subtitle: "\(player.plosat.card[5][0])")
+            
+            if player.culpado {
+                inocCulpImage.image = UIImage(named: "culpado")
+            } else{
+                inocCulpImage.image = UIImage(named: "inocente")
+                
+            }
+        }
+        if Model.instance.viuModal{
+            let minutos = Model.instance.timerUniversal/60
+            let segundos = Model.instance.timerUniversal % 60
+            
+            timerLabel.text = String(format: "%02d:%02d",minutos,segundos)
         } else{
-            inocCulpImage.image = UIImage(named: "inocente")
-
+            timerView.isHidden = true
         }
         
     }
+    
+    
+    
     
     func formatLabel(title: String, subtitle: String) -> NSMutableAttributedString {
         let mutable = NSMutableAttributedString()

@@ -21,6 +21,14 @@ class Model{
     var situacao : [String]!
     var acao : [String]!
     var tema : [Tema]!
+    var viuModal = false
+    var timerUniversal = 90 {
+        didSet {
+            timeObservers.forEach( { $0.notify() } )
+        }
+    }
+    
+    var timeObservers = [TimeObserver]()
     
     private init (){
         
@@ -144,4 +152,8 @@ class Model{
     }
     
     var game: Game!
+}
+
+protocol TimeObserver {
+    func notify()
 }

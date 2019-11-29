@@ -14,14 +14,16 @@ extension UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
 }
 
 class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate,  UINavigationControllerDelegate, UITextFieldDelegate{
-
+    
+    @IBOutlet weak var dashedBorder: UIView!
+    @IBOutlet weak var seloImage: UIImageView!
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var nameFiekd: UITextField!
     @IBOutlet weak var saveButton: DesignableButton!
@@ -54,25 +56,25 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
         dismiss(animated:true, completion: nil)
         
     }
-
-//                    AddPhotoButtobn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
-
+    
+    //                    AddPhotoButtobn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi/2))
+    
     
     func sepiaFilter(_ input: UIImage, intensity: Double) -> UIImage?
     {
-//        let rotation = CIImage(image: input)?.imageByApplyingOrientation(imageOrientationToTiffOrientation(value: input.imageOrientation))
-
+        //        let rotation = CIImage(image: input)?.imageByApplyingOrientation(imageOrientationToTiffOrientation(value: input.imageOrientation))
+        
         let image = CIImage(image: input)?.oriented(forExifOrientation: imageOrientationToTiffOrientation(value: input.imageOrientation))
-//        let transform = CGAffineTransform(rotationAngle: .pi/2)
-//        image?.transformed(by: transform)
+        //        let transform = CGAffineTransform(rotationAngle: .pi/2)
+        //        image?.transformed(by: transform)
         let sepiaFilter = CIFilter(name:"CISepiaTone")
         sepiaFilter?.setValue(image, forKey: kCIInputImageKey)
         sepiaFilter?.setValue(intensity, forKey: kCIInputIntensityKey)
         
-
-                
+        
+        
         return UIImage(ciImage: sepiaFilter!.outputImage!)
-
+        
     }
     func imageOrientationToTiffOrientation(value: UIImage.Orientation) -> Int32
     {
@@ -96,8 +98,8 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
             return 7
         }
     }
-
-  
+    
+    
     
     @IBAction func SavePlayer(_ sender: Any) {
         //FAZER SAFE UNWRAP!!!
@@ -120,9 +122,37 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         self.nameFiekd.delegate = self
-
+        seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+        AddPhotoButtobn.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+        let buttonColor = #colorLiteral(red: 0.9019607843, green: 0.8352941176, blue: 0.7882352941, alpha: 1)
+        nameFiekd.attributedPlaceholder = NSAttributedString(string: "NOME DO JOGADOR",attributes:[NSAttributedString.Key.foregroundColor: buttonColor])
+        nameFiekd.backgroundColor = .clear
+        addDashedBorder(forma: nameFiekd)
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
+    func addDashedBorder(forma: UITextField) {
+        
+        let color = #colorLiteral(red: 0.2156862745, green: 0.1725490196, blue: 0.262745098, alpha: 1)
+        let shapeLayer:CAShapeLayer = CAShapeLayer()
+        let frameSize = forma.frame.size
+        let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
+        
+        shapeLayer.bounds = shapeRect
+        shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.strokeColor = color.cgColor
+        shapeLayer.lineWidth = 2
+        shapeLayer.lineJoin = CAShapeLayerLineJoin.round
+        shapeLayer.lineDashPattern = [5,5]
+        shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 6).cgPath
+        
+        forma.layer.addSublayer(shapeLayer)
+    }
     
-
+    
 }
