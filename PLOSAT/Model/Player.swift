@@ -20,12 +20,12 @@ class Player{
     internal init(name: String, plosat:Plosat, foto: UIImage, culpado: Bool, visoes: Int) {
         self.name = name
         self.plosat = plosat
-        let g = Int.random(in: 1 ... 5)
-        var h = Int.random(in: 1 ... 5)
-        while(g==h){
-            h = Int.random(in: 1 ... 5)
+        let g = Int.random(in: 0 ... 4)
+        var h = Int.random(in: 0 ... 4)
+        while(g == h){
+            h = Int.random(in: 0 ... 4)
         }
-        for pos in 1 ... 5{
+        for pos in 0 ... 4{
             if(pos != g && pos != h){
                 self.plosat.card[pos] = [""]
             }
@@ -37,7 +37,7 @@ class Player{
     
     func setGuilty(){
         self.guilty = true
-        for pos in 1 ... 5{
+        for pos in 0 ... 4{
                 self.plosat.card[pos] = [""]
             }
     }
