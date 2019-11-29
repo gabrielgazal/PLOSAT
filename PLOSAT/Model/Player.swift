@@ -14,6 +14,7 @@ class Player{
     var name: String
     var plosat: Plosat
     var foto: UIImage
+    var guilty = false
     
     internal init(name: String, plosat:Plosat, foto: UIImage) {
         self.name = name
@@ -30,6 +31,11 @@ class Player{
         }
         self.foto = foto
     }
-
     
+    func setGuilty(){
+        self.guilty = true
+        for pos in 1 ... 5{
+                self.plosat.card[pos] = [""]
+            }
+    }
 }

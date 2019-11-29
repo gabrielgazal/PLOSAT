@@ -36,4 +36,7 @@ class Game {
         let newPlayer = Player(name: name, plosat: plosat, foto: foto)
         players.append(newPlayer)
     }
+    func declareGuilty(){
+        Model.instance.game.players[Int.random(in: 1 ... Model.instance.game.players.count)].setGuilty()
+    }
 }
