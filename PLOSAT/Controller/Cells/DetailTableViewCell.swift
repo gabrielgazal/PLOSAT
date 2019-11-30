@@ -14,6 +14,7 @@ class DetailTableViewCell: UITableViewCell {
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var seloImage: UIImageView!
     @IBOutlet weak var contagem: UILabel!
+    @IBOutlet weak var iconLocker: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

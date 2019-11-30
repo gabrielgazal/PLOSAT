@@ -157,3 +157,4 @@ class Model{
 protocol TimeObserver {
     func notify()
 }
+
