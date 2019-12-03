@@ -12,11 +12,17 @@ class DiscussionTimerViewController: UIViewController {
     
     @IBOutlet weak var minutosLabel: UILabel!
     @IBOutlet weak var segundosLabel: UILabel!
+    var createdTimer = false
     @IBAction func StartTimer(_ sender: Any) {
+        if createdTimer{
+            return
+        }
+        createdTimer = true
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         
     }
     @IBAction func startVoting(_ sender: Any) {
+        
         if timer != nil {
             timer.invalidate()
             performSegue(withIdentifier: "startVoting", sender: nil)
@@ -27,7 +33,7 @@ class DiscussionTimerViewController: UIViewController {
         
     }
     var timer: Timer!
-    var count = 5{
+    var count = 90{
         didSet {
             let minutos = count/60
             let segundos = count % 60

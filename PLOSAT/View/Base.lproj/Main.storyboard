@@ -2227,11 +2227,23 @@
                                                 <color key="value" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetGame:" destination="bfW-pe-3kY" eventType="touchUpInside" id="6Ha-Fl-6Au"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikt-vB-L4s">
                                         <rect key="frame" x="41.5" y="100" width="331" height="451.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-3o-GUp">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="451.5"/>
+                                            </imageView>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.20784313730000001" green="0.15686274510000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="cDj-3o-GUp" firstAttribute="leading" secondItem="ikt-vB-L4s" secondAttribute="leading" id="B4j-qF-kJM"/>
+                                            <constraint firstItem="cDj-3o-GUp" firstAttribute="top" secondItem="ikt-vB-L4s" secondAttribute="top" id="KRa-fK-6R9"/>
+                                            <constraint firstAttribute="bottom" secondItem="cDj-3o-GUp" secondAttribute="bottom" id="LSq-i4-Z6H"/>
+                                            <constraint firstAttribute="trailing" secondItem="cDj-3o-GUp" secondAttribute="trailing" id="b58-ZY-lmx"/>
                                             <constraint firstAttribute="width" secondItem="ikt-vB-L4s" secondAttribute="height" multiplier="11:15" id="sto-jw-e3q"/>
                                         </constraints>
                                     </view>
@@ -2250,7 +2262,7 @@
                                                     <constraint firstAttribute="width" secondItem="Y8q-DW-kT7" secondAttribute="height" multiplier="1:1" id="WhJ-Rf-ecQ"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-u5-MWB">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-u5-MWB">
                                                 <rect key="frame" x="21.5" y="39" width="56" height="56"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BYg-u5-MWB" secondAttribute="height" multiplier="1:1" id="lYq-z6-pqB"/>
@@ -2325,6 +2337,14 @@
                         <viewLayoutGuide key="safeArea" id="ZjQ-BP-imj"/>
                     </view>
                     <navigationItem key="navigationItem" id="hKE-N4-y7p"/>
+                    <connections>
+                        <outlet property="firstDesc" destination="hk9-97-kiW" id="uJY-op-2OC"/>
+                        <outlet property="fotoJogador" destination="BYg-u5-MWB" id="8Zp-BB-KBg"/>
+                        <outlet property="restart" destination="XHe-2R-VZS" id="MfN-VH-lYR"/>
+                        <outlet property="resultLabel" destination="7mU-cR-TYQ" id="ijQ-wD-5TP"/>
+                        <outlet property="secondDesc" destination="wrO-sJ-2dQ" id="4yk-os-XTq"/>
+                        <outlet property="selo" destination="Y8q-DW-kT7" id="i8I-YE-6T4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Woj-0b-goG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

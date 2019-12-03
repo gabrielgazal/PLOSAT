@@ -12,13 +12,19 @@ class PrepareViewController: UIViewController {
     
     @IBOutlet weak var minutosLabel: UILabel!
     @IBOutlet weak var segundosLabel: UILabel!
+    var createdTimer = false
     
     @IBAction func StartTimer(_ sender: Any) {
+        if createdTimer{
+            return
+        }
+        
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
-
+        createdTimer = true
+        
     }
     var timer: Timer!
-    var count = 5{
+    var count = 90{
         didSet {
             let minutos = count/60
             let segundos = count % 60
@@ -57,8 +63,8 @@ class PrepareViewController: UIViewController {
         
     }
     
-//    performSegue(withIdentifier: "nextOne", sender: nil)
-
+    //    performSegue(withIdentifier: "nextOne", sender: nil)
+    
     
     
 }

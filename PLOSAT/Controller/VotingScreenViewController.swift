@@ -15,7 +15,7 @@ class VotingScreenViewController: UIViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var playerName: UILabel!
     @IBAction func CondenarJogador(_ sender: Any) {
         
-        Model.instance.jogadorCondenado = selectedPlayer
+//        Model.instance.jogadorCondenado = selectedPlayer
         performSegue(withIdentifier: "julgamento", sender: nil)
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -29,7 +29,7 @@ class VotingScreenViewController: UIViewController, UICollectionViewDelegate, UI
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: "VoteCell", for: indexPath) as! VotingCollectionViewCell
         
-        if selectedPlayer != indexPath.row{
+        if Model.instance.jogadorCondenado != indexPath.row{
             cell.background.backgroundColor = .clear
         } else{
             cell.background.backgroundColor = #colorLiteral(red: 0.1803921569, green: 0.1333333333, blue: 0.2274509804, alpha: 1)
@@ -62,10 +62,11 @@ class VotingScreenViewController: UIViewController, UICollectionViewDelegate, UI
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        selectedPlayer = indexPath.row
-        print(selectedPlayer)
+        Model.instance.jogadorCondenado = indexPath.row
+        print( Model.instance.jogadorCondenado)
         collectionVotes.reloadData()
-        
+        playerName.text = Model.instance.game.players[Model.instance.jogadorCondenado].name
+
     }
     
     
@@ -75,14 +76,15 @@ class VotingScreenViewController: UIViewController, UICollectionViewDelegate, UI
         super.viewDidLoad()
         self.collectionVotes.delegate = self
         self.collectionVotes.dataSource = self
+        playerName.text = Model.instance.game.players[Model.instance.jogadorCondenado].name
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-//        playerName.text = Model.instance.game.players[selectedPlayer].name
+        playerName.text = Model.instance.game.players[Model.instance.jogadorCondenado].name
         
     }
     override func viewDidAppear(_ animated: Bool) {
-//        playerName.text = Model.instance.game.players[selectedPlayer].name
+        playerName.text = Model.instance.game.players[Model.instance.jogadorCondenado].name
         
     }
     
