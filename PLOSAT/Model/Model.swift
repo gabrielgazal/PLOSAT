@@ -29,6 +29,7 @@ class Model{
     }
     
     var timeObservers = [TimeObserver]()
+    var jogadorCondenado = 0
     
     private init (){
         

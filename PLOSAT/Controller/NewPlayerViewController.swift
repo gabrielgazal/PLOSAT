@@ -102,13 +102,20 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
     
     
     @IBAction func SavePlayer(_ sender: Any) {
-        //FAZER SAFE UNWRAP!!!
-        Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
-        Model.instance.enoughPlayers += 1
         
-        NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
-        dismiss(animated: true, completion: nil)
-        
+        if fotodojos != nil {
+            Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
+            Model.instance.enoughPlayers += 1
+            
+            NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
+            dismiss(animated: true, completion: nil)
+        }else{
+            Model.instance.game.newPlayer(name: nameFiekd.text!, foto: UIImage(named: "trash")!)
+            Model.instance.enoughPlayers += 1
+            
+            NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

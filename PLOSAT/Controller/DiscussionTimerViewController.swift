@@ -9,12 +9,22 @@
 import UIKit
 
 class DiscussionTimerViewController: UIViewController {
-
+    
     @IBOutlet weak var minutosLabel: UILabel!
     @IBOutlet weak var segundosLabel: UILabel!
     @IBAction func StartTimer(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
-
+        
+    }
+    @IBAction func startVoting(_ sender: Any) {
+        if timer != nil {
+            timer.invalidate()
+            performSegue(withIdentifier: "startVoting", sender: nil)
+        } else{
+            performSegue(withIdentifier: "startVoting", sender: nil)
+            
+        }
+        
     }
     var timer: Timer!
     var count = 5{
@@ -44,5 +54,5 @@ class DiscussionTimerViewController: UIViewController {
             }
         }
     }
-
+    
 }
