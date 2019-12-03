@@ -24,7 +24,7 @@ class PrepareViewController: UIViewController {
         
     }
     var timer: Timer!
-    var count = 90{
+    var count = 2{
         didSet {
             let minutos = count/60
             let segundos = count % 60

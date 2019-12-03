@@ -16,6 +16,7 @@ class Player{
     var foto: UIImage
     var culpado = false
     var visoes = 0
+    var guiltyCount = 0
     
     internal init(name: String, plosat:Plosat, foto: UIImage, culpado: Bool, visoes: Int) {
         self.name = name

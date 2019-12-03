@@ -18,6 +18,7 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var restart: DesignableButton!
     
     @IBAction func resetGame(_ sender: Any) {
+
         navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
     }
     

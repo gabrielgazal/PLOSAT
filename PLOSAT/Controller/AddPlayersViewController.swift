@@ -68,7 +68,8 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
 override func viewDidLoad() {
     super.viewDidLoad()
     tableview.keyboardDismissMode = .onDrag
-    Model.instance.game  = Game(players: [])
+    Model.instance.game = Game(players: [])
+    print(Model.instance.game.players.count)
     addPlayer.titleLabel?.font = UIFont(name: "RobotoCondensed-Bold", size: 20)
 
     NotificationCenter.default.addObserver(self, selector: #selector(performUpdate), name: NSNotification.Name("atualizaJogadores"), object: nil)
