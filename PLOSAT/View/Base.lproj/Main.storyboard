@@ -151,19 +151,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUm-pq-aQe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-9A-kcl">
-                                        <rect key="frame" x="343" y="25" width="46" height="46"/>
-                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-9A-kcl" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                        <rect key="frame" x="329" y="25" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="0qQ-9A-kcl" secondAttribute="height" multiplier="1:1" id="Atr-fr-AXF"/>
+                                            <constraint firstAttribute="height" constant="60" id="cDZ-no-kf3"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" backgroundImage="close"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="DismissModal:" destination="fQi-Ow-wVA" eventType="touchUpInside" id="BGf-ti-KBv"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOME DO JOGADOR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGD-VZ-SFI">
-                                        <rect key="frame" x="72.5" y="424" width="269" height="60"/>
+                                        <rect key="frame" x="72.5" y="434" width="269" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ORC-vc-28D"/>
                                         </constraints>
@@ -241,7 +247,7 @@
                                     <constraint firstItem="g78-Gi-tut" firstAttribute="top" secondItem="5iF-4T-N2y" secondAttribute="bottom" constant="10" id="58n-fw-LK6"/>
                                     <constraint firstItem="5iF-4T-N2y" firstAttribute="top" secondItem="ZUm-pq-aQe" secondAttribute="top" constant="83" id="7cp-B2-cy2"/>
                                     <constraint firstItem="vXB-7b-8nM" firstAttribute="width" secondItem="VGD-VZ-SFI" secondAttribute="width" id="8ip-gO-VoR"/>
-                                    <constraint firstItem="VGD-VZ-SFI" firstAttribute="top" secondItem="qR0-wO-SUa" secondAttribute="bottom" constant="25" id="9n2-dm-w2e"/>
+                                    <constraint firstItem="VGD-VZ-SFI" firstAttribute="top" secondItem="qR0-wO-SUa" secondAttribute="bottom" constant="35" id="9n2-dm-w2e"/>
                                     <constraint firstItem="qR0-wO-SUa" firstAttribute="width" secondItem="ZUm-pq-aQe" secondAttribute="width" multiplier="0.3" id="CyY-Co-4Rd"/>
                                     <constraint firstItem="qR0-wO-SUa" firstAttribute="centerY" secondItem="ZUm-pq-aQe" secondAttribute="centerY" multiplier="0.8" id="FR2-O9-XrX"/>
                                     <constraint firstItem="VGD-VZ-SFI" firstAttribute="width" secondItem="ZUm-pq-aQe" secondAttribute="width" multiplier="0.65" id="GhH-hO-ZYA"/>
@@ -496,7 +502,7 @@
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que tinha pra ser feito já foi! agora passe o celular para Gazal e deixe que ele se defenda." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVw-RU-ZEw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O que tinha pra ser feito já foi! Agora é a hora de todos os acusados fazerem suas defesas." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVw-RU-ZEw">
                                         <rect key="frame" x="41.5" y="471.5" width="331" height="42.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -907,6 +913,7 @@
                         <outlet property="HistoriaDescricao" destination="9Jw-FP-HJu" id="5vl-f9-Sd1"/>
                         <outlet property="HistoriaTitulo" destination="x7T-u6-5ms" id="MmW-7b-h9R"/>
                         <outlet property="imagemHistoria" destination="nyz-1r-Y8T" id="OF6-NS-xn2"/>
+                        <outlet property="textViewDica" destination="RtH-fX-W6O" id="j3g-AC-iCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbX-yk-J5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -927,13 +934,19 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Sml-4k-Hob">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-ex-tza">
-                                        <rect key="frame" x="343" y="25" width="46" height="46"/>
-                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-ex-tza" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                        <rect key="frame" x="329" y="25" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CYE-ex-tza" secondAttribute="height" multiplier="1:1" id="OhZ-Px-TH9"/>
+                                            <constraint firstAttribute="height" constant="60" id="dop-h0-nJe"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" backgroundImage="close"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="DismissAction:" destination="4yU-fK-M06" eventType="touchUpInside" id="Yke-0X-6N2"/>
                                         </connections>
@@ -944,7 +957,7 @@
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título da Monte sua defesa usando blablalb. Lorem ipsum dolor sit amet, consectetur adipiscing." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dn-A0-4YG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você foi vista na cena do crime e agora tem que explicar por que estava lá." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dn-A0-4YG">
                                         <rect key="frame" x="41.5" y="140.5" width="331" height="37.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1142,7 +1155,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EM-sW-cFs">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Um pequeno texto sobre os papéis e sobre o uso das palavras" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zm-CQ-2Xw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cada jogador irá clicar em seu avatar e descobrir se é inocente ou culpado.  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zm-CQ-2Xw">
                                         <rect key="frame" x="41.5" y="138.5" width="331" height="37.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1307,7 +1320,7 @@
                                             <segue destination="4Ri-jM-9J8" kind="show" id="gHq-dM-FWf"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VEJAM OS PAPÉIS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEn-1V-QEQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CULPADO OU INOCENTE?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEn-1V-QEQ">
                                         <rect key="frame" x="41.5" y="100" width="331" height="30.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1404,9 +1417,9 @@
                                             <constraint firstAttribute="height" constant="75" id="LFv-TJ-tS1"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODC-cn-YCM">
-                                        <rect key="frame" x="41.5" y="207" width="331" height="63.5"/>
-                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nulla maximus, dictum urna quis, sagittis enim. Mauris nunc dolor, fermentum nec ligula sed, rhoncus faucibus eros. In fermentum at dolor quis commodo. Nam libero purus, posuere et felis malesuada, venenatis tincidunt risus. Morbi quis risus sit amet sem lobortis volutpat. Suspendisse laoreet massa vel ligula tincidunt euismod. Aenean quis dapibus sem. Phasellus quis gravida justo, nec lacinia augue. Sed vel vehicula arcu.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODC-cn-YCM">
+                                        <rect key="frame" x="41.5" y="207" width="331" height="84.5"/>
+                                        <string key="text">Você tem pouco tempo para convencer todos que seu álibi é real. Se precisar lembrar algum ponto da sua história, pegue o celular e clique abaixo em "Espiar álibi". </string>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1977,13 +1990,13 @@
                                             <action selector="CondenarJogador:" destination="3Ne-uc-CQQ" eventType="touchUpInside" id="IOc-8S-tWh"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUEM É O CULPADO?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0c-yB-3Kl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HÁ UM CRIMINOSO ENTRE NÓS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0c-yB-3Kl">
                                         <rect key="frame" x="41.5" y="100" width="331" height="30.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.2156862745" green="0.17254901959999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Um pequeno texto sobre os papéis e sobre o uso das palavras" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBe-QI-BVL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agora é a hora de cada jogador descobrir se é culpado ou inocente." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBe-QI-BVL">
                                         <rect key="frame" x="41.5" y="138" width="331" height="37.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2375,6 +2388,7 @@
         <image name="background" width="414" height="896"/>
         <image name="background2" width="414" height="875"/>
         <image name="botao2fundo" width="254" height="62"/>
+        <image name="close" width="55" height="55"/>
         <image name="eye" width="15" height="9"/>
         <image name="gaiola" width="91" height="110"/>
         <image name="inocente" width="220" height="88"/>

@@ -32,7 +32,7 @@ class ResultsViewController: UIViewController {
         let jogadorFinal = Model.instance.game.players[Model.instance.jogadorCondenado]
                if jogadorFinal.culpado{
                    firstDesc.text = "Parabéns Jogadores vocês prenderam o verdadeiro culpado."
-                   secondDesc.text = "\(jogadorFinal.name), você não é uma boa mentirosa"
+                   secondDesc.text = "\(jogadorFinal.name), sua história não foi  convincente o suficiente"
                }
                else{
                    firstDesc.text = "Mais um inocente foi preso, enquanto o verdadeiro assassino continua a solta."
