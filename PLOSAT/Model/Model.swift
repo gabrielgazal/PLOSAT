@@ -54,10 +54,7 @@ class Model{
         situacao = ["Sequestro relâmpago","Ataque alienígena","Briga com facas","Show da Billie Eillish"]
         acao = ["Rasgar cartas","Lavar um caixão","Roer um cadeado"]
         tema = [Tema(titulo: "Descoberta do amor", descricao: "aadasfdasfdsgfdsafgadgfagadgd"),Tema(titulo: "Roubo do protótipo", descricao: "aadasfdasfdsgfdsafgadgfagadgd"),Tema(titulo: "Envenenamento do presidente", descricao: "aadasfdasfdsgfdsafgadgfagadgd")]
-        lugarQuery()
-       // querys()
-        
-        //publicDataBaase.
+        querys()
     }
     
     
@@ -71,6 +68,8 @@ class Model{
         temaQuery()
 
     }
+
+    
     func personagemQuery(){
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "Personagem", predicate: predicate)
@@ -80,12 +79,14 @@ class Model{
                 print(error!.localizedDescription)
                 return
             }
-            print (records ?? "deu ruim")
+            
             for record in recs {
                 self.personagem.append(record["personagem"]!)
             }
         }
+        
     }
+    
     func lugarQuery(){
         let predicate = NSPredicate(value: true)
         let query = CKQuery(recordType: "Lugar", predicate: predicate)
