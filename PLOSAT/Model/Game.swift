@@ -15,28 +15,26 @@ class Game {
     var plosat: Plosat!
     var tema: Tema!
     internal init(players: [Player]) {
-        Model.instance.shufle()
         self.players = players
-        self.plosat = Plosat(personagem: Model.instance.personagem.randomElement()!, lugar: Model.instance.lugar.randomElement()!, objeto: Model.instance.objeto.randomElement()!, situacao: Model.instance.situacao.randomElement()!, acao: Model.instance.acao.randomElement()!)
-        self.tema = Model.instance.tema.randomElement()
-        //Ajeitar para adicionar infos extras \/
-        self.plosat.card[1].append("personagem")
-        self.plosat.card[2].append("lugar")
-        self.plosat.card[3].append("objeto")
-        self.plosat.card[4].append("situacao")
-        self.plosat.card[5].append("acao")
-
-
     }
     
     func newPlayer(name: String,  foto: UIImage){
         let newPlosat = Plosat.init(personagem: "", lugar: "", objeto: "", situacao:  "", acao: "")
-        let n = Int.random(in: 1 ... 5)
-        newPlosat.card[n] = [self.plosat.card[n][Int.random(in: 0...1)]]
-        let newPlayer = Player(name: name, plosat: plosat, foto: foto, culpado: false, visoes: 0)
+        let newPlayer = Player(name: name, plosat: newPlosat, foto: foto, culpado: false, visoes: 0)
         players.append(newPlayer)
     }
     func declareGuilty(){
-        Model.instance.game.players[Int.random(in: 1 ... Model.instance.game.players.count)].setGuilty()
+//        let playerCount = Model.instance.game.players.count-1
+        for player in self.players{
+            player.culpado = false
+        }
+//        var p = Int.random(in: 0 ... playerCount)
+//        if(p == Model.instance.lastGuilt){
+//            p = Int.random(in: 0 ... playerCount)
+//        }
+//        Model.instance.game.players[p].setGuilty()
+//        Model.instance.lastGuilt = p
+        Model.instance.nextGuilty()
+        
     }
 }

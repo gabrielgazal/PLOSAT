@@ -20,10 +20,9 @@ class StoryTimerViewController: UIViewController {
     @IBOutlet weak var nextPage: DesignableButton!
     @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var seloImage: UIImageView!
-    
+    var createdTimer = false
     var timer : Timer!
     var endGame: Bool = false
-    var createdTimer = false
     
     @IBAction func espiarAlibi(_ sender: Any) {
         
@@ -43,18 +42,23 @@ class StoryTimerViewController: UIViewController {
         
     }
     @IBAction func startTempo(_ sender: Any) {
+        if createdTimer{
+            return
+        }
+        createdTimer = true
         guard !endGame else { return }
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        
     }
     
-    var count = 5 {
+    var count = 2 {
         didSet {
             let minutos = count/60
             let segundos = count % 60
             
             timerCounter.text = String(format: "%02d",minutos)
             secondsLabel.text = String(format: "%02d",segundos)
-            createdTimer = false
+//            createdTimer = false
         }
     }
     
@@ -64,7 +68,11 @@ class StoryTimerViewController: UIViewController {
     
     
     fileprivate func round() {
-       
+        #if DEBUG
+        
+        #else
+        
+        #endif
             if ordenacao.count > 0 {
                 currentPlayer = ordenacao.remove(at: 0)
                 playerImage.image = currentPlayer?.foto
@@ -72,6 +80,7 @@ class StoryTimerViewController: UIViewController {
                 playerImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
                 
                 let nome = currentPlayer!.name.uppercased()
+                createdTimer = false
                 let contentString = "\(nome),\nDEFENDA-SE"
                 
                 nomeLabel.text? = contentString
@@ -99,7 +108,7 @@ class StoryTimerViewController: UIViewController {
         
         round()
         
-        count = 5
+        count = 2
         Model.instance.timerUniversal = count
     }
     
@@ -108,7 +117,7 @@ class StoryTimerViewController: UIViewController {
             count -= 1
             Model.instance.timerUniversal = count
         } else {
-            count = 5
+            count = 2
             Model.instance.timerUniversal = count
 
             timer.invalidate()

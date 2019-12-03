@@ -21,6 +21,7 @@ class Model{
     var situacao : [String]!
     var acao : [String]!
     var tema : [Tema]!
+    var lastGuilt = Int.random(in: 0 ... 1)
     var viuModal = false
     var timerUniversal = 90 {
         didSet {
@@ -28,7 +29,22 @@ class Model{
         }
     }
     
+    func nextGuilty() {
+        let njog = self.game.players.count
+        let intervalo = CGFloat.pi * 0.5 / CGFloat(njog)
+        let rand = CGFloat.random(in: 0 ..< 1)
+        let indice = Int(asin(rand)/intervalo)
+        
+        let listaOrdenada = self.game.players.sorted(by: { $0.guiltyCount < $1.guiltyCount })
+        let guiltyPLayer = listaOrdenada[indice]
+        guiltyPLayer.guiltyCount += 1
+      
+        self.lastGuilt = indice
+        listaOrdenada[indice].setGuilty()
+    }
+    
     var timeObservers = [TimeObserver]()
+    var jogadorCondenado = 0
     
     private init (){
         
@@ -43,6 +59,8 @@ class Model{
         
         //publicDataBaase.
     }
+    
+    
     
     func querys(){
         personagemQuery()
@@ -65,7 +83,6 @@ class Model{
             print (records ?? "deu ruim")
             for record in recs {
                 self.personagem.append(record["personagem"]!)
-                print(record["personagem"]!)
             }
         }
     }
@@ -79,7 +96,6 @@ class Model{
             }
             for record in recs {
                 self.lugar.append(record["lugar"]!)
-                print(record["lugar"]!)
             }
         }
     }
@@ -137,7 +153,7 @@ class Model{
     }
     
     
-    var enoughPlayers = false
+    var enoughPlayers = 0
     var jogadorSelecionado = 0
     
 
@@ -157,3 +173,4 @@ class Model{
 protocol TimeObserver {
     func notify()
 }
+

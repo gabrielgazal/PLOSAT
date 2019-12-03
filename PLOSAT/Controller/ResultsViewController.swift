@@ -10,21 +10,38 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet weak var selo: UIImageView!
+    @IBOutlet weak var fotoJogador: UIImageView!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var firstDesc: UILabel!
+    @IBOutlet weak var secondDesc: UILabel!
+    @IBOutlet weak var restart: DesignableButton!
+    
+    @IBAction func resetGame(_ sender: Any) {
 
-        // Do any additional setup after loading the view.
+        navigationController?.popToViewController((navigationController?.viewControllers[1])!, animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        selo.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+        fotoJogador.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+        fotoJogador.image = Model.instance.game.players[Model.instance.jogadorCondenado].foto
+        let nome = Model.instance.game.players[Model.instance.jogadorCondenado].name.uppercased()
+        resultLabel.text = "\(nome), VOCÊ FOI CONDENADX"
+        let jogadorFinal = Model.instance.game.players[Model.instance.jogadorCondenado]
+               if jogadorFinal.culpado{
+                   firstDesc.text = "Parabéns Jogadores vocês prenderam o verdadeiro culpado."
+                   secondDesc.text = "\(jogadorFinal.name), você não é uma boa mentirosa"
+               }
+               else{
+                   firstDesc.text = "Mais um inocente foi preso, enquanto o verdadeiro assassino continua a solta."
+                   secondDesc.text = "Jogadores, vocês fracassaram."
+               }
+        
     }
-    */
+   
+    
+
 
 }

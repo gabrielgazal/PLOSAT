@@ -29,7 +29,13 @@ class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITa
         
         cell.playerImage.image = Model.instance.game.players[indexPath.section].foto
         cell.playerName.text = Model.instance.game.players[indexPath.section].name
-        cell.contagem.text = String(Model.instance.game.players[indexPath.section].visoes)
+        if Model.instance.game.players[indexPath.section].visoes <= 1{
+            cell.iconLocker.image = UIImage(named: "eye")
+        }else{
+            cell.iconLocker.image = UIImage(named: "locker")
+            
+        }
+        //cell.contagem.text = String(Model.instance.game.players[indexPath.section].visoes)/
         
         return cell
     }
@@ -51,15 +57,18 @@ class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Model.instance.game.players[indexPath.section].visoes += 1
+        
         tableView.reloadData()
-        if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") as? PapeisViewController {
-            vc.player = Model.instance.game.players[indexPath.section]
-            DispatchQueue.main.async {
-                self.present(vc, animated: true)
+        Model.instance.game.players[indexPath.section].visoes += 1
+        if Model.instance.game.players[indexPath.section].visoes <= 1{
+            if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") as? PapeisViewController {
+                vc.player = Model.instance.game.players[indexPath.section]
+                DispatchQueue.main.async {
+                    self.present(vc, animated: true)
+                    
+                }
                 
             }
-            
         }
         
         //        performSegue(withIdentifier: "showDetail", sender: nil)
@@ -67,9 +76,17 @@ class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        PlayersTableView.reloadData()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        PlayersTableView.reloadData()
+    }
+    
     
     
     

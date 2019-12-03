@@ -11,6 +11,8 @@
 		1259A446238EF031001CD989 /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1259A445238EF031001CD989 /* Tema.swift */; };
 		12F31B4C2388611C00276E09 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F31B4B2388611C00276E09 /* Game.swift */; };
 		560C18FD238EF1BE00F44CD2 /* EditableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C18FC238EF1BE00F44CD2 /* EditableButton.swift */; };
+		561AC95E23959CED00D58C25 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561AC95D23959CED00D58C25 /* DesignableImageView.swift */; };
+		561AC9602395A24600D58C25 /* VotingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561AC95F2395A24600D58C25 /* VotingCollectionViewCell.swift */; };
 		562400AF238B78080053DE6F /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AD238B78080053DE6F /* DesignableView.swift */; };
 		562400B0238B78080053DE6F /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400AE238B78080053DE6F /* DesignableButton.swift */; };
 		562400B2238B98CA0053DE6F /* AddPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562400B1238B98CA0053DE6F /* AddPlayersViewController.swift */; };
@@ -51,6 +53,8 @@
 		1259A445238EF031001CD989 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
 		12F31B4B2388611C00276E09 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		560C18FC238EF1BE00F44CD2 /* EditableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableButton.swift; sourceTree = "<group>"; };
+		561AC95D23959CED00D58C25 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		561AC95F2395A24600D58C25 /* VotingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingCollectionViewCell.swift; sourceTree = "<group>"; };
 		562400AD238B78080053DE6F /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		562400AE238B78080053DE6F /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		562400B1238B98CA0053DE6F /* AddPlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayersViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				562400AD238B78080053DE6F /* DesignableView.swift */,
 				56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */,
 				560C18FC238EF1BE00F44CD2 /* EditableButton.swift */,
+				561AC95D23959CED00D58C25 /* DesignableImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			children = (
 				562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */,
 				562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */,
+				561AC95F2395A24600D58C25 /* VotingCollectionViewCell.swift */,
 				56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */,
 			);
 			path = Cells;
@@ -315,10 +321,12 @@
 				56BD1DF52391637A007DE382 /* PrepareViewController.swift in Sources */,
 				56F631D723885093008B7A25 /* Player.swift in Sources */,
 				562400BC238B995A0053DE6F /* VotingScreenViewController.swift in Sources */,
+				561AC95E23959CED00D58C25 /* DesignableImageView.swift in Sources */,
 				562400C3238C56100053DE6F /* AddPlayerTableViewCell.swift in Sources */,
 				56E95F4E2390331B00EE4C45 /* PapeisViewController.swift in Sources */,
 				56EC810C23871F2B007DCFF2 /* Model.swift in Sources */,
 				562400C1238C53B20053DE6F /* JogadoresTableViewCell.swift in Sources */,
+				561AC9602395A24600D58C25 /* VotingCollectionViewCell.swift in Sources */,
 				562400B4238B98E00053DE6F /* StoryViewController.swift in Sources */,
 				562400B0238B78080053DE6F /* DesignableButton.swift in Sources */,
 				562400B2238B98CA0053DE6F /* AddPlayersViewController.swift in Sources */,

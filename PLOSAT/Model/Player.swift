@@ -16,29 +16,20 @@ class Player{
     var foto: UIImage
     var culpado = false
     var visoes = 0
+    var guiltyCount = 0
     
     internal init(name: String, plosat:Plosat, foto: UIImage, culpado: Bool, visoes: Int) {
         self.name = name
         self.plosat = plosat
-        let g = Int.random(in: 0 ... 4)
-        var h = Int.random(in: 0 ... 4)
-        while(g == h){
-            h = Int.random(in: 0 ... 4)
-        }
-        for pos in 0 ... 4{
-            if(pos != g && pos != h){
-                self.plosat.card[pos] = [""]
-            }
-        }
         self.foto = foto
         self.culpado = culpado
         self.visoes = visoes
+        for each in plosat.card{
+            print(each)
+        }
     }
     
     func setGuilty(){
         self.culpado = true
-        for pos in 0 ... 4{
-                self.plosat.card[pos] = [""]
-            }
     }
 }
