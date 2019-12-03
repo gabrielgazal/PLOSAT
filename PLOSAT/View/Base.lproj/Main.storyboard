@@ -643,12 +643,12 @@
                                                             </constraints>
                                                         </view>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSI-WE-ETa">
-                                                            <rect key="frame" x="266.5" y="40.5" width="29.5" height="29"/>
-                                                            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <rect key="frame" x="281" y="44.5" width="15" height="21"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="aSI-WE-ETa" secondAttribute="height" multiplier="1:1" id="HJ1-DX-9MU"/>
+                                                                <constraint firstAttribute="width" secondItem="aSI-WE-ETa" secondAttribute="height" multiplier="5:7" id="HJ1-DX-9MU"/>
                                                             </constraints>
-                                                            <state key="normal" title="-"/>
+                                                            <state key="normal" backgroundImage="trash"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="1"/>
@@ -668,7 +668,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WDo-EH-QUl">
-                                                            <rect key="frame" x="97" y="34" width="159.5" height="42"/>
+                                                            <rect key="frame" x="97" y="34" width="174" height="42"/>
                                                             <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="28"/>
                                                             <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -688,7 +688,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="u9T-vO-hYf" secondAttribute="bottom" id="c6j-2q-nEL"/>
                                                         <constraint firstItem="v4V-4U-Qxq" firstAttribute="leading" secondItem="aae-pJ-ZJO" secondAttribute="leading" constant="15" id="dYH-uE-Bae"/>
                                                         <constraint firstAttribute="trailing" secondItem="u9T-vO-hYf" secondAttribute="trailing" id="eEu-Vs-8Gl"/>
-                                                        <constraint firstItem="aSI-WE-ETa" firstAttribute="height" secondItem="WDo-EH-QUl" secondAttribute="height" multiplier="0.7" id="hJ7-kc-908"/>
+                                                        <constraint firstItem="aSI-WE-ETa" firstAttribute="height" secondItem="WDo-EH-QUl" secondAttribute="height" multiplier="0.5" id="hJ7-kc-908"/>
                                                         <constraint firstItem="u9T-vO-hYf" firstAttribute="top" secondItem="aae-pJ-ZJO" secondAttribute="top" id="iXK-8p-cF8"/>
                                                         <constraint firstItem="v4V-4U-Qxq" firstAttribute="centerY" secondItem="XS5-Du-5aJ" secondAttribute="centerY" id="kea-CW-3XI"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="aSI-WE-ETa" secondAttribute="trailing" constant="15" id="kf6-g7-RiT"/>
@@ -2381,5 +2381,6 @@
         <image name="next" width="55" height="55"/>
         <image name="selo" width="71" height="72"/>
         <image name="timerIcon" width="25" height="31"/>
+        <image name="trash" width="15" height="25"/>
     </resources>
 </document>

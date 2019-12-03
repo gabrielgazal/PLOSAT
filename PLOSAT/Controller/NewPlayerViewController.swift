@@ -142,7 +142,7 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
     }
     func addDashedBorder(forma: UITextField) {
         
-        let color = #colorLiteral(red: 0.2156862745, green: 0.1725490196, blue: 0.262745098, alpha: 1)
+        let color = UIColor.init(cgColor: #colorLiteral(red: 0.2509803922, green: 0.2, blue: 0.3058823529, alpha: 1))
         let shapeLayer:CAShapeLayer = CAShapeLayer()
         let frameSize = forma.frame.size
         let shapeRect = CGRect(x: 0, y: 0, width: frameSize.width, height: frameSize.height)
@@ -151,7 +151,7 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
         shapeLayer.position = CGPoint(x: frameSize.width/2, y: frameSize.height/2)
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeColor = color.cgColor
-        shapeLayer.lineWidth = 2
+        shapeLayer.lineWidth = 3
         shapeLayer.lineJoin = CAShapeLayerLineJoin.round
         shapeLayer.lineDashPattern = [5,5]
         shapeLayer.path = UIBezierPath(roundedRect: shapeRect, cornerRadius: 6).cgPath
