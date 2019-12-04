@@ -48,12 +48,12 @@ class Model{
     
     private init (){
         
-        personagem = ["Cabral","Adonay","Pedro","Tiririca","ET Bilu"]
-        lugar = ["Boate LGBT","Cassino clandestino","Deserto do Saara"]
-        objeto = ["Peruca Loira","Gravação VHS","Dentadura com dente de ouro","Selo da copa de 1970"]
-        situacao = ["Sequestro relâmpago","Ataque alienígena","Briga com facas","Show da Billie Eillish"]
-        acao = ["Rasgar cartas","Lavar um caixão","Roer um cadeado"]
-        tema = [Tema(titulo: "Descoberta do amor", descricao: "aadasfdasfdsgfdsafgadgfagadgd"),Tema(titulo: "Roubo do protótipo", descricao: "aadasfdasfdsgfdsafgadgfagadgd"),Tema(titulo: "Envenenamento do presidente", descricao: "aadasfdasfdsgfdsafgadgfagadgd")]
+        personagem = ["Vizinho"]
+        lugar = ["Boate LGBT"]
+        objeto = ["Peruca Loira",]
+        situacao = ["Sequestro relâmpago",]
+        acao = ["Lavar um caixão",]
+        tema = [Tema(titulo: "Roubo de Prototipo", descricao: "Na Califórnia, os designers engenheiros da Apple trabalham para o lançamento próximo de um novo iPhone. Em um breve descuido na última terça-feira, o protótipo do mais novo aparelho foi furtado. Todos aqui tinham fortes interesses em ter os segredos desse lançamento. Qual é seu álibi para o dia do crime?")]
         querys()
     }
     
