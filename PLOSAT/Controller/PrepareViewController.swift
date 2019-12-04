@@ -24,7 +24,7 @@ class PrepareViewController: UIViewController {
         
     }
     var timer: Timer!
-    var count = 90{
+    var count = Model.instance.timerPensar{
         didSet {
             let minutos = count/60
             let segundos = count % 60
@@ -37,6 +37,13 @@ class PrepareViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tempo = Model.instance.timerPensar
+        let minutos = tempo/60
+        let segundos = tempo % 60
+        
+        minutosLabel.text = String(format: "%02d",minutos)
+        segundosLabel.text = String(format: "%02d",segundos)
         // Do any additional setup after loading the view.
     }
     

@@ -156,6 +156,9 @@ class Model{
     
     var enoughPlayers = 0
     var jogadorSelecionado = 0
+    var timerPensar = 90
+    var timerContar = 90
+    var timerDiscutir = 90
     
 
     
