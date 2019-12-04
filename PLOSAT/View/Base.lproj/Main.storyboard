@@ -86,6 +86,9 @@
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="GKo-aP-khp" kind="show" id="Fd9-yh-XWU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -123,6 +126,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9UN-tB-OzI">
+            <objects>
+                <viewController id="GKo-aP-khp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gc-ls-eon">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gXs-Ar-jMc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9jD-Rl-m8u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HsE-bf-Uex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="834"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="P2c-8b-BKa">
@@ -231,7 +250,7 @@
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastar novo jogador blabla Lorem ipsum dolor sit amet." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g78-Gi-tut">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adicione o nome e a foto para incluir um novo jogador." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g78-Gi-tut">
                                         <rect key="frame" x="41.5" y="123.5" width="331" height="42.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -667,7 +686,7 @@
                                                                 <constraint firstAttribute="width" secondItem="v4V-4U-Qxq" secondAttribute="height" multiplier="1:1" id="kMh-bN-HWg"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playerPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="R01-W6-1In">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player" translatesAutoresizingMaskIntoConstraints="NO" id="R01-W6-1In">
                                                             <rect key="frame" x="24" y="29" width="52.5" height="52.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="R01-W6-1In" secondAttribute="height" multiplier="1:1" id="6vO-lP-l97"/>
@@ -2393,7 +2412,7 @@
         <image name="gaiola" width="91" height="110"/>
         <image name="inocente" width="220" height="88"/>
         <image name="next" width="55" height="55"/>
-        <image name="playerPlaceholder" width="32" height="35"/>
+        <image name="player" width="54" height="54"/>
         <image name="selo" width="71" height="72"/>
         <image name="timerIcon" width="25" height="31"/>
         <image name="trash" width="13" height="17"/>

@@ -51,7 +51,7 @@ class StoryTimerViewController: UIViewController {
         
     }
     
-    var count = 2 {
+    var count = 90 {
         didSet {
             let minutos = count/60
             let segundos = count % 60
@@ -108,7 +108,7 @@ class StoryTimerViewController: UIViewController {
         
         round()
         
-        count = 2
+        count = 90
         Model.instance.timerUniversal = count
     }
     
@@ -117,7 +117,7 @@ class StoryTimerViewController: UIViewController {
             count -= 1
             Model.instance.timerUniversal = count
         } else {
-            count = 2
+            count = 90
             Model.instance.timerUniversal = count
 
             timer.invalidate()
