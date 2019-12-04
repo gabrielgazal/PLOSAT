@@ -667,7 +667,7 @@
                                                                 <constraint firstAttribute="width" secondItem="v4V-4U-Qxq" secondAttribute="height" multiplier="1:1" id="kMh-bN-HWg"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R01-W6-1In">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playerPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="R01-W6-1In">
                                                             <rect key="frame" x="24" y="29" width="52.5" height="52.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="R01-W6-1In" secondAttribute="height" multiplier="1:1" id="6vO-lP-l97"/>
@@ -2393,8 +2393,9 @@
         <image name="gaiola" width="91" height="110"/>
         <image name="inocente" width="220" height="88"/>
         <image name="next" width="55" height="55"/>
+        <image name="playerPlaceholder" width="32" height="35"/>
         <image name="selo" width="71" height="72"/>
         <image name="timerIcon" width="25" height="31"/>
-        <image name="trash" width="15" height="25"/>
+        <image name="trash" width="13" height="17"/>
     </resources>
 </document>

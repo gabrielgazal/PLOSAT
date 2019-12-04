@@ -110,7 +110,7 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
             NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
             dismiss(animated: true, completion: nil)
         }else{
-            Model.instance.game.newPlayer(name: nameFiekd.text!, foto: UIImage(named: "trash")!)
+            Model.instance.game.newPlayer(name: nameFiekd.text!, foto: UIImage(named: "player")!)
             Model.instance.enoughPlayers += 1
             
             NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
