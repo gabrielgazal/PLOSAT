@@ -33,6 +33,7 @@ class JogadoresTableViewCell: UITableViewCell {
     
     @objc func handleDelete() {
         delegate?.delete(at: index)
+        Model.instance.enoughPlayers -= 1
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -33,7 +33,7 @@ class DiscussionTimerViewController: UIViewController {
         
     }
     var timer: Timer!
-    var count = 2{
+    var count = 90{
         didSet {
             let minutos = count/60
             let segundos = count % 60
