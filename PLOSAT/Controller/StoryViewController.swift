@@ -47,7 +47,7 @@ class StoryViewController: UIViewController {
     func getNAmes() -> String{
         var nomes = ""
         for player in Model.instance.game.players{
-            nomes = "\(player.name),"
+            nomes += " \(player.name),"
         }
         return nomes
     }
