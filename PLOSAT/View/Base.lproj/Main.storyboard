@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6w-AH-3Eq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6w-AH-3Eq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -55,6 +55,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="Comecar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLt-GE-Aap"/>
                                                     <segue destination="cls-Bf-buB" kind="show" id="srF-DH-Pb7"/>
                                                 </connections>
                                             </button>
@@ -71,6 +72,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="howTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aK1-tc-F71"/>
                                                     <segue destination="xLT-wC-Dj2" kind="show" id="oD3-WR-fMO"/>
                                                 </connections>
                                             </button>
@@ -87,6 +89,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
+                                                    <action selector="config:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vta-6g-gKV"/>
                                                     <segue destination="GKo-aP-khp" kind="presentation" id="Fd9-yh-XWU"/>
                                                 </connections>
                                             </button>
@@ -1072,6 +1075,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="add:" destination="cls-Bf-buB" eventType="touchUpInside" id="l7A-6c-loY"/>
                                             <segue destination="fQi-Ow-wVA" kind="presentation" id="pmD-jm-zxv"/>
                                         </connections>
                                     </button>
@@ -1163,6 +1167,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="next:" destination="Oz9-1R-oqD" eventType="touchUpInside" id="fwX-wN-UR9"/>
                                             <segue destination="0R4-Fo-qgL" kind="show" id="7Yp-Gv-z7g"/>
                                         </connections>
                                     </button>
@@ -1268,6 +1273,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="DismissAction:" destination="4yU-fK-M06" eventType="touchUpInside" id="Yke-0X-6N2"/>
+                                            <action selector="exit:" destination="4yU-fK-M06" eventType="touchUpInside" id="2EK-QF-8q1"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da pessoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oma-3X-ShH">
@@ -1289,38 +1295,38 @@
                                                 <rect key="frame" x="30" y="30" width="271" height="408.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WVG-p9-hfN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="271" height="269"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="271" height="250.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personagem(s): Um cientista maluco, a menor mulher do mundo. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJ2-aA-VMi">
-                                                                <rect key="frame" x="0.0" y="0.0" width="271" height="63"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="271" height="42.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
                                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lugare(s): Um cientista maluco, a menor mulher do mundo." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa6-1w-OOV">
-                                                                <rect key="frame" x="0.0" y="83" width="271" height="42"/>
+                                                                <rect key="frame" x="0.0" y="62.5" width="271" height="42.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
                                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetos(s): Um cientista maluco, a menor mulher do mundo.  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udf-F5-7UF">
-                                                                <rect key="frame" x="0.0" y="145" width="271" height="42"/>
+                                                                <rect key="frame" x="0.0" y="125" width="271" height="42.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
                                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situação:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVU-Xc-H12">
-                                                                <rect key="frame" x="0.0" y="207" width="271" height="21"/>
+                                                                <rect key="frame" x="0.0" y="187.5" width="271" height="21.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
                                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ação:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36y-w1-ccC">
-                                                                <rect key="frame" x="0.0" y="248" width="271" height="21"/>
+                                                                <rect key="frame" x="0.0" y="229" width="271" height="21.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
                                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1636,6 +1642,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="next:" destination="0R4-Fo-qgL" eventType="touchUpInside" id="OxW-4b-hxq"/>
                                             <segue destination="4Ri-jM-9J8" kind="show" id="gHq-dM-FWf"/>
                                         </connections>
                                     </button>
@@ -1890,7 +1897,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="nextScreen:" destination="rxV-aH-5Je" eventType="touchUpInside" id="bHn-Sj-iuU"/>
                                             <action selector="resetScreen:" destination="rxV-aH-5Je" eventType="touchUpInside" id="NKh-Ey-UIS"/>
                                         </connections>
                                     </button>
@@ -2106,6 +2112,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="AudioManagersharedplaysoundEffectbuttonnext:" destination="OLK-7h-nhN" eventType="touchUpInside" id="5F5-gf-MEG"/>
                                             <action selector="startVoting:" destination="OLK-7h-nhN" eventType="touchUpInside" id="mgN-KS-hax"/>
                                         </connections>
                                     </button>
@@ -2314,13 +2321,13 @@
                                             <action selector="CondenarJogador:" destination="3Ne-uc-CQQ" eventType="touchUpInside" id="IOc-8S-tWh"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HÁ UM CRIMINOSO ENTRE NÓS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0c-yB-3Kl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HÁ UM CRIMINOSO ENTRE NÓS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0c-yB-3Kl">
                                         <rect key="frame" x="41.5" y="100" width="331" height="30.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.2156862745" green="0.17254901959999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Agora é a hora de cada jogador descobrir se é culpado ou inocente." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBe-QI-BVL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agora é a hora de cada jogador descobrir se é culpado ou inocente." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBe-QI-BVL">
                                         <rect key="frame" x="41.5" y="138" width="331" height="37.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
                                         <color key="textColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2441,7 +2448,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOME DO JOGADOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndh-hJ-o3T">
-                                                        <rect key="frame" x="57.5" y="26.5" width="177" height="21"/>
+                                                        <rect key="frame" x="73.5" y="26.5" width="145" height="21"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>

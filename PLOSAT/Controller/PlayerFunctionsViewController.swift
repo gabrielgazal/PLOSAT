@@ -87,6 +87,10 @@ class PlayerFunctionsViewController: UIViewController, UITableViewDelegate, UITa
         PlayersTableView.reloadData()
     }
     
+    @IBAction func next(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
+    }
     
     
     

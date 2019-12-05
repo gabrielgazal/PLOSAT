@@ -73,6 +73,9 @@ class PapeisViewController: UIViewController, TimeObserver {
         
     }
     
+    @IBAction func exit(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+    }
     
     
     

@@ -24,6 +24,7 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBAction func StartPLaying(_ sender: Any) {
         if Model.instance.enoughPlayers >= 1{
+            AudioManager.shared.play(soundEffect: .button)
             performSegue(withIdentifier: "startGame", sender: self)
         }
     }
@@ -81,8 +82,6 @@ override func viewDidLoad() {
         
     }
     
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         tableview.reloadData()
     }
@@ -90,5 +89,8 @@ override func viewDidLoad() {
         tableview.reloadData()
     }
 
+    @IBAction func add(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
 
+    }
 }

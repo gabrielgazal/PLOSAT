@@ -25,7 +25,7 @@ class StoryTimerViewController: UIViewController {
     var endGame: Bool = false
     
     @IBAction func espiarAlibi(_ sender: Any) {
-        
+        AudioManager.shared.play(soundEffect: .button)
         if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") as? PapeisViewController {
             vc.player = currentPlayer
             DispatchQueue.main.async {
@@ -35,13 +35,15 @@ class StoryTimerViewController: UIViewController {
         
     }
     @IBAction func nextScreen(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
         performSegue(withIdentifier: "startDebate", sender: nil)
     }
     
     @IBAction func resetScreen(_ sender: Any) {
-        
     }
     @IBAction func startTempo(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
         if createdTimer{
             return
         }
@@ -137,8 +139,12 @@ class StoryTimerViewController: UIViewController {
                 endGame = true
             }
         }
+        if(Model.instance.timerUniversal == 10){
+            AudioManager.shared.play(soundEffect: .timer)
+        }
     }
     
+
     
     
 }

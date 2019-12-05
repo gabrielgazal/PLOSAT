@@ -53,4 +53,8 @@ class StoryViewController: UIViewController {
     }
     
     
+    @IBAction func next(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
+    }
 }

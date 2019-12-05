@@ -15,6 +15,7 @@ class MODALViewController: UIViewController {
     
     @IBAction func trocaDeTela(_ sender: Any) {
         Model.instance.viuModal  = true
+        AudioManager.shared.play(soundEffect: .button)
         dismiss(animated: true) {
             self.presentationParent.goToStoryTimer()
         }

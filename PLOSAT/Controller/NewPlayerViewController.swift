@@ -32,10 +32,11 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
     var fotodojos : UIImage!
     
     @IBAction func DismissModal(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
         dismiss(animated: true, completion: nil)
     }
     @IBAction func addPhoto(_ sender: Any) {
-        
+        AudioManager.shared.play(soundEffect: .button)
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -112,10 +113,12 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
         }else{
             Model.instance.game.newPlayer(name: nameFiekd.text!, foto: UIImage(named: "player")!)
             Model.instance.enoughPlayers += 1
-            
+            AudioManager.shared.play(soundEffect: .button)
             NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
             dismiss(animated: true, completion: nil)
         }
+        AudioManager.shared.play(soundEffect: .button)
+
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

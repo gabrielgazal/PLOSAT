@@ -66,6 +66,7 @@ class VotingScreenViewController: UIViewController, UICollectionViewDelegate, UI
         print( Model.instance.jogadorCondenado)
         collectionVotes.reloadData()
         playerName.text = Model.instance.game.players[Model.instance.jogadorCondenado].name
+        AudioManager.shared.play(soundEffect: .button)
 
     }
     

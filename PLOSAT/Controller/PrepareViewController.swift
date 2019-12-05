@@ -15,6 +15,7 @@ class PrepareViewController: UIViewController {
     var createdTimer = false
     
     @IBAction func StartTimer(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
         if createdTimer{
             return
         }
@@ -52,10 +53,14 @@ class PrepareViewController: UIViewController {
         if(count > 0) {
             count -= 1
         }else {
+
             timer.invalidate()
             if Model.instance.viuModal == false{
                 self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
             }
+        }
+        if(count == 10){
+            AudioManager.shared.play(soundEffect: .timer)
         }
     }
     

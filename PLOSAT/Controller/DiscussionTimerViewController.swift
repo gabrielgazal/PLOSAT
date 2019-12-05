@@ -23,6 +23,8 @@ class DiscussionTimerViewController: UIViewController {
     }
     @IBAction func startVoting(_ sender: Any) {
         
+        AudioManager.shared.stopCurrentSong()
+        AudioManager.shared.play(soundEffect: .button)
         if timer != nil {
             timer.invalidate()
             performSegue(withIdentifier: "startVoting", sender: nil)
@@ -61,10 +63,18 @@ class DiscussionTimerViewController: UIViewController {
             count -= 1
         }else {
             timer.invalidate()
+
             if Model.instance.viuModal == false{
                 self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
             }
         }
+        if(count == 10){
+            AudioManager.shared.play(soundEffect: .timer)
+        }
     }
     
+    @IBAction func AudioManagersharedplaysoundEffectbuttonnext(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
+    }
 }

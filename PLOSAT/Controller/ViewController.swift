@@ -18,5 +18,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func Comecar(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+    }
+    @IBAction func howTo(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
+    }
+    @IBAction func config(_ sender: Any) {
+        AudioManager.shared.play(soundEffect: .button)
+
+    }
 }
 

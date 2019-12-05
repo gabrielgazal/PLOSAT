@@ -26,6 +26,7 @@ class Model{
     var timerUniversal = 90 {
         didSet {
             timeObservers.forEach( { $0.notify() } )
+
         }
     }
     
@@ -68,7 +69,6 @@ class Model{
         temaQuery()
 
     }
-
     
     func personagemQuery(){
         let predicate = NSPredicate(value: true)
@@ -156,9 +156,9 @@ class Model{
     
     var enoughPlayers = 0
     var jogadorSelecionado = 0
-    var timerPensar = 90
-    var timerContar = 90
-    var timerDiscutir = 90
+    var timerPensar = 12
+    var timerContar = 12
+    var timerDiscutir = 12
     
 
     
