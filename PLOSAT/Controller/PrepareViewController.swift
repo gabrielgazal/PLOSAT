@@ -58,6 +58,14 @@ class PrepareViewController: UIViewController {
             }
         }
     }
+    @IBAction func finalizartimer(_ sender: Any) {
+        if count > 0{
+            timer.invalidate()
+            if Model.instance.viuModal == false{
+                self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
+            }
+        }
+    }
     
     func goToStoryTimer () {
         self.performSegue(withIdentifier: "nextOne", sender: nil)
