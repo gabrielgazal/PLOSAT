@@ -51,7 +51,7 @@ class StoryTimerViewController: UIViewController {
         
     }
     
-    var count = 90 {
+    var count = Model.instance.timerContar {
         didSet {
             let minutos = count/60
             let segundos = count % 60
@@ -102,13 +102,20 @@ class StoryTimerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tempo = Model.instance.timerContar
+        let minutos = tempo/60
+        let segundos = tempo % 60
+        
+        timerCounter.text = String(format: "%02d",minutos)
+        secondsLabel.text = String(format: "%02d",segundos)
         nextPage.isHidden = true
         ordenacao = Model.instance.game.players
         ordenacao.shuffle()
         
         round()
         
-        count = 90
+        count = Model.instance.timerContar
         Model.instance.timerUniversal = count
     }
     
@@ -117,7 +124,7 @@ class StoryTimerViewController: UIViewController {
             count -= 1
             Model.instance.timerUniversal = count
         } else {
-            count = 90
+            count = Model.instance.timerContar
             Model.instance.timerUniversal = count
 
             timer.invalidate()

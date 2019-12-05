@@ -33,7 +33,7 @@ class DiscussionTimerViewController: UIViewController {
         
     }
     var timer: Timer!
-    var count = 90{
+    var count = Model.instance.timerDiscutir{
         didSet {
             let minutos = count/60
             let segundos = count % 60
@@ -46,6 +46,12 @@ class DiscussionTimerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tempo = Model.instance.timerDiscutir
+        let minutos = tempo/60
+        let segundos = tempo % 60
+        
+        minutosLabel.text = String(format: "%02d",minutos)
+        segundosLabel.text = String(format: "%02d",segundos)
         // Do any additional setup after loading the view.
     }
     
