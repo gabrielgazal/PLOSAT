@@ -168,10 +168,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-Bf-8WL">
-                                                        <rect key="frame" x="0.0" y="49" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="64" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="50" id="8Sz-VF-TGt"/>
+                                                            <constraint firstAttribute="width" constant="40" id="8Sz-VF-TGt"/>
                                                             <constraint firstAttribute="width" secondItem="K4M-Bf-8WL" secondAttribute="height" multiplier="1:1" id="bbM-Sj-sh6"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="minus"/>
@@ -180,7 +180,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-rO-11d">
-                                                        <rect key="frame" x="281" y="49" width="50" height="50"/>
+                                                        <rect key="frame" x="291" y="64" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o3L-rO-11d" secondAttribute="height" multiplier="1:1" id="yHL-ij-YYI"/>
@@ -191,7 +191,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-OY-oZm">
-                                                        <rect key="frame" x="70" y="49" width="191" height="50"/>
+                                                        <rect key="frame" x="60" y="44" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -202,10 +202,10 @@
                                                     <constraint firstItem="oLN-Ef-N2w" firstAttribute="centerX" secondItem="Spt-rI-9xG" secondAttribute="centerX" id="3qN-nK-OmH"/>
                                                     <constraint firstAttribute="trailing" secondItem="o3L-rO-11d" secondAttribute="trailing" id="5pN-b5-fUu"/>
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="leading" secondItem="K4M-Bf-8WL" secondAttribute="trailing" constant="20" id="6iM-59-BLq"/>
-                                                    <constraint firstItem="UdN-OY-oZm" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" id="M6t-Go-Tdq"/>
+                                                    <constraint firstItem="UdN-OY-oZm" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" multiplier="2" id="M6t-Go-Tdq"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" id="OY4-I8-ivs"/>
-                                                    <constraint firstItem="K4M-Bf-8WL" firstAttribute="top" secondItem="oLN-Ef-N2w" secondAttribute="bottom" constant="15" id="SRC-0p-zO1"/>
                                                     <constraint firstItem="K4M-Bf-8WL" firstAttribute="leading" secondItem="Spt-rI-9xG" secondAttribute="leading" id="V33-XM-odk"/>
+                                                    <constraint firstItem="UdN-OY-oZm" firstAttribute="top" secondItem="oLN-Ef-N2w" secondAttribute="bottom" constant="10" id="aKI-cH-MmY"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="asL-4G-9Qz"/>
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="gL8-Gy-m4Y"/>
                                                     <constraint firstItem="oLN-Ef-N2w" firstAttribute="width" secondItem="Spt-rI-9xG" secondAttribute="width" id="hRR-Nh-iVG"/>
@@ -223,11 +223,11 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBN-s1-lYo">
-                                                        <rect key="frame" x="0.0" y="49" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="64" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="tBN-s1-lYo" secondAttribute="height" multiplier="1:1" id="KkW-6F-lO3"/>
-                                                            <constraint firstAttribute="width" constant="50" id="wZt-vf-4tO"/>
+                                                            <constraint firstAttribute="width" constant="40" id="wZt-vf-4tO"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="minus"/>
                                                         <connections>
@@ -235,7 +235,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gr-LE-lrh">
-                                                        <rect key="frame" x="281" y="49" width="50" height="50"/>
+                                                        <rect key="frame" x="291" y="64" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4Gr-LE-lrh" secondAttribute="height" multiplier="1:1" id="Xoj-d1-coP"/>
@@ -246,7 +246,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unz-aD-nQT">
-                                                        <rect key="frame" x="70" y="49" width="191" height="50"/>
+                                                        <rect key="frame" x="60" y="44" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -259,11 +259,11 @@
                                                     <constraint firstItem="tBN-s1-lYo" firstAttribute="leading" secondItem="Faw-XM-Mcd" secondAttribute="leading" id="9dT-RQ-f75"/>
                                                     <constraint firstItem="4Gr-LE-lrh" firstAttribute="height" secondItem="tBN-s1-lYo" secondAttribute="height" id="Mja-fo-LPK"/>
                                                     <constraint firstItem="unz-aD-nQT" firstAttribute="leading" secondItem="tBN-s1-lYo" secondAttribute="trailing" constant="20" id="Neg-eh-VML"/>
-                                                    <constraint firstItem="tBN-s1-lYo" firstAttribute="top" secondItem="3jY-TK-h1l" secondAttribute="bottom" constant="15" id="QRM-IS-vGM"/>
-                                                    <constraint firstItem="unz-aD-nQT" firstAttribute="height" secondItem="tBN-s1-lYo" secondAttribute="height" id="Rqt-NO-PRg"/>
+                                                    <constraint firstItem="unz-aD-nQT" firstAttribute="height" secondItem="tBN-s1-lYo" secondAttribute="height" multiplier="2" id="Rqt-NO-PRg"/>
                                                     <constraint firstItem="4Gr-LE-lrh" firstAttribute="leading" secondItem="unz-aD-nQT" secondAttribute="trailing" constant="20" id="Sbp-Y6-kvT"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Gr-LE-lrh" secondAttribute="trailing" id="SiN-Wv-mHC"/>
                                                     <constraint firstItem="unz-aD-nQT" firstAttribute="centerY" secondItem="tBN-s1-lYo" secondAttribute="centerY" id="TFh-v6-Fcv"/>
+                                                    <constraint firstItem="unz-aD-nQT" firstAttribute="top" secondItem="3jY-TK-h1l" secondAttribute="bottom" constant="10" id="TfS-Tv-084"/>
                                                     <constraint firstItem="3jY-TK-h1l" firstAttribute="centerX" secondItem="Faw-XM-Mcd" secondAttribute="centerX" id="pMM-6d-TqI"/>
                                                     <constraint firstItem="3jY-TK-h1l" firstAttribute="top" secondItem="Faw-XM-Mcd" secondAttribute="top" constant="8" id="xP9-po-MWd"/>
                                                 </constraints>
@@ -278,10 +278,10 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQl-yo-0YT">
-                                                        <rect key="frame" x="0.0" y="49" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="64" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="50" id="Cf1-br-Y8c"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Cf1-br-Y8c"/>
                                                             <constraint firstAttribute="width" secondItem="hQl-yo-0YT" secondAttribute="height" multiplier="1:1" id="aVD-hy-HFv"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="minus"/>
@@ -290,7 +290,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W09-U7-OUI">
-                                                        <rect key="frame" x="281" y="49" width="50" height="50"/>
+                                                        <rect key="frame" x="291" y="64" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="W09-U7-OUI" secondAttribute="height" multiplier="1:1" id="BNU-IS-qfR"/>
@@ -301,7 +301,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-iL-iS3">
-                                                        <rect key="frame" x="70" y="49" width="191" height="50"/>
+                                                        <rect key="frame" x="60" y="44" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -310,16 +310,16 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="W09-U7-OUI" secondAttribute="trailing" id="1CG-Oc-9AU"/>
-                                                    <constraint firstItem="hQl-yo-0YT" firstAttribute="top" secondItem="Q59-ye-njl" secondAttribute="bottom" constant="15" id="38W-VL-nll"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="top" secondItem="Wc4-cN-2df" secondAttribute="top" constant="8" id="72h-jD-D1d"/>
                                                     <constraint firstItem="hQl-yo-0YT" firstAttribute="leading" secondItem="Wc4-cN-2df" secondAttribute="leading" id="9Ia-52-C85"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="centerX" secondItem="Wc4-cN-2df" secondAttribute="centerX" id="Clf-5Y-nQa"/>
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="centerY" secondItem="hQl-yo-0YT" secondAttribute="centerY" id="GPl-EJ-Awk"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="leading" secondItem="fnG-iL-iS3" secondAttribute="trailing" constant="20" id="IFq-CG-77V"/>
-                                                    <constraint firstItem="fnG-iL-iS3" firstAttribute="height" secondItem="hQl-yo-0YT" secondAttribute="height" id="SSe-aL-ZV6"/>
+                                                    <constraint firstItem="fnG-iL-iS3" firstAttribute="height" secondItem="hQl-yo-0YT" secondAttribute="height" multiplier="2" id="SSe-aL-ZV6"/>
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="leading" secondItem="hQl-yo-0YT" secondAttribute="trailing" constant="20" id="UeB-8a-E1S"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="centerY" secondItem="hQl-yo-0YT" secondAttribute="centerY" id="ZYD-GJ-BXs"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="height" secondItem="hQl-yo-0YT" secondAttribute="height" id="nYh-Y1-ZXH"/>
+                                                    <constraint firstItem="fnG-iL-iS3" firstAttribute="top" secondItem="Q59-ye-njl" secondAttribute="bottom" constant="10" id="ncp-01-3W5"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="width" secondItem="Wc4-cN-2df" secondAttribute="width" id="vLC-tA-EGU"/>
                                                 </constraints>
                                             </view>
