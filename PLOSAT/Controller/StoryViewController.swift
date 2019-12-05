@@ -52,7 +52,7 @@ class StoryViewController: UIViewController {
         }
         let dica = nomes + " vocês foram vistos na cena do crime e alguém é culpado."
         
-        let descricao = Model.instance.game.tema.descricao + dica
+        let descricao = Model.instance.game.tema.descricao + "\n" + dica
         return descricao
     }
     
