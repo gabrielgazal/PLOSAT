@@ -23,6 +23,7 @@ class Model{
     var tema : [Tema]!
     var lastGuilt = Int.random(in: 0 ... 1)
     var viuModal = false
+    var minJogadores = 1
     var timerUniversal = 90 {
         didSet {
             timeObservers.forEach( { $0.notify() } )
@@ -156,9 +157,9 @@ class Model{
     
     var enoughPlayers = 0
     var jogadorSelecionado = 0
-    var timerPensar = 90
-    var timerContar = 90
-    var timerDiscutir = 90
+    var timerPensar = 1
+    var timerContar = 1
+    var timerDiscutir = 1
     
 
     

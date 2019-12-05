@@ -59,11 +59,15 @@ class PrepareViewController: UIViewController {
         }
     }
     @IBAction func finalizartimer(_ sender: Any) {
-        if count > 0{
+        if timer != nil{
             timer.invalidate()
             if Model.instance.viuModal == false{
                 self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
             }
+        }else{
+            if Model.instance.viuModal == false{
+                           self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
+                       }
         }
     }
     

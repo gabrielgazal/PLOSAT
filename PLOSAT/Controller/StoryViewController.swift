@@ -38,6 +38,7 @@ class StoryViewController: UIViewController {
             player.visoes = 0
         }
         Model.instance.viuModal = false
+        var jogadorCondenado = 0
         HistoriaTitulo.text = Model.instance.game.tema.titulo
         HistoriaDescricao.text = getNAmes()
         Model.instance.game.declareGuilty()
