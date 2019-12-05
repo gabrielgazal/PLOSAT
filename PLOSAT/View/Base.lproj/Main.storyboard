@@ -1129,7 +1129,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noplayers" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-xq-1Ew">
-                                        <rect key="frame" x="41.5" y="324" width="331.00000000000006" height="248"/>
+                                        <rect key="frame" x="41.5" y="324" width="331" height="248"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xZc-xq-1Ew" secondAttribute="height" multiplier="4:3" id="zWi-aN-tAX"/>
                                         </constraints>
