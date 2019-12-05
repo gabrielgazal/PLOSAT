@@ -63,6 +63,18 @@ class PrepareViewController: UIViewController {
             AudioManager.shared.play(soundEffect: .timer)
         }
     }
+    @IBAction func finalizartimer(_ sender: Any) {
+        if timer != nil{
+            timer.invalidate()
+            if Model.instance.viuModal == false{
+                self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
+            }
+        }else{
+            if Model.instance.viuModal == false{
+                           self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
+                       }
+        }
+    }
     
     func goToStoryTimer () {
         self.performSegue(withIdentifier: "nextOne", sender: nil)

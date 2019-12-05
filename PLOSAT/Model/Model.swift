@@ -23,6 +23,7 @@ class Model{
     var tema : [Tema]!
     var lastGuilt = Int.random(in: 0 ... 1)
     var viuModal = false
+    var minJogadores = 1
     var timerUniversal = 90 {
         didSet {
             timeObservers.forEach( { $0.notify() } )
@@ -49,12 +50,12 @@ class Model{
     
     private init (){
         
-        personagem = ["Vizinho"]
-        lugar = ["Boate LGBT"]
-        objeto = ["Peruca Loira",]
-        situacao = ["Sequestro relâmpago",]
-        acao = ["Lavar um caixão",]
-        tema = [Tema(titulo: "Roubo de Prototipo", descricao: "Na Califórnia, os designers engenheiros da Apple trabalham para o lançamento próximo de um novo iPhone. Em um breve descuido na última terça-feira, o protótipo do mais novo aparelho foi furtado. Todos aqui tinham fortes interesses em ter os segredos desse lançamento. Qual é seu álibi para o dia do crime?")]
+        personagem = []
+        lugar = []
+        objeto = []
+        situacao = []
+        acao = []
+        tema = []
         querys()
     }
     
@@ -156,9 +157,9 @@ class Model{
     
     var enoughPlayers = 0
     var jogadorSelecionado = 0
-    var timerPensar = 12
-    var timerContar = 12
-    var timerDiscutir = 12
+    var timerPensar = 1
+    var timerContar = 1
+    var timerDiscutir = 1
     
 
     

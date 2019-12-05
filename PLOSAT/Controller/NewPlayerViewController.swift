@@ -105,17 +105,33 @@ class NewPlayerViewController: UIViewController, UIImagePickerControllerDelegate
     @IBAction func SavePlayer(_ sender: Any) {
         
         if fotodojos != nil {
-            Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
-            Model.instance.enoughPlayers += 1
-            
-            NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
-            dismiss(animated: true, completion: nil)
+            if nameFiekd.text!.isEmpty{
+                Model.instance.game.newPlayer(name: "Jogador \(Model.instance.game.players.count + 1)", foto: fotodojos)
+                Model.instance.enoughPlayers += 1
+                
+                NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
+                dismiss(animated: true, completion: nil)
+            }else{
+                Model.instance.game.newPlayer(name: nameFiekd.text!, foto: fotodojos)
+                Model.instance.enoughPlayers += 1
+                
+                NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
+                dismiss(animated: true, completion: nil)
+            }
         }else{
-            Model.instance.game.newPlayer(name: nameFiekd.text!, foto: UIImage(named: "player")!)
-            Model.instance.enoughPlayers += 1
-            AudioManager.shared.play(soundEffect: .button)
-            NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
-            dismiss(animated: true, completion: nil)
+            if nameFiekd.text!.isEmpty{
+                Model.instance.game.newPlayer(name: "Jogador \(Model.instance.game.players.count + 1)", foto: UIImage(named: "player")!)
+                Model.instance.enoughPlayers += 1
+                NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
+                dismiss(animated: true, completion: nil)
+            }else{
+                Model.instance.game.newPlayer(name: nameFiekd.text!, foto: UIImage(named: "player")!)
+                Model.instance.enoughPlayers += 1
+                
+                NotificationCenter.default.post(name: NSNotification.Name("atualizaJogadores"), object: nil)
+                dismiss(animated: true, completion: nil)
+            }
+            
         }
         AudioManager.shared.play(soundEffect: .button)
 

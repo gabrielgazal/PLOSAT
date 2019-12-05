@@ -12,14 +12,15 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var imagemHistoria: UIImageView!
     @IBOutlet weak var HistoriaTitulo: UILabel!
     @IBOutlet weak var HistoriaDescricao: UITextView!
-    @IBOutlet weak var textViewDica: UITextView!
+//    @IBOutlet weak var textViewDica: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Model.instance.shufle()
         Model.instance.game.plosat = Plosat(personagem: Model.instance.personagem.randomElement()!, lugar: Model.instance.lugar.randomElement()!, objeto: Model.instance.objeto.randomElement()!, situacao: Model.instance.situacao.randomElement()!, acao: Model.instance.acao.randomElement()!)
         Model.instance.game.tema = Model.instance.tema.randomElement()
-        textViewDica.text = "\(getNAmes()) vocês foram  vistos na cena do crime e um de vocês é culpado."
+//        textViewDica.text = "\(getNAmes()) vocês foram  vistos na cena do crime e um de vocês é culpado."
+//        textViewDica.isHidden = true
         
         
         for player in Model.instance.game.players{
@@ -37,8 +38,9 @@ class StoryViewController: UIViewController {
             player.visoes = 0
         }
         Model.instance.viuModal = false
+        var jogadorCondenado = 0
         HistoriaTitulo.text = Model.instance.game.tema.titulo
-        HistoriaDescricao.text = Model.instance.game.tema.descricao
+        HistoriaDescricao.text = getNAmes()
         Model.instance.game.declareGuilty()
         
         // Do any additional setup after loading the view.
@@ -47,9 +49,12 @@ class StoryViewController: UIViewController {
     func getNAmes() -> String{
         var nomes = ""
         for player in Model.instance.game.players{
-            nomes = "\(player.name),"
+            nomes += "\(player.name), "
         }
-        return nomes
+        let dica = nomes + " vocês foram vistos na cena do crime e alguém é culpado."
+        
+        let descricao = Model.instance.game.tema.descricao + "\n" + dica
+        return descricao
     }
     
     

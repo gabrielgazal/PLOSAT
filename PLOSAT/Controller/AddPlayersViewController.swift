@@ -18,13 +18,13 @@ class AddPlayersViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBOutlet weak var tableview: UITableView!
     @IBOutlet weak var addPlayer: DesignableButton!
+    @IBOutlet weak var noplayers: UIImageView!
     
    
     @IBOutlet weak var StartGame: DesignableButton!
     
     @IBAction func StartPLaying(_ sender: Any) {
-        if Model.instance.enoughPlayers >= 1{
-            AudioManager.shared.play(soundEffect: .button)
+        if Model.instance.enoughPlayers >= Model.instance.minJogadores{
             performSegue(withIdentifier: "startGame", sender: self)
         }
     }
@@ -78,14 +78,24 @@ override func viewDidLoad() {
 }
     
     @objc func performUpdate(_ notification: Notification){
+        if Model.instance.game.players.count > 0{
+            noplayers.isHidden = true
+        }
         self.tableview.reloadData()
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if Model.instance.game.players.count > 0{
+            noplayers.isHidden = true
+        }
         tableview.reloadData()
+        
     }
     override func viewDidAppear(_ animated: Bool) {
+        if Model.instance.game.players.count > 0{
+            noplayers.isHidden = true
+        }
         tableview.reloadData()
     }
 
