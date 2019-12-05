@@ -1125,7 +1125,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noplayers" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-xq-1Ew">
-                                        <rect key="frame" x="41.5" y="324" width="331" height="248"/>
+                                        <rect key="frame" x="41.5" y="324" width="331.00000000000006" height="248"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xZc-xq-1Ew" secondAttribute="height" multiplier="4:3" id="zWi-aN-tAX"/>
                                         </constraints>
@@ -2017,7 +2017,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-J9-dvi" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="83" y="580.5" width="248" height="131.5"/>
+                                        <rect key="frame" x="83" y="550.5" width="248" height="131.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-gL-a95">
                                                 <rect key="frame" x="49.5" y="0.0" width="149" height="131.5"/>
@@ -2152,25 +2152,25 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-ZR-BeS">
-                                        <rect key="frame" x="83" y="722" width="248" height="20"/>
+                                        <rect key="frame" x="83" y="692" width="248" height="20"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FiV-7Y-OiZ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prepare-se" translatesAutoresizingMaskIntoConstraints="NO" id="FiV-7Y-OiZ">
                                         <rect key="frame" x="41.5" y="100" width="331" height="331"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FiV-7Y-OiZ" secondAttribute="height" multiplier="1:1" id="OdW-cA-6pY"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HORA DE DISCUTIR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5D-0J-ZKS">
-                                        <rect key="frame" x="41.5" y="451" width="331" height="31"/>
+                                        <rect key="frame" x="41.5" y="421" width="331" height="31"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agora é hora de colocar os álibis à prova. Todos devem discutir sobre quem entre o grupo é o verdadeiro culpado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0i-mq-oCC">
-                                        <rect key="frame" x="41.5" y="492" width="331" height="63.5"/>
+                                        <rect key="frame" x="41.5" y="462" width="331" height="63.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2179,7 +2179,7 @@
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="jI0-bf-6dv" firstAttribute="centerX" secondItem="jQf-da-fyu" secondAttribute="centerX" id="3Pw-bG-XVY"/>
-                                    <constraint firstItem="j5D-0J-ZKS" firstAttribute="top" secondItem="FiV-7Y-OiZ" secondAttribute="bottom" constant="20" id="3Yc-SJ-9Qe"/>
+                                    <constraint firstItem="j5D-0J-ZKS" firstAttribute="top" secondItem="FiV-7Y-OiZ" secondAttribute="bottom" constant="-10" id="3Yc-SJ-9Qe"/>
                                     <constraint firstItem="hEG-7R-4vG" firstAttribute="height" secondItem="jQf-da-fyu" secondAttribute="height" id="CQT-1K-q63"/>
                                     <constraint firstItem="S0i-mq-oCC" firstAttribute="top" secondItem="j5D-0J-ZKS" secondAttribute="bottom" constant="10" id="F0J-OO-viX"/>
                                     <constraint firstItem="Kij-ZR-BeS" firstAttribute="centerX" secondItem="0ZM-J9-dvi" secondAttribute="centerX" id="Hbt-lJ-Rdi"/>
@@ -2488,7 +2488,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="66f-B9-DYE">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-TV-vNB">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo1" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-TV-vNB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-2R-VZS" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
@@ -2517,29 +2517,29 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikt-vB-L4s">
-                                        <rect key="frame" x="41.5" y="100" width="331" height="451.5"/>
+                                        <rect key="frame" x="41.5" y="100" width="331" height="391.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-3o-GUp">
-                                                <rect key="frame" x="0.0" y="0.0" width="331" height="451.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ilustra-final01" translatesAutoresizingMaskIntoConstraints="NO" id="cDj-3o-GUp">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="391.5"/>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.20784313730000001" green="0.15686274510000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="cDj-3o-GUp" firstAttribute="leading" secondItem="ikt-vB-L4s" secondAttribute="leading" id="B4j-qF-kJM"/>
                                             <constraint firstItem="cDj-3o-GUp" firstAttribute="top" secondItem="ikt-vB-L4s" secondAttribute="top" id="KRa-fK-6R9"/>
                                             <constraint firstAttribute="bottom" secondItem="cDj-3o-GUp" secondAttribute="bottom" id="LSq-i4-Z6H"/>
                                             <constraint firstAttribute="trailing" secondItem="cDj-3o-GUp" secondAttribute="trailing" id="b58-ZY-lmx"/>
-                                            <constraint firstAttribute="width" secondItem="ikt-vB-L4s" secondAttribute="height" multiplier="11:15" id="sto-jw-e3q"/>
+                                            <constraint firstAttribute="width" secondItem="ikt-vB-L4s" secondAttribute="height" multiplier="11:13" id="sto-jw-e3q"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parabéns Jogadores vocês prenderam o verdadeiro culpado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk9-97-kiW">
-                                        <rect key="frame" x="56.5" y="642.5" width="301" height="42.5"/>
+                                        <rect key="frame" x="56.5" y="597.5" width="301" height="42.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l6H-Yv-HnF">
-                                        <rect key="frame" x="56.5" y="488" width="99.5" height="116"/>
+                                        <rect key="frame" x="56.5" y="428.5" width="99.5" height="116"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selo" translatesAutoresizingMaskIntoConstraints="NO" id="Y8q-DW-kT7">
                                                 <rect key="frame" x="12.5" y="29.5" width="74.5" height="74.5"/>
@@ -2548,18 +2548,18 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-u5-MWB">
-                                                <rect key="frame" x="21.5" y="39" width="56" height="56"/>
+                                                <rect key="frame" x="21.5" y="39" width="56" height="55.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BYg-u5-MWB" secondAttribute="height" multiplier="1:1" id="lYq-z6-pqB"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gaiola" translatesAutoresizingMaskIntoConstraints="NO" id="ZRu-qs-UlQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="99.5" height="116"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jail" translatesAutoresizingMaskIntoConstraints="NO" id="ZRu-qs-UlQ">
+                                                <rect key="frame" x="0.0" y="11.5" width="99.5" height="116"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="ZRu-qs-UlQ" firstAttribute="centerY" secondItem="l6H-Yv-HnF" secondAttribute="centerY" id="8kW-Yi-z1g"/>
+                                            <constraint firstItem="ZRu-qs-UlQ" firstAttribute="centerY" secondItem="l6H-Yv-HnF" secondAttribute="centerY" multiplier="1.2" id="8kW-Yi-z1g"/>
                                             <constraint firstItem="BYg-u5-MWB" firstAttribute="centerX" secondItem="Y8q-DW-kT7" secondAttribute="centerX" id="CsP-9n-yTf"/>
                                             <constraint firstItem="BYg-u5-MWB" firstAttribute="width" secondItem="Y8q-DW-kT7" secondAttribute="width" multiplier="0.75" id="GOd-lj-8Xt"/>
                                             <constraint firstItem="ZRu-qs-UlQ" firstAttribute="centerX" secondItem="l6H-Yv-HnF" secondAttribute="centerX" id="Gdi-0F-494"/>
@@ -2573,13 +2573,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mari, você não é uma boa mentirosa!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrO-sJ-2dQ">
-                                        <rect key="frame" x="56.5" y="695" width="301" height="21.5"/>
+                                        <rect key="frame" x="56.5" y="660" width="301" height="21.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARI, VOCÊ FOI CONDENADA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-cR-TYQ">
-                                        <rect key="frame" x="166" y="571.5" width="206.5" height="61"/>
+                                        <rect key="frame" x="166" y="511.5" width="206.5" height="61"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2587,7 +2587,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="wrO-sJ-2dQ" firstAttribute="top" secondItem="hk9-97-kiW" secondAttribute="bottom" constant="10" id="8HM-rl-91W"/>
+                                    <constraint firstItem="wrO-sJ-2dQ" firstAttribute="top" secondItem="hk9-97-kiW" secondAttribute="bottom" constant="20" id="8HM-rl-91W"/>
                                     <constraint firstItem="l6H-Yv-HnF" firstAttribute="width" secondItem="ikt-vB-L4s" secondAttribute="width" multiplier="0.3" id="8rV-6T-5zE"/>
                                     <constraint firstItem="7mU-cR-TYQ" firstAttribute="top" secondItem="ikt-vB-L4s" secondAttribute="bottom" constant="20" id="BjO-1S-Vzf"/>
                                     <constraint firstItem="o4B-TV-vNB" firstAttribute="centerY" secondItem="66f-B9-DYE" secondAttribute="centerY" id="DU7-u1-Y0F"/>
@@ -2605,7 +2605,7 @@
                                     <constraint firstItem="XHe-2R-VZS" firstAttribute="width" secondItem="66f-B9-DYE" secondAttribute="width" multiplier="0.6" id="dku-Bh-UmX"/>
                                     <constraint firstItem="XHe-2R-VZS" firstAttribute="centerX" secondItem="66f-B9-DYE" secondAttribute="centerX" id="eKA-KI-xMl"/>
                                     <constraint firstItem="hk9-97-kiW" firstAttribute="centerX" secondItem="ikt-vB-L4s" secondAttribute="centerX" id="iRr-HP-Bu3"/>
-                                    <constraint firstItem="hk9-97-kiW" firstAttribute="top" secondItem="7mU-cR-TYQ" secondAttribute="bottom" constant="10" id="ud9-oW-qTx"/>
+                                    <constraint firstItem="hk9-97-kiW" firstAttribute="top" secondItem="7mU-cR-TYQ" secondAttribute="bottom" constant="25" id="ud9-oW-qTx"/>
                                     <constraint firstItem="ikt-vB-L4s" firstAttribute="width" secondItem="66f-B9-DYE" secondAttribute="width" multiplier="0.8" id="w03-Lv-ing"/>
                                     <constraint firstItem="o4B-TV-vNB" firstAttribute="width" secondItem="66f-B9-DYE" secondAttribute="width" id="w4W-jq-G9g"/>
                                     <constraint firstItem="hk9-97-kiW" firstAttribute="leading" secondItem="ZRu-qs-UlQ" secondAttribute="leading" id="xXw-iR-aLJ"/>
@@ -2625,6 +2625,7 @@
                     <connections>
                         <outlet property="firstDesc" destination="hk9-97-kiW" id="uJY-op-2OC"/>
                         <outlet property="fotoJogador" destination="BYg-u5-MWB" id="8Zp-BB-KBg"/>
+                        <outlet property="ilustracaoFinal" destination="cDj-3o-GUp" id="3Sk-ek-rvW"/>
                         <outlet property="restart" destination="XHe-2R-VZS" id="MfN-VH-lYR"/>
                         <outlet property="resultLabel" destination="7mU-cR-TYQ" id="ijQ-wD-5TP"/>
                         <outlet property="secondDesc" destination="wrO-sJ-2dQ" id="4yk-os-XTq"/>
@@ -2667,9 +2668,10 @@
         <image name="fundo2" width="414" height="896"/>
         <image name="fundo3" width="414" height="896"/>
         <image name="fundo4" width="414" height="896"/>
-        <image name="gaiola" width="91" height="110"/>
+        <image name="ilustra-final01" width="335" height="246"/>
         <image name="ilustra1" width="278" height="212"/>
         <image name="inocente" width="220" height="88"/>
+        <image name="jail" width="91" height="94"/>
         <image name="minus" width="55" height="55"/>
         <image name="next" width="55" height="55"/>
         <image name="noplayers" width="239" height="202"/>
