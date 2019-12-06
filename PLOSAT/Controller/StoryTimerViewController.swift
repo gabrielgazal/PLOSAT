@@ -24,6 +24,7 @@ class StoryTimerViewController: UIViewController {
     var timer : Timer!
     var endGame: Bool = false
     
+    
     @IBAction func espiarAlibi(_ sender: Any) {
         AudioManager.shared.play(soundEffect: .button)
         if let vc = storyboard?.instantiateViewController(identifier: "vcDetalhe") as? PapeisViewController {
@@ -104,7 +105,7 @@ class StoryTimerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Model.instance.viuModal = false
         let tempo = Model.instance.timerContar
         let minutos = tempo/60
         let segundos = tempo % 60

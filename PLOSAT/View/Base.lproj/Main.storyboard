@@ -834,7 +834,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQS-dg-PDS" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="83" y="574.5" width="248" height="131.5"/>
+                                        <rect key="frame" x="83" y="554" width="248" height="131.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O02-yU-sDj">
                                                 <rect key="frame" x="0.0" y="0.0" width="248" height="131.5"/>
@@ -954,7 +954,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos terão agora um tempo para preparar suas defesas. Fique de olho no timer!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceL-t3-OzW">
-                                        <rect key="frame" x="41.5" y="471.5" width="331" height="63"/>
+                                        <rect key="frame" x="41.5" y="471.5" width="331" height="42.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1056,13 +1056,13 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="É hora de todos os acusados darem seu depoimento. Pressione abaixo para saber quem será o primeiro." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVw-RU-ZEw">
-                                        <rect key="frame" x="41.5" y="471.5" width="331" height="63"/>
+                                        <rect key="frame" x="41.5" y="471.5" width="331" height="63.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-FI-TzJ" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="66" y="601.5" width="282" height="60"/>
+                                        <rect key="frame" x="66" y="602" width="282" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="964-4l-38i"/>
                                         </constraints>
@@ -1417,13 +1417,13 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <segue destination="0R4-Fo-qgL" kind="show" id="7Yp-Gv-z7g"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Título da história" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7T-u6-5ms">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título da história" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7T-u6-5ms">
                                         <rect key="frame" x="41.5" y="440" width="331" height="30"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jw-FP-HJu">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jw-FP-HJu">
                                         <rect key="frame" x="41.5" y="478" width="331" height="298"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -1934,10 +1934,10 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdx-2C-2GC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="pi2-hT-48Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="brb-kE-3HD">
                                         <rect key="frame" x="41.5" y="150" width="331" height="75"/>
@@ -1987,16 +1987,16 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28r-p1-uax" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="-47" y="358.5" width="508" height="268.5"/>
+                                        <rect key="frame" x="80" y="401.5" width="254" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56W-E9-rg9">
-                                                <rect key="frame" x="0.0" y="0.0" width="508" height="268.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="254" height="134"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="75"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-RF-Flr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="10" y="10" width="218.5" height="258.5"/>
+                                                <rect key="frame" x="10" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2005,7 +2005,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-uh-ZrX" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="218.5" height="258.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2020,7 +2020,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55R-l6-TMr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="289.5" y="10" width="218.5" height="258.5"/>
+                                                <rect key="frame" x="149.5" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2029,7 +2029,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oli-g3-4kJ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="279.5" y="0.0" width="218.5" height="258.5"/>
+                                                <rect key="frame" x="139.5" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2044,13 +2044,13 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89Z-oW-xjF">
-                                                <rect key="frame" x="10" y="90.5" width="208.5" height="88"/>
+                                                <rect key="frame" x="10" y="23" width="94.5" height="88"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="75"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glw-rb-7iE">
-                                                <rect key="frame" x="289.5" y="90.5" width="208.5" height="88"/>
+                                                <rect key="frame" x="149.5" y="23" width="94.5" height="88"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="75"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2098,13 +2098,13 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora da discussão!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYZ-EJ-eHI">
-                                        <rect key="frame" x="127" y="761" width="160" height="60"/>
+                                        <rect key="frame" x="127" y="717" width="160" height="60"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="21"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-ve-eNH" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="-47" y="697" width="508" height="124"/>
+                                        <rect key="frame" x="80" y="715" width="254" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <state key="normal" title="ESPIAR ÁLIBI " backgroundImage="botao2fundo">
@@ -2120,7 +2120,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw2-Fr-B7C" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="312.5" y="761" width="60" height="60"/>
+                                        <rect key="frame" x="312.5" y="717" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Bab-mj-hEL"/>
@@ -2138,7 +2138,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-GF-Sb1">
-                                        <rect key="frame" x="-47" y="637" width="508" height="20"/>
+                                        <rect key="frame" x="80" y="545.5" width="254" height="20"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2735,7 +2735,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parabéns Jogadores vocês prenderam o verdadeiro culpado." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hk9-97-kiW">
-                                        <rect key="frame" x="56.5" y="627.5" width="301" height="42"/>
+                                        <rect key="frame" x="56.5" y="597.5" width="301" height="42.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2775,13 +2775,13 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mari, você não é uma boa mentirosa!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrO-sJ-2dQ">
-                                        <rect key="frame" x="56.5" y="689.5" width="301" height="21"/>
+                                        <rect key="frame" x="56.5" y="660" width="301" height="21.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARI, VOCÊ FOI CONDENADA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-cR-TYQ">
-                                        <rect key="frame" x="166" y="511.5" width="206.5" height="91"/>
+                                        <rect key="frame" x="166" y="511.5" width="206.5" height="61"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2841,9 +2841,10 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Navigation Controller-->
         <scene sceneID="HVW-MJ-yVl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="E6w-AH-3Eq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E6w-AH-3Eq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A7y-O5-Jgy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
