@@ -51,6 +51,7 @@
 		56C36F66238EDFE40090E1F0 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */; };
 		56E95F4C23902C5500EE4C45 /* EditableViewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */; };
 		56E95F4E2390331B00EE4C45 /* PapeisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E95F4D2390331B00EE4C45 /* PapeisViewController.swift */; };
+		56EA574C239ACC4200095FC1 /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EA574B239ACC4200095FC1 /* TutorialCollectionViewCell.swift */; };
 		56EC810C23871F2B007DCFF2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810B23871F2B007DCFF2 /* Model.swift */; };
 		56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810D23871F7C007DCFF2 /* Plosat.swift */; };
 		56F0D1DC23999687003BD8C8 /* AudioLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0D1D823999687003BD8C8 /* AudioLibrary.swift */; };
@@ -108,6 +109,7 @@
 		56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableViewFile.swift; sourceTree = "<group>"; };
 		56E95F4D2390331B00EE4C45 /* PapeisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapeisViewController.swift; sourceTree = "<group>"; };
+		56EA574B239ACC4200095FC1 /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
 		56EC810B23871F2B007DCFF2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56EC810D23871F7C007DCFF2 /* Plosat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plosat.swift; sourceTree = "<group>"; };
 		56F0D1D823999687003BD8C8 /* AudioLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLibrary.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */,
 				562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */,
+				56EA574B239ACC4200095FC1 /* TutorialCollectionViewCell.swift */,
 				561AC95F2395A24600D58C25 /* VotingCollectionViewCell.swift */,
 				56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */,
 			);
@@ -366,6 +369,7 @@
 				56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */,
 				56F0D1DC23999687003BD8C8 /* AudioLibrary.swift in Sources */,
 				562400BE238B99760053DE6F /* ResultsViewController.swift in Sources */,
+				56EA574C239ACC4200095FC1 /* TutorialCollectionViewCell.swift in Sources */,
 				56BD1DF52391637A007DE382 /* PrepareViewController.swift in Sources */,
 				56F0D1DF23999687003BD8C8 /* Song.swift in Sources */,
 				56F631D723885093008B7A25 /* Player.swift in Sources */,
