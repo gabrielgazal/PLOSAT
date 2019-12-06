@@ -32,7 +32,7 @@ class ResultsViewController: UIViewController {
         resultLabel.text = "\(nome), VOCÊ FOI CONDENADX"
         let jogadorFinal = Model.instance.game.players[Model.instance.jogadorCondenado]
         if jogadorFinal.culpado{
-            ilustracaoFinal.image = UIImage(named: "ilustra-final01")
+            ilustracaoFinal.image = UIImage(named: "ilustra-final02")
             firstDesc.text = "Parabéns jogadores, vocês prenderam o verdadeiro culpado."
             secondDesc.text = "\(jogadorFinal.name), sua história não foi  convincente o suficiente."
         }

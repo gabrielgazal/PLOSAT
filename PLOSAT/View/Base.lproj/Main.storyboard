@@ -27,20 +27,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0D-Sp-DMh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-40-KvI">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo2" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-40-KvI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-6z-S7H">
-                                        <rect key="frame" x="103.5" y="277.5" width="207" height="207"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-6z-S7H">
+                                        <rect key="frame" x="62" y="236" width="290" height="289.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ab1-6z-S7H" secondAttribute="height" multiplier="1:1" id="g8I-aS-DnD"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-SZ-Xa0">
-                                        <rect key="frame" x="83" y="559.5" width="248" height="210"/>
+                                        <rect key="frame" x="84" y="575.5" width="246" height="210"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inz-h9-bMO" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="248" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="246" height="60"/>
                                                 <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="off-Ol-4xn"/>
@@ -60,15 +60,21 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-pw-mdF" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="75" width="248" height="60"/>
+                                                <rect key="frame" x="0.0" y="75" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
-                                                <state key="normal" title="COMO JOGAR" backgroundImage="botao2fundo">
+                                                <state key="normal" title="COMO JOGAR">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                        <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -77,15 +83,21 @@
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-BI-led" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="150" width="248" height="60"/>
+                                                <rect key="frame" x="0.0" y="150" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
-                                                <state key="normal" title="CONFIGURAÇÕES" backgroundImage="botao2fundo">
+                                                <state key="normal" title="CONFIGURAÇÕES">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                        <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -104,14 +116,14 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="0ez-40-KvI" secondAttribute="bottom" id="42y-QQ-KQz"/>
                                     <constraint firstItem="0ez-40-KvI" firstAttribute="top" secondItem="B0D-Sp-DMh" secondAttribute="top" id="5WU-pc-wT3"/>
-                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="top" secondItem="ab1-6z-S7H" secondAttribute="bottom" constant="75" id="AwW-rP-Ihj"/>
+                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="top" secondItem="ab1-6z-S7H" secondAttribute="bottom" constant="50" id="AwW-rP-Ihj"/>
                                     <constraint firstItem="0ez-40-KvI" firstAttribute="leading" secondItem="B0D-Sp-DMh" secondAttribute="leading" id="M4H-X8-PSz"/>
                                     <constraint firstAttribute="trailing" secondItem="0ez-40-KvI" secondAttribute="trailing" id="ZwU-X2-LgW"/>
                                     <constraint firstItem="ab1-6z-S7H" firstAttribute="centerX" secondItem="B0D-Sp-DMh" secondAttribute="centerX" id="aDB-bB-MZe"/>
-                                    <constraint firstItem="ab1-6z-S7H" firstAttribute="width" secondItem="B0D-Sp-DMh" secondAttribute="width" multiplier="0.5" id="fmE-PQ-6vi"/>
+                                    <constraint firstItem="ab1-6z-S7H" firstAttribute="width" secondItem="B0D-Sp-DMh" secondAttribute="width" multiplier="0.7" id="fmE-PQ-6vi"/>
                                     <constraint firstItem="ab1-6z-S7H" firstAttribute="centerY" secondItem="B0D-Sp-DMh" secondAttribute="centerY" multiplier="0.85" id="hlS-bI-zeP"/>
                                     <constraint firstItem="v9J-SZ-Xa0" firstAttribute="centerX" secondItem="ab1-6z-S7H" secondAttribute="centerX" id="wm4-La-tsJ"/>
-                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="width" secondItem="ab1-6z-S7H" secondAttribute="width" multiplier="1.2" id="yAf-Ux-Yih"/>
+                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="width" secondItem="ab1-6z-S7H" secondAttribute="width" multiplier="0.85" id="yAf-Ux-Yih"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -2859,7 +2871,6 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
     </scenes>
     <resources>
         <image name="BotaoFundo" width="252" height="66"/>
-        <image name="Logo" width="212" height="178"/>
         <image name="PHOTOICON" width="85" height="85"/>
         <image name="back" width="55" height="55"/>
         <image name="background" width="414" height="896"/>
@@ -2876,6 +2887,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <image name="inocente" width="220" height="88"/>
         <image name="jail" width="91" height="94"/>
         <image name="minus" width="55" height="55"/>
+        <image name="name" width="308" height="303"/>
         <image name="next" width="55" height="55"/>
         <image name="noplayers" width="239" height="202"/>
         <image name="player" width="54" height="54"/>
