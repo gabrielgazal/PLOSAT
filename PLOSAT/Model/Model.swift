@@ -23,7 +23,7 @@ class Model{
     var tema : [Tema]!
     var lastGuilt = Int.random(in: 0 ... 1)
     var viuModal = false
-    var minJogadores = 1
+    var minJogadores = 4
     var enoughPlayers = 0
     var jogadorCondenado = 0
     var jogadorSelecionado = 0
