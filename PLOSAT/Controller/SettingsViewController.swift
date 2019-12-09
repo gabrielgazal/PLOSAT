@@ -90,7 +90,12 @@ class SettingsViewController: UIViewController {
         pensarLabel.text = converteString(count: Model.instance.timerPensar)
         contarLabel.text = converteString(count: Model.instance.timerContar)
         discutirLabel.text = converteString(count: Model.instance.timerDiscutir)
-        
+        if Model.instance.somLigado{
+                   toggleButton.backgroundColor = #colorLiteral(red: 1, green: 0.5215686275, blue: 0.4980392157, alpha: 1)
+               }else{
+                   toggleButton.backgroundColor = . clear
+
+               }
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -109,7 +114,7 @@ class SettingsViewController: UIViewController {
         let minutos = count/60
         let segundos = count % 60
         
-        let string = String(format: "%02d:%02d", minutos, segundos)
+        let string = String(format: "%02d  :  %02d", minutos, segundos)
         
         return string
     }
