@@ -12,17 +12,23 @@ class PrepareViewController: UIViewController {
     
     @IBOutlet weak var minutosLabel: UILabel!
     @IBOutlet weak var segundosLabel: UILabel!
+    @IBOutlet weak var toquePraComecar: UILabel!
     var createdTimer = false
     
     @IBAction func StartTimer(_ sender: Any) {
-        AudioManager.shared.play(soundEffect: .button)
-        if createdTimer{
-            return
+        
+        if !createdTimer{
+            AudioManager.shared.play(soundEffect: .button)
+            if createdTimer{
+                return
+            }
+            
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+            createdTimer = true
+            toquePraComecar.text = "TOQUE PARA FINALIZAR"
+        } else{
+            timer.invalidate()
         }
-        
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
-        createdTimer = true
-        
     }
     var timer: Timer!
     var count = Model.instance.timerPensar{
@@ -34,6 +40,7 @@ class PrepareViewController: UIViewController {
             segundosLabel.text = String(format: "%02d",segundos)
             
         }
+        
     }
     
     override func viewDidLoad() {
@@ -53,7 +60,7 @@ class PrepareViewController: UIViewController {
         if(count > 0) {
             count -= 1
         }else {
-
+            
             timer.invalidate()
             if Model.instance.viuModal == false{
                 self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
@@ -71,8 +78,8 @@ class PrepareViewController: UIViewController {
             }
         }else{
             if Model.instance.viuModal == false{
-                           self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
-                       }
+                self.performSegue(withIdentifier: "modalDiscussion", sender: nil)
+            }
         }
     }
     

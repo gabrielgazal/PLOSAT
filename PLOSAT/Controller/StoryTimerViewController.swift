@@ -20,6 +20,7 @@ class StoryTimerViewController: UIViewController {
     @IBOutlet weak var nextPage: DesignableButton!
     @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var seloImage: UIImageView!
+    @IBOutlet weak var TOQUEPRACOMECAR: UILabel!
     var createdTimer = false
     var timer : Timer!
     var endGame: Bool = false
@@ -43,14 +44,20 @@ class StoryTimerViewController: UIViewController {
     @IBAction func resetScreen(_ sender: Any) {
     }
     @IBAction func startTempo(_ sender: Any) {
-        AudioManager.shared.play(soundEffect: .button)
-
-        if createdTimer{
-            return
+        if !createdTimer{
+            AudioManager.shared.play(soundEffect: .button)
+            
+            if createdTimer{
+                return
+            }
+            createdTimer = true
+            guard !endGame else { return }
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+            TOQUEPRACOMECAR.text = "TOQUE PARA FINZALIZAR"
+        }else{
+           count = 0
+            
         }
-        createdTimer = true
-        guard !endGame else { return }
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         
     }
     
@@ -61,7 +68,7 @@ class StoryTimerViewController: UIViewController {
             
             timerCounter.text = String(format: "%02d",minutos)
             secondsLabel.text = String(format: "%02d",segundos)
-//            createdTimer = false
+            //            createdTimer = false
         }
     }
     
@@ -71,35 +78,31 @@ class StoryTimerViewController: UIViewController {
     
     
     fileprivate func round() {
-        #if DEBUG
         
-        #else
-        
-        #endif
-            if ordenacao.count > 0 {
-                currentPlayer = ordenacao.remove(at: 0)
-                playerImage.image = currentPlayer?.foto
-                seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
-                playerImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
-                
-                let nome = currentPlayer!.name.uppercased()
-                createdTimer = false
-                let contentString = "\(nome),\nDEFENDA-SE"
-                
-                nomeLabel.text? = contentString
-            }
+        if ordenacao.count > 0 {
+            currentPlayer = ordenacao.remove(at: 0)
+            playerImage.image = currentPlayer?.foto
+            seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
+            playerImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)
             
-            if let next = ordenacao.first {
-                nextPLayerLabel.isHidden = true
-//                nextPLayerLabel.text = "\(next.name)"
-            } else {
-                nextPLayerLabel.isHidden = true
-                //Mostra botao de continuar
-                //Esconde ver alibi
-                //Escon
-                //Fim da rodada
-            }
-    
+            let nome = currentPlayer!.name.uppercased()
+            createdTimer = false
+            let contentString = "\(nome),\nDEFENDA-SE"
+            
+            nomeLabel.text? = contentString
+        }
+        
+        if let next = ordenacao.first {
+            nextPLayerLabel.isHidden = true
+            //                nextPLayerLabel.text = "\(next.name)"
+        } else {
+            nextPLayerLabel.isHidden = true
+            //Mostra botao de continuar
+            //Esconde ver alibi
+            //Escon
+            //Fim da rodada
+        }
+        
     }
     
     
@@ -129,7 +132,7 @@ class StoryTimerViewController: UIViewController {
         } else {
             count = Model.instance.timerContar
             Model.instance.timerUniversal = count
-
+            
             timer.invalidate()
             if ordenacao.count > 0 {
                 round()
@@ -145,7 +148,7 @@ class StoryTimerViewController: UIViewController {
         }
     }
     
-
+    
     
     
 }
