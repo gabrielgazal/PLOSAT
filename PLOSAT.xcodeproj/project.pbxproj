@@ -16,10 +16,6 @@
 		12CB370723996D8C00FD4A92 /* Acusado-Inocente-_Dramático_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12CB370123996D8C00FD4A92 /* Acusado-Inocente-_Dramático_.mp3 */; };
 		12CB370823996D8C00FD4A92 /* Contagem-Regressiva-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12CB370223996D8C00FD4A92 /* Contagem-Regressiva-2.mp3 */; };
 		12CB370923996D8C00FD4A92 /* Clique-do-Botão-_mais-curto_.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 12CB370323996D8C00FD4A92 /* Clique-do-Botão-_mais-curto_.mp3 */; };
-		12CB370E23996DF900FD4A92 /* AudioLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB370A23996DF900FD4A92 /* AudioLibrary.swift */; };
-		12CB370F23996DF900FD4A92 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB370B23996DF900FD4A92 /* AudioManager.swift */; };
-		12CB371023996DF900FD4A92 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB370C23996DF900FD4A92 /* Song.swift */; };
-		12CB371123996DF900FD4A92 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CB370D23996DF900FD4A92 /* SoundEffects.swift */; };
 		12F31B4C2388611C00276E09 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F31B4B2388611C00276E09 /* Game.swift */; };
 		560C18FD238EF1BE00F44CD2 /* EditableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560C18FC238EF1BE00F44CD2 /* EditableButton.swift */; };
 		561827192398721800F5F5A2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561827182398721800F5F5A2 /* SettingsViewController.swift */; };
@@ -55,8 +51,13 @@
 		56C36F66238EDFE40090E1F0 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */; };
 		56E95F4C23902C5500EE4C45 /* EditableViewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */; };
 		56E95F4E2390331B00EE4C45 /* PapeisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E95F4D2390331B00EE4C45 /* PapeisViewController.swift */; };
+		56EA574C239ACC4200095FC1 /* TutorialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EA574B239ACC4200095FC1 /* TutorialCollectionViewCell.swift */; };
 		56EC810C23871F2B007DCFF2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810B23871F2B007DCFF2 /* Model.swift */; };
 		56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC810D23871F7C007DCFF2 /* Plosat.swift */; };
+		56F0D1DC23999687003BD8C8 /* AudioLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0D1D823999687003BD8C8 /* AudioLibrary.swift */; };
+		56F0D1DD23999687003BD8C8 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0D1D923999687003BD8C8 /* AudioManager.swift */; };
+		56F0D1DE23999687003BD8C8 /* SoundEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0D1DA23999687003BD8C8 /* SoundEffects.swift */; };
+		56F0D1DF23999687003BD8C8 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F0D1DB23999687003BD8C8 /* Song.swift */; };
 		56F631D723885093008B7A25 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F631D623885093008B7A25 /* Player.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,10 +72,6 @@
 		12CB370123996D8C00FD4A92 /* Acusado-Inocente-_Dramático_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Acusado-Inocente-_Dramático_.mp3"; sourceTree = "<group>"; };
 		12CB370223996D8C00FD4A92 /* Contagem-Regressiva-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Contagem-Regressiva-2.mp3"; sourceTree = "<group>"; };
 		12CB370323996D8C00FD4A92 /* Clique-do-Botão-_mais-curto_.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Clique-do-Botão-_mais-curto_.mp3"; sourceTree = "<group>"; };
-		12CB370A23996DF900FD4A92 /* AudioLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioLibrary.swift; path = ../../../Documents/ADA/Plosat/AudioLibrary.swift; sourceTree = "<group>"; };
-		12CB370B23996DF900FD4A92 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AudioManager.swift; path = ../../../Documents/ADA/Plosat/AudioManager.swift; sourceTree = "<group>"; };
-		12CB370C23996DF900FD4A92 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Song.swift; path = ../../../Documents/ADA/Plosat/Song.swift; sourceTree = "<group>"; };
-		12CB370D23996DF900FD4A92 /* SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundEffects.swift; path = ../../../Documents/ADA/Plosat/SoundEffects.swift; sourceTree = "<group>"; };
 		12F31B4B2388611C00276E09 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		560C18FC238EF1BE00F44CD2 /* EditableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableButton.swift; sourceTree = "<group>"; };
 		561827182398721800F5F5A2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +90,7 @@
 		562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JogadoresTableViewCell.swift; sourceTree = "<group>"; };
 		562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerTableViewCell.swift; sourceTree = "<group>"; };
 		562400C4238D9DBA0053DE6F /* NewPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlayerViewController.swift; sourceTree = "<group>"; };
-		563EF33B2387069900684647 /* PLOSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLOSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		563EF33B2387069900684647 /* The Crook Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Crook Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		563EF33E2387069900684647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		563EF3402387069900684647 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		563EF3422387069900684647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,8 +109,13 @@
 		56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		56E95F4B23902C5500EE4C45 /* EditableViewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableViewFile.swift; sourceTree = "<group>"; };
 		56E95F4D2390331B00EE4C45 /* PapeisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapeisViewController.swift; sourceTree = "<group>"; };
+		56EA574B239ACC4200095FC1 /* TutorialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewCell.swift; sourceTree = "<group>"; };
 		56EC810B23871F2B007DCFF2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56EC810D23871F7C007DCFF2 /* Plosat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plosat.swift; sourceTree = "<group>"; };
+		56F0D1D823999687003BD8C8 /* AudioLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLibrary.swift; sourceTree = "<group>"; };
+		56F0D1D923999687003BD8C8 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		56F0D1DA23999687003BD8C8 /* SoundEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundEffects.swift; sourceTree = "<group>"; };
+		56F0D1DB23999687003BD8C8 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		56F631D623885093008B7A25 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 			children = (
 				562400C0238C53B20053DE6F /* JogadoresTableViewCell.swift */,
 				562400C2238C56100053DE6F /* AddPlayerTableViewCell.swift */,
+				56EA574B239ACC4200095FC1 /* TutorialCollectionViewCell.swift */,
 				561AC95F2395A24600D58C25 /* VotingCollectionViewCell.swift */,
 				56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */,
 			);
@@ -186,7 +189,7 @@
 		563EF33C2387069900684647 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				563EF33B2387069900684647 /* PLOSAT.app */,
+				563EF33B2387069900684647 /* The Crook Game.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,11 +214,11 @@
 		563EF35223871DD700684647 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				12CB370A23996DF900FD4A92 /* AudioLibrary.swift */,
-				12CB370B23996DF900FD4A92 /* AudioManager.swift */,
-				12CB370C23996DF900FD4A92 /* Song.swift */,
-				12CB370D23996DF900FD4A92 /* SoundEffects.swift */,
 				56EC810B23871F2B007DCFF2 /* Model.swift */,
+				56F0D1D823999687003BD8C8 /* AudioLibrary.swift */,
+				56F0D1D923999687003BD8C8 /* AudioManager.swift */,
+				56F0D1DB23999687003BD8C8 /* Song.swift */,
+				56F0D1DA23999687003BD8C8 /* SoundEffects.swift */,
 				56F631D623885093008B7A25 /* Player.swift */,
 				56EC810D23871F7C007DCFF2 /* Plosat.swift */,
 				12F31B4B2388611C00276E09 /* Game.swift */,
@@ -286,7 +289,7 @@
 			);
 			name = PLOSAT;
 			productName = PLOSAT;
-			productReference = 563EF33B2387069900684647 /* PLOSAT.app */;
+			productReference = 563EF33B2387069900684647 /* The Crook Game.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -361,11 +364,14 @@
 				1259A446238EF031001CD989 /* Tema.swift in Sources */,
 				12F31B4C2388611C00276E09 /* Game.swift in Sources */,
 				562400B8238B99140053DE6F /* StoryTimerViewController.swift in Sources */,
+				56F0D1DE23999687003BD8C8 /* SoundEffects.swift in Sources */,
 				563EF3412387069900684647 /* SceneDelegate.swift in Sources */,
 				56EC810E23871F7C007DCFF2 /* Plosat.swift in Sources */,
-				12CB370E23996DF900FD4A92 /* AudioLibrary.swift in Sources */,
+				56F0D1DC23999687003BD8C8 /* AudioLibrary.swift in Sources */,
 				562400BE238B99760053DE6F /* ResultsViewController.swift in Sources */,
+				56EA574C239ACC4200095FC1 /* TutorialCollectionViewCell.swift in Sources */,
 				56BD1DF52391637A007DE382 /* PrepareViewController.swift in Sources */,
+				56F0D1DF23999687003BD8C8 /* Song.swift in Sources */,
 				56F631D723885093008B7A25 /* Player.swift in Sources */,
 				562400BC238B995A0053DE6F /* VotingScreenViewController.swift in Sources */,
 				5618271B23987CF200F5F5A2 /* HowToPlayViewController.swift in Sources */,
@@ -379,11 +385,9 @@
 				562400B0238B78080053DE6F /* DesignableButton.swift in Sources */,
 				562400B2238B98CA0053DE6F /* AddPlayersViewController.swift in Sources */,
 				561827192398721800F5F5A2 /* SettingsViewController.swift in Sources */,
-				12CB370F23996DF900FD4A92 /* AudioManager.swift in Sources */,
-				12CB371023996DF900FD4A92 /* Song.swift in Sources */,
+				56F0D1DD23999687003BD8C8 /* AudioManager.swift in Sources */,
 				560C18FD238EF1BE00F44CD2 /* EditableButton.swift in Sources */,
 				562400BA238B99360053DE6F /* DiscussionTimerViewController.swift in Sources */,
-				12CB371123996DF900FD4A92 /* SoundEffects.swift in Sources */,
 				56C36F66238EDFE40090E1F0 /* DetailTableViewCell.swift in Sources */,
 				56BD1DF723916F2D007DE382 /* MODALViewController.swift in Sources */,
 				562400B6238B98FE0053DE6F /* PlayerFunctionsViewController.swift in Sources */,
@@ -539,7 +543,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomaisbonitadacidade.PLOSAT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The Crook Game";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -558,7 +562,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.grupomaisbonitadacidade.PLOSAT;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "The Crook Game";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

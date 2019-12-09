@@ -10,11 +10,19 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet weak var toggleButton: UIButton!
     @IBAction func dismissScreenButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func soundsCheck(_ sender: Any) {
+        Model.instance.somLigado = !Model.instance.somLigado
+        if Model.instance.somLigado{
+            toggleButton.backgroundColor = #colorLiteral(red: 1, green: 0.5215686275, blue: 0.4980392157, alpha: 1)
+        }else{
+            toggleButton.backgroundColor = . clear
+
+        }
     }
     @IBOutlet weak var pensarLabel: UILabel!
     @IBOutlet weak var contarLabel: UILabel!
@@ -27,8 +35,8 @@ class SettingsViewController: UIViewController {
     var timeDiscutir = Model.instance.timerDiscutir
     
     @IBAction func minusPensar(_ sender: Any) {
-        if timePensar > 30{
-            timePensar -= 30
+        if timePensar > 10{
+            timePensar -= 10
         }else{
             return
         }
@@ -36,14 +44,14 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusPensar(_ sender: Any) {
-        timePensar += 30
+        timePensar += 10
         pensarLabel.text = converteString(count: timePensar)
 
     }
     
     @IBAction func minusContar(_ sender: Any) {
-        if timeContar > 30{
-            timeContar -= 30
+        if timeContar > 10{
+            timeContar -= 10
         }else{
             return
         }
@@ -51,13 +59,13 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusContar(_ sender: Any) {
-        timeContar += 30
+        timeContar += 10
         contarLabel.text = converteString(count: timeContar)
 
     }
     @IBAction func minusDiscutir(_ sender: Any) {
-        if timeDiscutir > 30{
-            timeDiscutir -= 30
+        if timeDiscutir > 10{
+            timeDiscutir -= 10
         }else{
             return
         }
@@ -65,7 +73,7 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusDiscutir(_ sender: Any) {
-        timeDiscutir += 30
+        timeDiscutir += 10
         discutirLabel.text = converteString(count: timeDiscutir)
 
     }

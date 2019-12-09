@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6w-AH-3Eq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6w-AH-3Eq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,20 +27,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0D-Sp-DMh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-40-KvI">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo2" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-40-KvI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-6z-S7H">
-                                        <rect key="frame" x="103.5" y="277.5" width="207" height="207"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="name" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-6z-S7H">
+                                        <rect key="frame" x="62" y="236" width="290" height="289.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ab1-6z-S7H" secondAttribute="height" multiplier="1:1" id="g8I-aS-DnD"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-SZ-Xa0">
-                                        <rect key="frame" x="83" y="559.5" width="248" height="210"/>
+                                        <rect key="frame" x="84" y="575.5" width="246" height="210"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inz-h9-bMO" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="248" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="246" height="60"/>
                                                 <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="off-Ol-4xn"/>
@@ -60,15 +60,21 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-pw-mdF" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="75" width="248" height="60"/>
+                                                <rect key="frame" x="0.0" y="75" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
-                                                <state key="normal" title="COMO JOGAR" backgroundImage="botao2fundo">
+                                                <state key="normal" title="COMO JOGAR">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                        <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -77,15 +83,21 @@
                                                 </connections>
                                             </button>
                                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-BI-led" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="150" width="248" height="60"/>
+                                                <rect key="frame" x="0.0" y="150" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
-                                                <state key="normal" title="CONFIGURAÇÕES" backgroundImage="botao2fundo">
+                                                <state key="normal" title="CONFIGURAÇÕES">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                        <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -104,14 +116,14 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="0ez-40-KvI" secondAttribute="bottom" id="42y-QQ-KQz"/>
                                     <constraint firstItem="0ez-40-KvI" firstAttribute="top" secondItem="B0D-Sp-DMh" secondAttribute="top" id="5WU-pc-wT3"/>
-                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="top" secondItem="ab1-6z-S7H" secondAttribute="bottom" constant="75" id="AwW-rP-Ihj"/>
+                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="top" secondItem="ab1-6z-S7H" secondAttribute="bottom" constant="50" id="AwW-rP-Ihj"/>
                                     <constraint firstItem="0ez-40-KvI" firstAttribute="leading" secondItem="B0D-Sp-DMh" secondAttribute="leading" id="M4H-X8-PSz"/>
                                     <constraint firstAttribute="trailing" secondItem="0ez-40-KvI" secondAttribute="trailing" id="ZwU-X2-LgW"/>
                                     <constraint firstItem="ab1-6z-S7H" firstAttribute="centerX" secondItem="B0D-Sp-DMh" secondAttribute="centerX" id="aDB-bB-MZe"/>
-                                    <constraint firstItem="ab1-6z-S7H" firstAttribute="width" secondItem="B0D-Sp-DMh" secondAttribute="width" multiplier="0.5" id="fmE-PQ-6vi"/>
+                                    <constraint firstItem="ab1-6z-S7H" firstAttribute="width" secondItem="B0D-Sp-DMh" secondAttribute="width" multiplier="0.7" id="fmE-PQ-6vi"/>
                                     <constraint firstItem="ab1-6z-S7H" firstAttribute="centerY" secondItem="B0D-Sp-DMh" secondAttribute="centerY" multiplier="0.85" id="hlS-bI-zeP"/>
                                     <constraint firstItem="v9J-SZ-Xa0" firstAttribute="centerX" secondItem="ab1-6z-S7H" secondAttribute="centerX" id="wm4-La-tsJ"/>
-                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="width" secondItem="ab1-6z-S7H" secondAttribute="width" multiplier="1.2" id="yAf-Ux-Yih"/>
+                                    <constraint firstItem="v9J-SZ-Xa0" firstAttribute="width" secondItem="ab1-6z-S7H" secondAttribute="width" multiplier="0.85" id="yAf-Ux-Yih"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -141,21 +153,31 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQd-HQ-muq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-cZ-kF6">
-                                        <rect key="frame" x="41.5" y="150.5" width="46" height="46"/>
-                                        <color key="backgroundColor" red="0.60649532080000002" green="0.20477780700000001" blue="0.1725281477" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-cZ-kF6" customClass="DesignableButton" customModule="The_Crook_Game">
+                                        <rect key="frame" x="41.5" y="156.5" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Rij-cZ-kF6" secondAttribute="height" multiplier="1:1" id="76S-SA-jEx"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="soundsCheck:" destination="GKo-aP-khp" eventType="touchUpInside" id="3qB-0q-Ejz"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSIVA E SONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVi-Ej-R2g">
-                                        <rect key="frame" x="102.5" y="150.5" width="270" height="46"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MÚSICA E SONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVi-Ej-R2g">
+                                        <rect key="frame" x="96.5" y="156.5" width="276" height="40"/>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="18"/>
+                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="MIO-IV-mhc">
@@ -164,14 +186,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spt-rI-9xG">
                                                 <rect key="frame" x="0.0" y="0.0" width="331" height="117"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO PREPARAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-Ef-N2w">
-                                                        <rect key="frame" x="0.0" y="8" width="331" height="26"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="22"/>
-                                                        <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE PREPARAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-Ef-N2w">
+                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
+                                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-Bf-8WL">
-                                                        <rect key="frame" x="0.0" y="64" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="8Sz-VF-TGt"/>
@@ -183,7 +205,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-rO-11d">
-                                                        <rect key="frame" x="291" y="64" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o3L-rO-11d" secondAttribute="height" multiplier="1:1" id="yHL-ij-YYI"/>
@@ -194,7 +216,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-OY-oZm">
-                                                        <rect key="frame" x="60" y="44" width="211" height="80"/>
+                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -219,14 +241,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Faw-XM-Mcd">
                                                 <rect key="frame" x="0.0" y="142" width="331" height="117.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO CONTAR HISTÓRIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-TK-h1l">
-                                                        <rect key="frame" x="0.0" y="8" width="331" height="26"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="22"/>
-                                                        <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO PARA CONTAR HISTÓRIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-TK-h1l">
+                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
+                                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBN-s1-lYo">
-                                                        <rect key="frame" x="0.0" y="64" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="tBN-s1-lYo" secondAttribute="height" multiplier="1:1" id="KkW-6F-lO3"/>
@@ -238,7 +260,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gr-LE-lrh">
-                                                        <rect key="frame" x="291" y="64" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4Gr-LE-lrh" secondAttribute="height" multiplier="1:1" id="Xoj-d1-coP"/>
@@ -249,7 +271,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unz-aD-nQT">
-                                                        <rect key="frame" x="60" y="44" width="211" height="80"/>
+                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -275,13 +297,13 @@
                                                 <rect key="frame" x="0.0" y="284.5" width="331" height="117"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE DISCUSSÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q59-ye-njl">
-                                                        <rect key="frame" x="0.0" y="8" width="331" height="26"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="22"/>
-                                                        <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
+                                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQl-yo-0YT">
-                                                        <rect key="frame" x="0.0" y="64" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="Cf1-br-Y8c"/>
@@ -293,7 +315,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W09-U7-OUI">
-                                                        <rect key="frame" x="291" y="64" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="W09-U7-OUI" secondAttribute="height" multiplier="1:1" id="BNU-IS-qfR"/>
@@ -304,7 +326,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-iL-iS3">
-                                                        <rect key="frame" x="60" y="44" width="211" height="80"/>
+                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -347,6 +369,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="kaY-dJ-ch0" secondAttribute="trailing" constant="25" id="6Yd-zu-rmD"/>
                                     <constraint firstItem="lVi-Ej-R2g" firstAttribute="leading" secondItem="Rij-cZ-kF6" secondAttribute="trailing" constant="15" id="9ka-bu-T2z"/>
+                                    <constraint firstItem="Rij-cZ-kF6" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" id="GhN-YJ-oHw"/>
                                     <constraint firstItem="kaY-dJ-ch0" firstAttribute="top" secondItem="QQd-HQ-muq" secondAttribute="top" constant="25" id="LDu-Kq-JOh"/>
                                     <constraint firstItem="MIO-IV-mhc" firstAttribute="top" secondItem="Rij-cZ-kF6" secondAttribute="bottom" constant="25" id="Wt2-ro-A1V"/>
                                     <constraint firstItem="lVi-Ej-R2g" firstAttribute="centerY" secondItem="Rij-cZ-kF6" secondAttribute="centerY" id="h64-rQ-aiF"/>
@@ -354,7 +377,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIGURAÇÕES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7f-EU-k2S">
-                                <rect key="frame" x="41.5" y="75" width="331" height="30.5"/>
+                                <rect key="frame" x="41.5" y="75" width="331" height="36.5"/>
                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                 <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -410,6 +433,7 @@
                         <outlet property="contarLabel" destination="unz-aD-nQT" id="QFN-XR-fN2"/>
                         <outlet property="discutirLabel" destination="fnG-iL-iS3" id="xJr-Bl-h8l"/>
                         <outlet property="pensarLabel" destination="UdN-OY-oZm" id="PBI-9b-M8X"/>
+                        <outlet property="toggleButton" destination="Rij-cZ-kF6" id="2aH-ts-yPM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HsE-bf-Uex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -427,6 +451,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3j9-Xh-g9I">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="PIb-EX-AA8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS2-U7-Jyu">
                                         <rect key="frame" x="25" y="75" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -439,11 +466,199 @@
                                             <action selector="backButton:" destination="xLT-wC-Dj2" eventType="touchUpInside" id="VUN-oO-FC4"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMO JOGAR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSI-WA-64Q">
+                                        <rect key="frame" x="41.5" y="145" width="331" height="30.5"/>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
+                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O PLOSAT é um jogo de criar histórias e desvendar mistérios para 4 a 7 jogadores usando apenas um iPhone." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GS-7h-oBc">
+                                        <rect key="frame" x="41.5" y="175.5" width="331" height="63.5"/>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
+                                        <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UM CRIME ACONTECEU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-M6-y9G">
+                                        <rect key="frame" x="41.5" y="254" width="331" height="19"/>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-J5-yq9">
+                                        <rect key="frame" x="41.5" y="278" width="331" height="56.5"/>
+                                        <string key="text">Uma pequena história de crime é introduzida aos jogadores e todos na roda são suspeitos, mas apenas um realmente será o culpado.  </string>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUEM VENCE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nv-te-4v9">
+                                        <rect key="frame" x="41.5" y="633" width="331" height="19"/>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KH8-UI-bHD">
+                                        <rect key="frame" x="41.5" y="657" width="331" height="94"/>
+                                        <string key="text">Se o jogador preso for o culpado, a partida se encerra com vitória dos inocentes.
+Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do criminoso.
+</string>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-PT-72C" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                        <rect key="frame" x="66" y="761" width="282" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="43k-tx-6aa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
+                                        <state key="normal" title="DICAS">
+                                            <color key="titleColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                <real key="value" value="1.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="SavePlayer:" destination="fQi-Ow-wVA" eventType="touchUpInside" id="bvq-1N-ehc"/>
+                                        </connections>
+                                    </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-Pn-qjG">
+                                        <rect key="frame" x="41.5" y="354.5" width="372.5" height="258.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UwE-3a-EgK">
+                                            <size key="itemSize" width="228" height="255"/>
+                                            <size key="estimatedItemSize" width="228" height="255"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tutorial" id="Tze-QW-Og3" customClass="TutorialCollectionViewCell" customModule="PLOSAT" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="2" width="228" height="255"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IYd-4X-rVe">
+                                                    <rect key="frame" x="0.0" y="0.0" width="228" height="255"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-DN-Pz0" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                            <rect key="frame" x="1.5" y="0.0" width="225" height="255"/>
+                                                            <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="225" id="TgO-TJ-Bbk"/>
+                                                                <constraint firstAttribute="width" secondItem="h6Q-DN-Pz0" secondAttribute="height" multiplier="15:17" id="kgk-aE-sUc"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="11"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                    <real key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hPb-RJ-hEj">
+                                                            <rect key="frame" x="1.5" y="0.0" width="225" height="255"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xSQ-ph-yPM">
+                                                            <rect key="frame" x="25" y="15" width="90" height="90"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="xSQ-ph-yPM" secondAttribute="height" multiplier="1:1" id="I9q-Yy-BgL"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUEM VENCE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yM-Ri-iEG">
+                                                            <rect key="frame" x="24" y="110" width="180" height="19"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="19" id="HJv-fy-fj2"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="16"/>
+                                                            <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="biC-gq-61U">
+                                                            <rect key="frame" x="24" y="129" width="180" height="101"/>
+                                                            <string key="text">Se o jogador preso for o culpado, a partida se encerra com vitória dos inocentes.
+Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do criminoso.
+</string>
+                                                            <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                                                            <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="biC-gq-61U" firstAttribute="width" secondItem="1yM-Ri-iEG" secondAttribute="width" id="6kI-4c-qJ5"/>
+                                                        <constraint firstItem="h6Q-DN-Pz0" firstAttribute="centerY" secondItem="IYd-4X-rVe" secondAttribute="centerY" id="8FV-HR-0O3"/>
+                                                        <constraint firstItem="h6Q-DN-Pz0" firstAttribute="centerX" secondItem="IYd-4X-rVe" secondAttribute="centerX" id="C47-dP-MPP"/>
+                                                        <constraint firstAttribute="bottom" secondItem="biC-gq-61U" secondAttribute="bottom" constant="25" id="Lzb-VL-MKT"/>
+                                                        <constraint firstItem="xSQ-ph-yPM" firstAttribute="width" secondItem="hPb-RJ-hEj" secondAttribute="width" multiplier="0.4" id="Rmq-Er-aR3"/>
+                                                        <constraint firstItem="hPb-RJ-hEj" firstAttribute="centerY" secondItem="h6Q-DN-Pz0" secondAttribute="centerY" id="Wsq-2H-h1M"/>
+                                                        <constraint firstItem="biC-gq-61U" firstAttribute="top" secondItem="1yM-Ri-iEG" secondAttribute="bottom" id="c8a-HP-sg1"/>
+                                                        <constraint firstItem="hPb-RJ-hEj" firstAttribute="width" secondItem="h6Q-DN-Pz0" secondAttribute="width" id="cuc-Kx-coD"/>
+                                                        <constraint firstItem="h6Q-DN-Pz0" firstAttribute="height" secondItem="IYd-4X-rVe" secondAttribute="height" id="jqW-Lp-gvu"/>
+                                                        <constraint firstItem="1yM-Ri-iEG" firstAttribute="width" secondItem="hPb-RJ-hEj" secondAttribute="width" multiplier="0.8" id="mcF-kl-pFH"/>
+                                                        <constraint firstItem="1yM-Ri-iEG" firstAttribute="centerX" secondItem="hPb-RJ-hEj" secondAttribute="centerX" id="pDb-jC-hjK"/>
+                                                        <constraint firstItem="biC-gq-61U" firstAttribute="centerX" secondItem="1yM-Ri-iEG" secondAttribute="centerX" id="pJP-Py-fkn"/>
+                                                        <constraint firstItem="hPb-RJ-hEj" firstAttribute="height" secondItem="h6Q-DN-Pz0" secondAttribute="height" id="qaZ-TZ-KFn"/>
+                                                        <constraint firstItem="xSQ-ph-yPM" firstAttribute="leading" secondItem="IYd-4X-rVe" secondAttribute="leading" constant="25" id="r9V-OE-twM"/>
+                                                        <constraint firstItem="hPb-RJ-hEj" firstAttribute="centerX" secondItem="h6Q-DN-Pz0" secondAttribute="centerX" id="sJd-Yb-r8i"/>
+                                                        <constraint firstItem="1yM-Ri-iEG" firstAttribute="top" secondItem="xSQ-ph-yPM" secondAttribute="bottom" constant="5" id="v5i-Cc-y1K"/>
+                                                        <constraint firstItem="xSQ-ph-yPM" firstAttribute="top" secondItem="IYd-4X-rVe" secondAttribute="top" constant="15" id="xN5-6n-phY"/>
+                                                    </constraints>
+                                                </collectionViewCellContentView>
+                                                <size key="customSize" width="228" height="255"/>
+                                                <connections>
+                                                    <outlet property="descricao" destination="biC-gq-61U" id="17U-b3-pRX"/>
+                                                    <outlet property="imagem" destination="xSQ-ph-yPM" id="lIC-jh-b05"/>
+                                                    <outlet property="titulo" destination="1yM-Ri-iEG" id="DaV-tI-FgQ"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="BS2-U7-Jyu" firstAttribute="leading" secondItem="3j9-Xh-g9I" secondAttribute="leading" constant="25" id="0e9-61-ygu"/>
+                                    <constraint firstItem="xjh-Pn-qjG" firstAttribute="leading" secondItem="e1U-J5-yq9" secondAttribute="leading" id="1Pe-Go-mZa"/>
+                                    <constraint firstItem="PIb-EX-AA8" firstAttribute="width" secondItem="3j9-Xh-g9I" secondAttribute="width" id="27w-4B-VHn"/>
                                     <constraint firstItem="BS2-U7-Jyu" firstAttribute="top" secondItem="3j9-Xh-g9I" secondAttribute="top" constant="75" id="4PL-wc-KYZ"/>
+                                    <constraint firstItem="PIb-EX-AA8" firstAttribute="height" secondItem="3j9-Xh-g9I" secondAttribute="height" id="5A5-qm-CFE"/>
+                                    <constraint firstItem="7nv-te-4v9" firstAttribute="width" secondItem="PIb-EX-AA8" secondAttribute="width" multiplier="0.8" id="689-04-89O"/>
+                                    <constraint firstItem="0GS-7h-oBc" firstAttribute="centerX" secondItem="DSI-WA-64Q" secondAttribute="centerX" id="6dO-bw-XA2"/>
+                                    <constraint firstItem="Zya-PT-72C" firstAttribute="centerX" secondItem="KH8-UI-bHD" secondAttribute="centerX" id="7ZZ-6g-iyR"/>
+                                    <constraint firstItem="DSI-WA-64Q" firstAttribute="centerX" secondItem="PIb-EX-AA8" secondAttribute="centerX" id="9oe-56-UNQ"/>
+                                    <constraint firstItem="ofJ-M6-y9G" firstAttribute="top" secondItem="0GS-7h-oBc" secondAttribute="bottom" constant="15" id="HIi-JW-GoF"/>
+                                    <constraint firstItem="7nv-te-4v9" firstAttribute="centerX" secondItem="PIb-EX-AA8" secondAttribute="centerX" id="JnC-LE-SoK"/>
+                                    <constraint firstItem="0GS-7h-oBc" firstAttribute="width" secondItem="DSI-WA-64Q" secondAttribute="width" id="L3c-fh-FWM"/>
+                                    <constraint firstItem="Zya-PT-72C" firstAttribute="top" secondItem="KH8-UI-bHD" secondAttribute="bottom" constant="10" id="N15-DF-RBo"/>
+                                    <constraint firstItem="PIb-EX-AA8" firstAttribute="centerY" secondItem="3j9-Xh-g9I" secondAttribute="centerY" id="O7h-jd-PYH"/>
+                                    <constraint firstItem="DSI-WA-64Q" firstAttribute="width" secondItem="PIb-EX-AA8" secondAttribute="width" multiplier="0.8" id="Qky-tn-vO0"/>
+                                    <constraint firstItem="KH8-UI-bHD" firstAttribute="top" secondItem="7nv-te-4v9" secondAttribute="bottom" constant="5" id="Sha-wI-hOJ"/>
+                                    <constraint firstItem="e1U-J5-yq9" firstAttribute="centerX" secondItem="ofJ-M6-y9G" secondAttribute="centerX" id="ZEa-L1-nAF"/>
+                                    <constraint firstAttribute="trailing" secondItem="xjh-Pn-qjG" secondAttribute="trailing" id="ZlC-db-U3Q"/>
+                                    <constraint firstItem="DSI-WA-64Q" firstAttribute="top" secondItem="BS2-U7-Jyu" secondAttribute="bottom" constant="10" id="a50-cs-d9q"/>
+                                    <constraint firstItem="Zya-PT-72C" firstAttribute="width" secondItem="KH8-UI-bHD" secondAttribute="width" multiplier="0.85" id="bH3-9Y-CK6"/>
+                                    <constraint firstItem="e1U-J5-yq9" firstAttribute="top" secondItem="ofJ-M6-y9G" secondAttribute="bottom" constant="5" id="hcJ-mb-GMC"/>
+                                    <constraint firstItem="KH8-UI-bHD" firstAttribute="centerX" secondItem="7nv-te-4v9" secondAttribute="centerX" id="ipu-xT-sUs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zya-PT-72C" secondAttribute="bottom" constant="75" id="jfQ-ng-VkP"/>
+                                    <constraint firstItem="KH8-UI-bHD" firstAttribute="width" secondItem="7nv-te-4v9" secondAttribute="width" id="lSj-P6-bnJ"/>
+                                    <constraint firstItem="7nv-te-4v9" firstAttribute="top" secondItem="xjh-Pn-qjG" secondAttribute="bottom" constant="20" id="pvk-25-cOg"/>
+                                    <constraint firstItem="e1U-J5-yq9" firstAttribute="width" secondItem="ofJ-M6-y9G" secondAttribute="width" id="rSk-yp-1zM"/>
+                                    <constraint firstItem="xjh-Pn-qjG" firstAttribute="top" secondItem="e1U-J5-yq9" secondAttribute="bottom" constant="20" id="sKZ-sW-cvb"/>
+                                    <constraint firstItem="0GS-7h-oBc" firstAttribute="top" secondItem="DSI-WA-64Q" secondAttribute="bottom" id="uTY-3o-M1I"/>
+                                    <constraint firstItem="PIb-EX-AA8" firstAttribute="centerX" secondItem="3j9-Xh-g9I" secondAttribute="centerX" id="vEm-XU-s3o"/>
+                                    <constraint firstItem="ofJ-M6-y9G" firstAttribute="centerX" secondItem="0GS-7h-oBc" secondAttribute="centerX" id="vmz-aE-Oyr"/>
+                                    <constraint firstItem="ofJ-M6-y9G" firstAttribute="width" secondItem="0GS-7h-oBc" secondAttribute="width" id="wIl-wn-g62"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -457,6 +672,9 @@
                         <viewLayoutGuide key="safeArea" id="Kqy-Gm-PsN"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZsO-6c-TeZ"/>
+                    <connections>
+                        <outlet property="passosCollection" destination="xjh-Pn-qjG" id="BbO-RD-sGO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixe-o8-hDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1129,7 +1347,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noplayers" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-xq-1Ew">
-                                        <rect key="frame" x="41.5" y="324" width="331.00000000000006" height="248"/>
+                                        <rect key="frame" x="41.5" y="324" width="331" height="248"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xZc-xq-1Ew" secondAttribute="height" multiplier="4:3" id="zWi-aN-tAX"/>
                                         </constraints>
@@ -1740,10 +1958,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdx-2C-2GC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="pi2-hT-48Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="brb-kE-3HD">
                                         <rect key="frame" x="41.5" y="150" width="331" height="75"/>
@@ -1793,16 +2011,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28r-p1-uax" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="80" y="425.5" width="254" height="134.5"/>
+                                        <rect key="frame" x="80" y="401.5" width="254" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56W-E9-rg9">
-                                                <rect key="frame" x="0.0" y="0.0" width="254" height="134.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="254" height="134"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="75"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-RF-Flr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="10" y="10" width="104.5" height="124.5"/>
+                                                <rect key="frame" x="10" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1811,7 +2029,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-uh-ZrX" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="124.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1826,7 +2044,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55R-l6-TMr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="149.5" y="10" width="104.5" height="124.5"/>
+                                                <rect key="frame" x="149.5" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1835,7 +2053,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oli-g3-4kJ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
-                                                <rect key="frame" x="139.5" y="0.0" width="104.5" height="124.5"/>
+                                                <rect key="frame" x="139.5" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1850,13 +2068,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89Z-oW-xjF">
-                                                <rect key="frame" x="10" y="23.5" width="94.5" height="88"/>
+                                                <rect key="frame" x="10" y="23" width="94.5" height="88"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="75"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glw-rb-7iE">
-                                                <rect key="frame" x="149.5" y="23.5" width="94.5" height="88"/>
+                                                <rect key="frame" x="149.5" y="23" width="94.5" height="88"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="75"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1904,13 +2122,13 @@
                                         </connections>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora da discussão!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYZ-EJ-eHI">
-                                        <rect key="frame" x="127" y="761" width="160" height="60"/>
+                                        <rect key="frame" x="127" y="717" width="160" height="60"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="21"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-ve-eNH" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="80" y="759" width="254" height="62"/>
+                                        <rect key="frame" x="80" y="715" width="254" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <state key="normal" title="ESPIAR ÁLIBI " backgroundImage="botao2fundo">
@@ -1926,7 +2144,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw2-Fr-B7C" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
-                                        <rect key="frame" x="312.5" y="761" width="60" height="60"/>
+                                        <rect key="frame" x="312.5" y="717" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Bab-mj-hEL"/>
@@ -1939,11 +2157,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="nextScreen:" destination="rxV-aH-5Je" eventType="touchUpInside" id="d9K-Do-HVM"/>
                                             <action selector="resetScreen:" destination="rxV-aH-5Je" eventType="touchUpInside" id="NKh-Ey-UIS"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-GF-Sb1">
-                                        <rect key="frame" x="80" y="570" width="254" height="20"/>
+                                        <rect key="frame" x="80" y="545.5" width="254" height="20"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2250,19 +2469,19 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo3" translatesAutoresizingMaskIntoConstraints="NO" id="19c-Nw-t6u">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-Rx-sS5" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-Rx-sS5" customClass="DesignableButton" customModule="The_Crook_Game">
                                         <rect key="frame" x="83" y="761" width="248" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="YMU-Dt-3kR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
-                                        <state key="normal" title="CONDENAR" backgroundImage="BotaoFundo">
+                                        <state key="normal" title="CONDENAR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="1"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -2646,9 +2865,10 @@
         <!--Navigation Controller-->
         <scene sceneID="HVW-MJ-yVl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="E6w-AH-3Eq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E6w-AH-3Eq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A7y-O5-Jgy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2662,8 +2882,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BotaoFundo" width="252" height="66"/>
-        <image name="Logo" width="212" height="178"/>
         <image name="PHOTOICON" width="85" height="85"/>
         <image name="back" width="55" height="55"/>
         <image name="background" width="414" height="896"/>
@@ -2680,6 +2898,7 @@
         <image name="inocente" width="220" height="88"/>
         <image name="jail" width="91" height="94"/>
         <image name="minus" width="55" height="55"/>
+        <image name="name" width="308" height="303"/>
         <image name="next" width="55" height="55"/>
         <image name="noplayers" width="239" height="202"/>
         <image name="player" width="54" height="54"/>
