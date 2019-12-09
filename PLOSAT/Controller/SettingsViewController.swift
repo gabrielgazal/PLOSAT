@@ -10,11 +10,19 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet weak var toggleButton: UIButton!
     @IBAction func dismissScreenButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func soundsCheck(_ sender: Any) {
+        Model.instance.somLigado = !Model.instance.somLigado
+        if Model.instance.somLigado{
+            toggleButton.backgroundColor = #colorLiteral(red: 1, green: 0.5215686275, blue: 0.4980392157, alpha: 1)
+        }else{
+            toggleButton.backgroundColor = . clear
+
+        }
     }
     @IBOutlet weak var pensarLabel: UILabel!
     @IBOutlet weak var contarLabel: UILabel!
