@@ -12,12 +12,16 @@ class AudioManager{
     }
     
     func play(soundEffect: SoundEffectLibrary) {
+        if Model.instance.somLigado{
         soundEffects[soundEffect]?.play()
+        }
     }
     
     func play(song: SongLibrary) {
+        if Model.instance.somLigado{
         stopSongs()
         songs[song]?.play()
+        }
     }
 
     
