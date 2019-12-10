@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-SZ-Xa0">
                                         <rect key="frame" x="84" y="575.5" width="246" height="210"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inz-h9-bMO" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inz-h9-bMO" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="246" height="60"/>
                                                 <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -59,7 +59,7 @@
                                                     <segue destination="cls-Bf-buB" kind="show" id="srF-DH-Pb7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-pw-mdF" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-pw-mdF" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="75" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
@@ -82,7 +82,7 @@
                                                     <segue destination="xLT-wC-Dj2" kind="show" id="oD3-WR-fMO"/>
                                                 </connections>
                                             </button>
-                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-BI-led" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-BI-led" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="150" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
@@ -145,7 +145,7 @@
         <!--Settings View Controller-->
         <scene sceneID="9UN-tB-OzI">
             <objects>
-                <viewController id="GKo-aP-khp" customClass="SettingsViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GKo-aP-khp" customClass="SettingsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gc-ls-eon">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,16 +153,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQd-HQ-muq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="geb-zM-ST4">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-cZ-kF6" customClass="DesignableButton" customModule="The_Crook_Game">
                                         <rect key="frame" x="41.5" y="156.5" width="40" height="40"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Rij-cZ-kF6" secondAttribute="height" multiplier="1:1" id="76S-SA-jEx"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="0.0"/>
@@ -184,242 +180,20 @@
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddd-ce-zbS">
-                                        <rect key="frame" x="101.5" y="557" width="211" height="80"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNY-ne-fS4" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="5" y="-3" width="80" height="96"/>
-                                                <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GS-6f-hue" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="-8" width="80" height="96"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="9GS-6f-hue" secondAttribute="height" multiplier="101:121" id="Rx3-ka-XJj"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
-                                                        <real key="value" value="1.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2g-kb-nBR" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="131" y="-3" width="80" height="96"/>
-                                                <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGi-nU-Bl2" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="-8" width="80" height="96"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
-                                                        <real key="value" value="1.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="N2g-kb-nBR" firstAttribute="centerY" secondItem="CNY-ne-fS4" secondAttribute="centerY" id="4Sa-aD-6GE"/>
-                                            <constraint firstItem="9GS-6f-hue" firstAttribute="leading" secondItem="Ddd-ce-zbS" secondAttribute="leading" id="68P-Wh-JtM"/>
-                                            <constraint firstItem="CNY-ne-fS4" firstAttribute="centerX" secondItem="9GS-6f-hue" secondAttribute="centerX" constant="5" id="CLZ-1j-4mT"/>
-                                            <constraint firstItem="N2g-kb-nBR" firstAttribute="width" secondItem="9GS-6f-hue" secondAttribute="width" id="HlP-06-nUO"/>
-                                            <constraint firstAttribute="trailing" secondItem="N2g-kb-nBR" secondAttribute="trailing" id="JMi-Xr-1mD"/>
-                                            <constraint firstItem="CNY-ne-fS4" firstAttribute="width" secondItem="9GS-6f-hue" secondAttribute="width" id="MPX-0b-fND"/>
-                                            <constraint firstItem="mGi-nU-Bl2" firstAttribute="centerY" secondItem="9GS-6f-hue" secondAttribute="centerY" id="Oux-ee-qIF"/>
-                                            <constraint firstItem="9GS-6f-hue" firstAttribute="height" secondItem="Ddd-ce-zbS" secondAttribute="height" multiplier="1.2" id="U0e-mU-CGp"/>
-                                            <constraint firstItem="CNY-ne-fS4" firstAttribute="centerY" secondItem="9GS-6f-hue" secondAttribute="centerY" constant="5" id="YEf-b5-xCC"/>
-                                            <constraint firstItem="mGi-nU-Bl2" firstAttribute="width" secondItem="9GS-6f-hue" secondAttribute="width" id="Ymg-dS-dan"/>
-                                            <constraint firstItem="CNY-ne-fS4" firstAttribute="height" secondItem="9GS-6f-hue" secondAttribute="height" id="az8-iV-V5X"/>
-                                            <constraint firstAttribute="trailing" secondItem="mGi-nU-Bl2" secondAttribute="trailing" constant="5" id="cgp-ZN-QiG"/>
-                                            <constraint firstItem="N2g-kb-nBR" firstAttribute="height" secondItem="9GS-6f-hue" secondAttribute="height" id="rE5-Jm-jKP"/>
-                                            <constraint firstItem="9GS-6f-hue" firstAttribute="centerY" secondItem="Ddd-ce-zbS" secondAttribute="centerY" id="rhC-ca-L5b"/>
-                                            <constraint firstItem="mGi-nU-Bl2" firstAttribute="height" secondItem="9GS-6f-hue" secondAttribute="height" id="ySL-ZB-Sh6"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ww9-Bt-WzB">
-                                        <rect key="frame" x="101.5" y="410.5" width="211" height="80"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dk8-Fh-1EJ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="5" y="-3" width="80" height="96"/>
-                                                <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZD-H9-41D" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="-8" width="80" height="96"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="lZD-H9-41D" secondAttribute="height" multiplier="101:121" id="KO9-aj-7Wf"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
-                                                        <real key="value" value="1.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIf-gI-P5f" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="131" y="-3" width="80" height="96"/>
-                                                <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyU-y6-SSI" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="-8" width="80" height="96"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
-                                                        <real key="value" value="1.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="dk8-Fh-1EJ" firstAttribute="width" secondItem="lZD-H9-41D" secondAttribute="width" id="45u-AS-Scp"/>
-                                            <constraint firstItem="IyU-y6-SSI" firstAttribute="width" secondItem="lZD-H9-41D" secondAttribute="width" id="6m1-dv-q8W"/>
-                                            <constraint firstItem="IyU-y6-SSI" firstAttribute="height" secondItem="lZD-H9-41D" secondAttribute="height" id="7Gf-ax-oTc"/>
-                                            <constraint firstItem="dk8-Fh-1EJ" firstAttribute="height" secondItem="lZD-H9-41D" secondAttribute="height" id="86W-PJ-zp2"/>
-                                            <constraint firstItem="lZD-H9-41D" firstAttribute="centerY" secondItem="Ww9-Bt-WzB" secondAttribute="centerY" id="EmK-UP-5xa"/>
-                                            <constraint firstItem="lZD-H9-41D" firstAttribute="leading" secondItem="Ww9-Bt-WzB" secondAttribute="leading" id="MqV-Tg-l7D"/>
-                                            <constraint firstAttribute="trailing" secondItem="IyU-y6-SSI" secondAttribute="trailing" constant="5" id="T8V-FL-gZU"/>
-                                            <constraint firstItem="iIf-gI-P5f" firstAttribute="centerY" secondItem="dk8-Fh-1EJ" secondAttribute="centerY" id="cs6-uw-80h"/>
-                                            <constraint firstItem="dk8-Fh-1EJ" firstAttribute="centerX" secondItem="lZD-H9-41D" secondAttribute="centerX" constant="5" id="di1-Sh-hDx"/>
-                                            <constraint firstItem="lZD-H9-41D" firstAttribute="height" secondItem="Ww9-Bt-WzB" secondAttribute="height" multiplier="1.2" id="g4P-7k-DyB"/>
-                                            <constraint firstItem="iIf-gI-P5f" firstAttribute="width" secondItem="lZD-H9-41D" secondAttribute="width" id="s9p-s4-Fqj"/>
-                                            <constraint firstItem="iIf-gI-P5f" firstAttribute="height" secondItem="lZD-H9-41D" secondAttribute="height" id="t6k-W2-nMu"/>
-                                            <constraint firstItem="dk8-Fh-1EJ" firstAttribute="centerY" secondItem="lZD-H9-41D" secondAttribute="centerY" constant="5" id="vNO-jL-Rbl"/>
-                                            <constraint firstAttribute="trailing" secondItem="iIf-gI-P5f" secondAttribute="trailing" id="xcz-QG-k9S"/>
-                                            <constraint firstItem="IyU-y6-SSI" firstAttribute="centerY" secondItem="lZD-H9-41D" secondAttribute="centerY" id="zJu-MV-CE6"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Je-2i-v5Y">
-                                        <rect key="frame" x="101.5" y="264" width="211" height="80"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktT-T3-ELW" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="5" y="-3" width="80" height="96"/>
-                                                <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chf-9l-JWb" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="-8" width="80" height="96"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="chf-9l-JWb" secondAttribute="height" multiplier="101:121" id="vkX-dl-XnO"/>
-                                                </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
-                                                        <real key="value" value="1.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Myl-E6-nRg" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="131" y="-3" width="80" height="96"/>
-                                                <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wc4-wP-ZPA" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="126" y="-8" width="80" height="96"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="4"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
-                                                        <real key="value" value="1.5"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="ktT-T3-ELW" firstAttribute="width" secondItem="chf-9l-JWb" secondAttribute="width" id="5CC-em-hRO"/>
-                                            <constraint firstItem="ktT-T3-ELW" firstAttribute="centerX" secondItem="chf-9l-JWb" secondAttribute="centerX" constant="5" id="7sD-IA-TMZ"/>
-                                            <constraint firstAttribute="trailing" secondItem="wc4-wP-ZPA" secondAttribute="trailing" constant="5" id="CFR-7K-sa1"/>
-                                            <constraint firstItem="ktT-T3-ELW" firstAttribute="height" secondItem="chf-9l-JWb" secondAttribute="height" id="E5H-nQ-JZz"/>
-                                            <constraint firstItem="wc4-wP-ZPA" firstAttribute="centerY" secondItem="chf-9l-JWb" secondAttribute="centerY" id="KwA-1C-lak"/>
-                                            <constraint firstItem="Myl-E6-nRg" firstAttribute="height" secondItem="chf-9l-JWb" secondAttribute="height" id="Udt-fD-JK9"/>
-                                            <constraint firstItem="wc4-wP-ZPA" firstAttribute="height" secondItem="chf-9l-JWb" secondAttribute="height" id="YQH-rL-5An"/>
-                                            <constraint firstAttribute="trailing" secondItem="Myl-E6-nRg" secondAttribute="trailing" id="kBt-4t-jRl"/>
-                                            <constraint firstItem="Myl-E6-nRg" firstAttribute="centerY" secondItem="ktT-T3-ELW" secondAttribute="centerY" id="p14-Or-CMi"/>
-                                            <constraint firstItem="ktT-T3-ELW" firstAttribute="centerY" secondItem="chf-9l-JWb" secondAttribute="centerY" constant="5" id="qdf-Gb-fHV"/>
-                                            <constraint firstItem="chf-9l-JWb" firstAttribute="centerY" secondItem="2Je-2i-v5Y" secondAttribute="centerY" id="rlG-3w-DYR"/>
-                                            <constraint firstItem="Myl-E6-nRg" firstAttribute="width" secondItem="chf-9l-JWb" secondAttribute="width" id="sMm-m7-Zey"/>
-                                            <constraint firstItem="wc4-wP-ZPA" firstAttribute="width" secondItem="chf-9l-JWb" secondAttribute="width" id="vTF-ee-Yfu"/>
-                                            <constraint firstItem="chf-9l-JWb" firstAttribute="leading" secondItem="2Je-2i-v5Y" secondAttribute="leading" id="wxr-Pn-ThD"/>
-                                            <constraint firstItem="chf-9l-JWb" firstAttribute="height" secondItem="2Je-2i-v5Y" secondAttribute="height" multiplier="1.2" id="xf9-KH-vbO"/>
-                                        </constraints>
-                                    </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="MIO-IV-mhc">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="MIO-IV-mhc">
                                         <rect key="frame" x="41.5" y="221.5" width="331" height="401.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spt-rI-9xG">
-                                                <rect key="frame" x="0.0" y="0.0" width="331" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="117"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO PARA PREPARAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-Ef-N2w">
-                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="22.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE PREPARAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-Ef-N2w">
+                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
                                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-Bf-8WL">
-                                                        <rect key="frame" x="0.0" y="62.5" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="8Sz-VF-TGt"/>
@@ -431,7 +205,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-rO-11d">
-                                                        <rect key="frame" x="291" y="62.5" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o3L-rO-11d" secondAttribute="height" multiplier="1:1" id="yHL-ij-YYI"/>
@@ -441,9 +215,9 @@
                                                             <action selector="plusPensar:" destination="GKo-aP-khp" eventType="touchUpInside" id="rkk-JO-x8u"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00  :  00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-OY-oZm">
-                                                        <rect key="frame" x="60" y="42.5" width="211" height="80"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="55"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-OY-oZm">
+                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -456,25 +230,25 @@
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" multiplier="2" id="M6t-Go-Tdq"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" id="OY4-I8-ivs"/>
                                                     <constraint firstItem="K4M-Bf-8WL" firstAttribute="leading" secondItem="Spt-rI-9xG" secondAttribute="leading" id="V33-XM-odk"/>
-                                                    <constraint firstItem="UdN-OY-oZm" firstAttribute="top" secondItem="oLN-Ef-N2w" secondAttribute="bottom" constant="20" id="aKI-cH-MmY"/>
+                                                    <constraint firstItem="UdN-OY-oZm" firstAttribute="top" secondItem="oLN-Ef-N2w" secondAttribute="bottom" constant="10" id="aKI-cH-MmY"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="asL-4G-9Qz"/>
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="gL8-Gy-m4Y"/>
                                                     <constraint firstItem="oLN-Ef-N2w" firstAttribute="width" secondItem="Spt-rI-9xG" secondAttribute="width" id="hRR-Nh-iVG"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="leading" secondItem="UdN-OY-oZm" secondAttribute="trailing" constant="20" id="jgq-tt-G4C"/>
-                                                    <constraint firstItem="oLN-Ef-N2w" firstAttribute="top" secondItem="Spt-rI-9xG" secondAttribute="top" id="on6-Vk-x7n"/>
+                                                    <constraint firstItem="oLN-Ef-N2w" firstAttribute="top" secondItem="Spt-rI-9xG" secondAttribute="top" constant="8" id="on6-Vk-x7n"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Faw-XM-Mcd">
-                                                <rect key="frame" x="0.0" y="146.5" width="331" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="142" width="331" height="117.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO PARA CONTAR HISTÓRIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-TK-h1l">
-                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="22.5"/>
+                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
                                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBN-s1-lYo">
-                                                        <rect key="frame" x="0.0" y="62.5" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="tBN-s1-lYo" secondAttribute="height" multiplier="1:1" id="KkW-6F-lO3"/>
@@ -486,7 +260,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gr-LE-lrh">
-                                                        <rect key="frame" x="291" y="62.5" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4Gr-LE-lrh" secondAttribute="height" multiplier="1:1" id="Xoj-d1-coP"/>
@@ -496,9 +270,9 @@
                                                             <action selector="plusContar:" destination="GKo-aP-khp" eventType="touchUpInside" id="hNJ-rG-kdx"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00  :  00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unz-aD-nQT">
-                                                        <rect key="frame" x="60" y="42.5" width="211" height="80"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="55"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unz-aD-nQT">
+                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -514,22 +288,22 @@
                                                     <constraint firstItem="4Gr-LE-lrh" firstAttribute="leading" secondItem="unz-aD-nQT" secondAttribute="trailing" constant="20" id="Sbp-Y6-kvT"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Gr-LE-lrh" secondAttribute="trailing" id="SiN-Wv-mHC"/>
                                                     <constraint firstItem="unz-aD-nQT" firstAttribute="centerY" secondItem="tBN-s1-lYo" secondAttribute="centerY" id="TFh-v6-Fcv"/>
-                                                    <constraint firstItem="unz-aD-nQT" firstAttribute="top" secondItem="3jY-TK-h1l" secondAttribute="bottom" constant="20" id="TfS-Tv-084"/>
+                                                    <constraint firstItem="unz-aD-nQT" firstAttribute="top" secondItem="3jY-TK-h1l" secondAttribute="bottom" constant="10" id="TfS-Tv-084"/>
                                                     <constraint firstItem="3jY-TK-h1l" firstAttribute="centerX" secondItem="Faw-XM-Mcd" secondAttribute="centerX" id="pMM-6d-TqI"/>
-                                                    <constraint firstItem="3jY-TK-h1l" firstAttribute="top" secondItem="Faw-XM-Mcd" secondAttribute="top" id="xP9-po-MWd"/>
+                                                    <constraint firstItem="3jY-TK-h1l" firstAttribute="top" secondItem="Faw-XM-Mcd" secondAttribute="top" constant="8" id="xP9-po-MWd"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-cN-2df">
-                                                <rect key="frame" x="0.0" y="293" width="331" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="284.5" width="331" height="117"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO PARA DISCUSSÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q59-ye-njl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="22.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE DISCUSSÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q59-ye-njl">
+                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
                                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQl-yo-0YT">
-                                                        <rect key="frame" x="0.0" y="62.5" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="Cf1-br-Y8c"/>
@@ -541,7 +315,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W09-U7-OUI">
-                                                        <rect key="frame" x="291" y="62.5" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="W09-U7-OUI" secondAttribute="height" multiplier="1:1" id="BNU-IS-qfR"/>
@@ -551,9 +325,9 @@
                                                             <action selector="plusDiscutir:" destination="GKo-aP-khp" eventType="touchUpInside" id="8FF-py-x1T"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00  :  00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-iL-iS3">
-                                                        <rect key="frame" x="60" y="42.5" width="211" height="80"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="55"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-iL-iS3">
+                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -561,7 +335,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="W09-U7-OUI" secondAttribute="trailing" id="1CG-Oc-9AU"/>
-                                                    <constraint firstItem="Q59-ye-njl" firstAttribute="top" secondItem="Wc4-cN-2df" secondAttribute="top" id="72h-jD-D1d"/>
+                                                    <constraint firstItem="Q59-ye-njl" firstAttribute="top" secondItem="Wc4-cN-2df" secondAttribute="top" constant="8" id="72h-jD-D1d"/>
                                                     <constraint firstItem="hQl-yo-0YT" firstAttribute="leading" secondItem="Wc4-cN-2df" secondAttribute="leading" id="9Ia-52-C85"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="centerX" secondItem="Wc4-cN-2df" secondAttribute="centerX" id="Clf-5Y-nQa"/>
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="centerY" secondItem="hQl-yo-0YT" secondAttribute="centerY" id="GPl-EJ-Awk"/>
@@ -570,7 +344,7 @@
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="leading" secondItem="hQl-yo-0YT" secondAttribute="trailing" constant="20" id="UeB-8a-E1S"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="centerY" secondItem="hQl-yo-0YT" secondAttribute="centerY" id="ZYD-GJ-BXs"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="height" secondItem="hQl-yo-0YT" secondAttribute="height" id="nYh-Y1-ZXH"/>
-                                                    <constraint firstItem="fnG-iL-iS3" firstAttribute="top" secondItem="Q59-ye-njl" secondAttribute="bottom" constant="20" id="ncp-01-3W5"/>
+                                                    <constraint firstItem="fnG-iL-iS3" firstAttribute="top" secondItem="Q59-ye-njl" secondAttribute="bottom" constant="10" id="ncp-01-3W5"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="width" secondItem="Wc4-cN-2df" secondAttribute="width" id="vLC-tA-EGU"/>
                                                 </constraints>
                                             </view>
@@ -579,29 +353,26 @@
                                             <constraint firstAttribute="height" constant="401.5" id="UK4-AT-aei"/>
                                         </constraints>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-dJ-ch0">
+                                        <rect key="frame" x="329" y="25" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kaY-dJ-ch0" secondAttribute="height" multiplier="1:1" id="2TG-Xv-1Ph"/>
+                                            <constraint firstAttribute="height" constant="60" id="eHC-sF-A3o"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="close"/>
+                                        <connections>
+                                            <action selector="dismissScreenButton:" destination="GKo-aP-khp" eventType="touchUpInside" id="Egg-JU-pji"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20784313730000001" green="0.15686274510000001" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Ww9-Bt-WzB" firstAttribute="centerX" secondItem="unz-aD-nQT" secondAttribute="centerX" id="2AS-KZ-PXx"/>
-                                    <constraint firstItem="geb-zM-ST4" firstAttribute="height" secondItem="QQd-HQ-muq" secondAttribute="height" id="425-i6-Pfr"/>
-                                    <constraint firstItem="Ddd-ce-zbS" firstAttribute="centerX" secondItem="fnG-iL-iS3" secondAttribute="centerX" id="99m-GP-KJ1"/>
-                                    <constraint firstItem="geb-zM-ST4" firstAttribute="centerY" secondItem="QQd-HQ-muq" secondAttribute="centerY" id="9Mt-Z6-7pW"/>
+                                    <constraint firstAttribute="trailing" secondItem="kaY-dJ-ch0" secondAttribute="trailing" constant="25" id="6Yd-zu-rmD"/>
                                     <constraint firstItem="lVi-Ej-R2g" firstAttribute="leading" secondItem="Rij-cZ-kF6" secondAttribute="trailing" constant="15" id="9ka-bu-T2z"/>
-                                    <constraint firstItem="Ddd-ce-zbS" firstAttribute="height" secondItem="fnG-iL-iS3" secondAttribute="height" id="Aux-Rz-4GA"/>
-                                    <constraint firstItem="Ddd-ce-zbS" firstAttribute="width" secondItem="fnG-iL-iS3" secondAttribute="width" id="F14-Oe-oBM"/>
                                     <constraint firstItem="Rij-cZ-kF6" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" id="GhN-YJ-oHw"/>
-                                    <constraint firstItem="2Je-2i-v5Y" firstAttribute="height" secondItem="UdN-OY-oZm" secondAttribute="height" id="HYe-wU-pXH"/>
-                                    <constraint firstItem="Ddd-ce-zbS" firstAttribute="centerY" secondItem="fnG-iL-iS3" secondAttribute="centerY" id="LJT-8Q-1SV"/>
-                                    <constraint firstItem="Ww9-Bt-WzB" firstAttribute="height" secondItem="unz-aD-nQT" secondAttribute="height" id="Rwn-oZ-i15"/>
-                                    <constraint firstItem="2Je-2i-v5Y" firstAttribute="centerY" secondItem="UdN-OY-oZm" secondAttribute="centerY" id="W1a-vD-ZHf"/>
+                                    <constraint firstItem="kaY-dJ-ch0" firstAttribute="top" secondItem="QQd-HQ-muq" secondAttribute="top" constant="25" id="LDu-Kq-JOh"/>
                                     <constraint firstItem="MIO-IV-mhc" firstAttribute="top" secondItem="Rij-cZ-kF6" secondAttribute="bottom" constant="25" id="Wt2-ro-A1V"/>
-                                    <constraint firstItem="geb-zM-ST4" firstAttribute="centerX" secondItem="QQd-HQ-muq" secondAttribute="centerX" id="X8y-Ep-yty"/>
-                                    <constraint firstItem="geb-zM-ST4" firstAttribute="width" secondItem="QQd-HQ-muq" secondAttribute="width" id="Yce-wY-r1x"/>
-                                    <constraint firstItem="2Je-2i-v5Y" firstAttribute="width" secondItem="UdN-OY-oZm" secondAttribute="width" id="eUT-Uh-FIx"/>
-                                    <constraint firstItem="Ww9-Bt-WzB" firstAttribute="width" secondItem="unz-aD-nQT" secondAttribute="width" id="f0s-Ov-xJi"/>
                                     <constraint firstItem="lVi-Ej-R2g" firstAttribute="centerY" secondItem="Rij-cZ-kF6" secondAttribute="centerY" id="h64-rQ-aiF"/>
-                                    <constraint firstItem="Ww9-Bt-WzB" firstAttribute="centerY" secondItem="unz-aD-nQT" secondAttribute="centerY" id="hSK-Rb-Ex3"/>
-                                    <constraint firstItem="2Je-2i-v5Y" firstAttribute="centerX" secondItem="UdN-OY-oZm" secondAttribute="centerX" id="iJb-aU-cuL"/>
                                     <constraint firstItem="lVi-Ej-R2g" firstAttribute="height" secondItem="Rij-cZ-kF6" secondAttribute="height" id="s1Q-f6-A57"/>
                                 </constraints>
                             </view>
@@ -611,7 +382,7 @@
                                 <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-20-jVI" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-20-jVI" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                 <rect key="frame" x="66" y="673" width="282" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Djj-Wd-Cfd"/>
@@ -638,6 +409,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="v93-20-jVI" firstAttribute="width" secondItem="QQd-HQ-muq" secondAttribute="width" multiplier="0.68" id="1qh-2C-PFS"/>
                             <constraint firstItem="M7f-EU-k2S" firstAttribute="centerX" secondItem="QQd-HQ-muq" secondAttribute="centerX" id="8q8-fg-iSZ"/>
                             <constraint firstItem="gXs-Ar-jMc" firstAttribute="trailing" secondItem="QQd-HQ-muq" secondAttribute="trailing" id="F7Q-zH-cHz"/>
                             <constraint firstItem="QQd-HQ-muq" firstAttribute="top" secondItem="7gc-ls-eon" secondAttribute="top" id="Qhu-0W-8eO"/>
@@ -650,7 +422,6 @@
                             <constraint firstItem="QQd-HQ-muq" firstAttribute="leading" secondItem="gXs-Ar-jMc" secondAttribute="leading" id="h1M-7D-CUS"/>
                             <constraint firstItem="v93-20-jVI" firstAttribute="top" secondItem="MIO-IV-mhc" secondAttribute="bottom" constant="50" id="ipy-WW-20K"/>
                             <constraint firstItem="MIO-IV-mhc" firstAttribute="centerX" secondItem="M7f-EU-k2S" secondAttribute="centerX" id="mn1-T8-9nk"/>
-                            <constraint firstItem="v93-20-jVI" firstAttribute="width" secondItem="M7f-EU-k2S" secondAttribute="width" multiplier="0.85" id="r12-cx-fvJ"/>
                             <constraint firstItem="v93-20-jVI" firstAttribute="centerX" secondItem="QQd-HQ-muq" secondAttribute="centerX" id="smt-Lc-fSQ"/>
                             <constraint firstItem="lVi-Ej-R2g" firstAttribute="trailing" secondItem="M7f-EU-k2S" secondAttribute="trailing" id="uQe-UA-oq5"/>
                             <constraint firstItem="Rij-cZ-kF6" firstAttribute="leading" secondItem="M7f-EU-k2S" secondAttribute="leading" id="wU5-FD-YM2"/>
@@ -669,81 +440,10 @@
             </objects>
             <point key="canvasLocation" x="1048" y="834"/>
         </scene>
-        <!--Hints View Controller-->
-        <scene sceneID="u6d-lC-OFb">
-            <objects>
-                <viewController id="2S5-Qj-OPt" customClass="HintsViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cG1-kj-8Sl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Go6-ad-WmO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DICAS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6G-ih-kvr">
-                                        <rect key="frame" x="41.5" y="160" width="331" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
-                                        <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pue-ON-tAN">
-                                        <rect key="frame" x="41.5" y="225.5" width="331" height="595.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mru-d9-vlU">
-                                        <rect key="frame" x="25" y="75" width="50" height="50"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="2TF-nV-F5c"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="back"/>
-                                        <connections>
-                                            <action selector="backButton:" destination="2S5-Qj-OPt" eventType="touchUpInside" id="UYL-3N-Iou"/>
-                                            <action selector="backButton:" destination="xLT-wC-Dj2" eventType="touchUpInside" id="zSi-bk-Ts5"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="n6G-ih-kvr" firstAttribute="centerX" secondItem="Go6-ad-WmO" secondAttribute="centerX" id="15G-uc-9dW"/>
-                                    <constraint firstItem="pue-ON-tAN" firstAttribute="centerX" secondItem="n6G-ih-kvr" secondAttribute="centerX" id="9vI-pG-NPN"/>
-                                    <constraint firstItem="pue-ON-tAN" firstAttribute="top" secondItem="n6G-ih-kvr" secondAttribute="bottom" constant="35" id="CQ2-Jm-4Pq"/>
-                                    <constraint firstItem="pue-ON-tAN" firstAttribute="width" secondItem="n6G-ih-kvr" secondAttribute="width" id="HdC-aO-BBL"/>
-                                    <constraint firstItem="n6G-ih-kvr" firstAttribute="width" secondItem="Go6-ad-WmO" secondAttribute="width" multiplier="0.8" id="Pap-EA-j2r"/>
-                                    <constraint firstItem="mru-d9-vlU" firstAttribute="top" secondItem="Go6-ad-WmO" secondAttribute="top" constant="75" id="UP8-9W-STi"/>
-                                    <constraint firstItem="n6G-ih-kvr" firstAttribute="top" secondItem="mru-d9-vlU" secondAttribute="bottom" constant="35" id="avo-qa-MtC"/>
-                                    <constraint firstAttribute="bottom" secondItem="pue-ON-tAN" secondAttribute="bottom" constant="75" id="gJU-Bk-2F7"/>
-                                    <constraint firstItem="mru-d9-vlU" firstAttribute="width" secondItem="mru-d9-vlU" secondAttribute="height" multiplier="1:1" id="jGQ-8I-WTy"/>
-                                    <constraint firstItem="mru-d9-vlU" firstAttribute="leading" secondItem="Go6-ad-WmO" secondAttribute="leading" constant="25" id="qnx-WF-NMc"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Go6-ad-WmO" firstAttribute="leading" secondItem="EPu-Db-Fcy" secondAttribute="leading" id="0Ym-Xv-Gs5"/>
-                            <constraint firstItem="Go6-ad-WmO" firstAttribute="top" secondItem="cG1-kj-8Sl" secondAttribute="top" id="5hb-tR-UA4"/>
-                            <constraint firstItem="Go6-ad-WmO" firstAttribute="trailing" secondItem="EPu-Db-Fcy" secondAttribute="trailing" id="aN9-1R-bhU"/>
-                            <constraint firstAttribute="bottom" secondItem="Go6-ad-WmO" secondAttribute="bottom" id="wdq-zX-99B"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="EPu-Db-Fcy"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7v0-Fe-PF2"/>
-                    <connections>
-                        <outlet property="TextView" destination="pue-ON-tAN" id="mAc-vY-j8P"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XX4-gS-5ve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2052" y="1357"/>
-        </scene>
         <!--How To Play View Controller-->
         <scene sceneID="P2c-8b-BKa">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xLT-wC-Dj2" customClass="HowToPlayViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="xLT-wC-Dj2" customClass="HowToPlayViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vAE-cR-tud">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -755,10 +455,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BS2-U7-Jyu">
-                                        <rect key="frame" x="25" y="75" width="50" height="50"/>
+                                        <rect key="frame" x="25" y="75" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="oGV-59-iXt"/>
+                                            <constraint firstAttribute="height" constant="60" id="oGV-59-iXt"/>
                                             <constraint firstAttribute="width" secondItem="BS2-U7-Jyu" secondAttribute="height" multiplier="1:1" id="wM0-v7-rKl"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="back"/>
@@ -767,25 +467,25 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMO JOGAR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSI-WA-64Q">
-                                        <rect key="frame" x="41.5" y="135" width="331" height="30.5"/>
+                                        <rect key="frame" x="41.5" y="145" width="331" height="30.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="26"/>
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O PLOSAT é um jogo de criar histórias e desvendar mistérios para 4 a 7 jogadores usando apenas um iPhone." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GS-7h-oBc">
-                                        <rect key="frame" x="41.5" y="165.5" width="331" height="63.5"/>
+                                        <rect key="frame" x="41.5" y="175.5" width="331" height="63.5"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UM CRIME ACONTECEU" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofJ-M6-y9G">
-                                        <rect key="frame" x="41.5" y="244" width="331" height="19"/>
+                                        <rect key="frame" x="41.5" y="254" width="331" height="19"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="16"/>
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-J5-yq9">
-                                        <rect key="frame" x="41.5" y="268" width="331" height="56.5"/>
+                                        <rect key="frame" x="41.5" y="278" width="331" height="56.5"/>
                                         <string key="text">Uma pequena história de crime é introduzida aos jogadores e todos na roda são suspeitos, mas apenas um realmente será o culpado.  </string>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -806,7 +506,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-PT-72C" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-PT-72C" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="66" y="761" width="282" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -829,11 +529,10 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="SavePlayer:" destination="fQi-Ow-wVA" eventType="touchUpInside" id="bvq-1N-ehc"/>
-                                            <segue destination="2S5-Qj-OPt" kind="show" id="w4z-bH-0rg"/>
                                         </connections>
                                     </button>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-Pn-qjG">
-                                        <rect key="frame" x="41.5" y="344.5" width="372.5" height="268.5"/>
+                                        <rect key="frame" x="41.5" y="354.5" width="372.5" height="258.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UwE-3a-EgK">
                                             <size key="itemSize" width="228" height="255"/>
@@ -843,14 +542,14 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tutorial" id="Tze-QW-Og3" customClass="TutorialCollectionViewCell" customModule="The_Crook_Game" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="7" width="228" height="255"/>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tutorial" id="Tze-QW-Og3" customClass="TutorialCollectionViewCell" customModule="PLOSAT" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="2" width="228" height="255"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IYd-4X-rVe">
                                                     <rect key="frame" x="0.0" y="0.0" width="228" height="255"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-DN-Pz0" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-DN-Pz0" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                             <rect key="frame" x="1.5" y="0.0" width="225" height="255"/>
                                                             <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
@@ -984,7 +683,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--New Player View Controller-->
         <scene sceneID="9Wv-Lh-AWu">
             <objects>
-                <viewController id="fQi-Ow-wVA" customClass="NewPlayerViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fQi-Ow-wVA" customClass="NewPlayerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qZe-bo-KD5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -995,6 +694,23 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo1" translatesAutoresizingMaskIntoConstraints="NO" id="Sxh-oM-oIE">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-9A-kcl" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                        <rect key="frame" x="329" y="25" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0qQ-9A-kcl" secondAttribute="height" multiplier="1:1" id="Atr-fr-AXF"/>
+                                            <constraint firstAttribute="height" constant="60" id="cDZ-no-kf3"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="close"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="DismissModal:" destination="fQi-Ow-wVA" eventType="touchUpInside" id="BGf-ti-KBv"/>
+                                        </connections>
+                                    </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOME DO JOGADOR" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VGD-VZ-SFI">
                                         <rect key="frame" x="72.5" y="434" width="269" height="60"/>
                                         <constraints>
@@ -1004,7 +720,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-7b-8nM" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-7b-8nM" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="72.5" y="707" width="269" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1071,6 +787,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <constraint firstItem="5iF-4T-N2y" firstAttribute="width" secondItem="ZUm-pq-aQe" secondAttribute="width" multiplier="0.8" id="0rz-nS-2d2"/>
                                     <constraint firstItem="g78-Gi-tut" firstAttribute="width" secondItem="5iF-4T-N2y" secondAttribute="width" id="2qx-ze-gAH"/>
                                     <constraint firstItem="Sxh-oM-oIE" firstAttribute="centerX" secondItem="ZUm-pq-aQe" secondAttribute="centerX" id="2yI-k4-mzU"/>
+                                    <constraint firstAttribute="trailing" secondItem="0qQ-9A-kcl" secondAttribute="trailing" constant="25" id="517-gm-f2w"/>
                                     <constraint firstItem="g78-Gi-tut" firstAttribute="top" secondItem="5iF-4T-N2y" secondAttribute="bottom" constant="10" id="58n-fw-LK6"/>
                                     <constraint firstItem="5iF-4T-N2y" firstAttribute="top" secondItem="ZUm-pq-aQe" secondAttribute="top" constant="83" id="7cp-B2-cy2"/>
                                     <constraint firstItem="vXB-7b-8nM" firstAttribute="width" secondItem="VGD-VZ-SFI" secondAttribute="width" id="8ip-gO-VoR"/>
@@ -1078,6 +795,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <constraint firstItem="qR0-wO-SUa" firstAttribute="width" secondItem="ZUm-pq-aQe" secondAttribute="width" multiplier="0.3" id="CyY-Co-4Rd"/>
                                     <constraint firstItem="qR0-wO-SUa" firstAttribute="centerY" secondItem="ZUm-pq-aQe" secondAttribute="centerY" multiplier="0.8" id="FR2-O9-XrX"/>
                                     <constraint firstItem="VGD-VZ-SFI" firstAttribute="width" secondItem="ZUm-pq-aQe" secondAttribute="width" multiplier="0.65" id="GhH-hO-ZYA"/>
+                                    <constraint firstItem="0qQ-9A-kcl" firstAttribute="top" secondItem="ZUm-pq-aQe" secondAttribute="top" constant="25" id="IxN-7t-mfq"/>
                                     <constraint firstItem="Sxh-oM-oIE" firstAttribute="height" secondItem="ZUm-pq-aQe" secondAttribute="height" id="L18-fy-Oqn"/>
                                     <constraint firstItem="Sxh-oM-oIE" firstAttribute="centerY" secondItem="ZUm-pq-aQe" secondAttribute="centerY" id="Qu0-F1-mvm"/>
                                     <constraint firstItem="qR0-wO-SUa" firstAttribute="centerY" secondItem="5Ym-Dr-nSz" secondAttribute="centerY" id="UpN-2h-WyO"/>
@@ -1103,6 +821,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                     </view>
                     <connections>
                         <outlet property="AddPhotoButtobn" destination="5Ym-Dr-nSz" id="TQd-pq-SBr"/>
+                        <outlet property="dismissButton" destination="0qQ-9A-kcl" id="v1D-BD-9ZI"/>
                         <outlet property="nameFiekd" destination="VGD-VZ-SFI" id="3Ep-9F-bMV"/>
                         <outlet property="saveButton" destination="vXB-7b-8nM" id="nLX-Tn-rcc"/>
                         <outlet property="seloImage" destination="qR0-wO-SUa" id="lC2-Se-Fsq"/>
@@ -1115,7 +834,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Prepare View Controller-->
         <scene sceneID="fGw-xC-iPW">
             <objects>
-                <viewController id="4Ri-jM-9J8" customClass="PrepareViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Ri-jM-9J8" customClass="PrepareViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZaO-jv-unc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1138,7 +857,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQS-dg-PDS" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQS-dg-PDS" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="83" y="554" width="248" height="131.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O02-yU-sDj">
@@ -1147,7 +866,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7d-Vd-qre" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7d-Vd-qre" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1156,7 +875,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWu-VW-KKb" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWu-VW-KKb" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1171,7 +890,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-Xe-uHW" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-Xe-uHW" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="146.5" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1180,7 +899,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iur-NB-HX4" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iur-NB-HX4" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="136.5" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -1207,7 +926,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PARA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-RO-OQB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-RO-OQB">
                                                 <rect key="frame" x="0.0" y="136.5" width="248" height="20"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1264,13 +983,13 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g96-px-zMl" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g96-px-zMl" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="66" y="761" width="282" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ivf-8q-ATK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
-                                        <state key="normal" title="IR PARA DEFESAS">
+                                        <state key="normal" title="FINALIZAR TIMER">
                                             <color key="titleColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1327,7 +1046,6 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                     <connections>
                         <outlet property="minutosLabel" destination="tIY-1f-cla" id="3B8-Kr-EK0"/>
                         <outlet property="segundosLabel" destination="oI1-c6-JVc" id="OWd-Np-BHL"/>
-                        <outlet property="toquePraComecar" destination="HDQ-RO-OQB" id="o2g-7p-uzF"/>
                         <segue destination="oAx-8F-yVb" kind="presentation" identifier="modalDiscussion" id="AZ0-cI-bce"/>
                         <segue destination="rxV-aH-5Je" kind="show" identifier="nextOne" id="B5g-FJ-8Fl"/>
                     </connections>
@@ -1344,7 +1062,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--View Controller-->
         <scene sceneID="PiU-0Y-QYa">
             <objects>
-                <viewController id="oAx-8F-yVb" customClass="MODALViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oAx-8F-yVb" customClass="MODALViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3NL-wz-Vw6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1367,7 +1085,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-FI-TzJ" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-FI-TzJ" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="66" y="602" width="282" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="964-4l-38i"/>
@@ -1440,7 +1158,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Add Players View Controller-->
         <scene sceneID="T64-Qc-1GT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cls-Bf-buB" customClass="AddPlayersViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cls-Bf-buB" customClass="AddPlayersViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fY-QA-q9x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1463,7 +1181,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="jogadorCell" rowHeight="120" id="1UE-hx-97k" customClass="JogadoresTableViewCell" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="jogadorCell" rowHeight="120" id="1UE-hx-97k" customClass="JogadoresTableViewCell" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="331" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1UE-hx-97k" id="aae-pJ-ZJO">
@@ -1473,7 +1191,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9T-vO-hYf">
                                                             <rect key="frame" x="0.0" y="0.0" width="331" height="120"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-mH-1OW" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-mH-1OW" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                                     <rect key="frame" x="10" y="10" width="321" height="110"/>
                                                                     <color key="backgroundColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <userDefinedRuntimeAttributes>
@@ -1488,7 +1206,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XS5-Du-5aJ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XS5-Du-5aJ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="321" height="110"/>
                                                                     <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <userDefinedRuntimeAttributes>
@@ -1577,7 +1295,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <outlet property="delegate" destination="cls-Bf-buB" id="ysi-gC-ryH"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-l3-Pgy" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-l3-Pgy" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="317.5" y="766" width="55" height="55"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1595,7 +1313,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <action selector="StartPLaying:" destination="cls-Bf-buB" eventType="touchUpInside" id="12r-WH-bCS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-El-mQL" customClass="EditableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-El-mQL" customClass="EditableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="41.5" y="671" width="331" height="75"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1687,7 +1405,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Story View Controller-->
         <scene sceneID="Mxh-xi-Udb">
             <objects>
-                <viewController id="Oz9-1R-oqD" customClass="StoryViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Oz9-1R-oqD" customClass="StoryViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Us-DF-Fg3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1704,7 +1422,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <constraint firstAttribute="width" secondItem="nyz-1r-Y8T" secondAttribute="height" multiplier="15:12" id="ZdN-su-lFm"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j30-2D-t9N" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j30-2D-t9N" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="317.5" y="766" width="55" height="55"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1782,7 +1500,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Papeis View Controller-->
         <scene sceneID="a2M-Vh-zI3">
             <objects>
-                <viewController storyboardIdentifier="vcDetalhe" id="4yU-fK-M06" customClass="PapeisViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcDetalhe" id="4yU-fK-M06" customClass="PapeisViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hft-Wq-h6x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1793,7 +1511,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="Sml-4k-Hob">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-ex-tza" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-ex-tza" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="329" y="25" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1823,7 +1541,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vT-5e-eTf" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vT-5e-eTf" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="41.5" y="203" width="331" height="488.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5a-iq-0Gh">
@@ -1914,7 +1632,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <constraint firstItem="N2v-5B-Tsd" firstAttribute="height" secondItem="Qoa-JH-lrY" secondAttribute="height" id="jcP-wu-I47"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-BM-G5L" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-BM-G5L" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="41.5" y="-5" width="100" height="53.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1jw-y9-xZC">
@@ -2007,7 +1725,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Player Functions View Controller-->
         <scene sceneID="REa-gx-K3E">
             <objects>
-                <viewController id="0R4-Fo-qgL" customClass="PlayerFunctionsViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0R4-Fo-qgL" customClass="PlayerFunctionsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gRZ-Km-Mc1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2030,7 +1748,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="120" id="pMW-hg-UgW" customClass="DetailTableViewCell" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="120" id="pMW-hg-UgW" customClass="DetailTableViewCell" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="331" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pMW-hg-UgW" id="6w3-4D-WjH">
@@ -2040,7 +1758,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-CN-og9">
                                                             <rect key="frame" x="0.0" y="0.0" width="331" height="120"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36b-pW-Igh" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36b-pW-Igh" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                                     <rect key="frame" x="10" y="10" width="321" height="110"/>
                                                                     <color key="backgroundColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <userDefinedRuntimeAttributes>
@@ -2055,7 +1773,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NII-a8-RwL" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NII-a8-RwL" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="321" height="110"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Fsf-bF-AOg">
@@ -2071,7 +1789,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                                                 <constraint firstAttribute="width" constant="22.5" id="T7V-3F-iZe"/>
                                                                             </constraints>
                                                                         </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztN-RW-PXr" customClass="EditableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztN-RW-PXr" customClass="EditableView" customModule="PLOSAT" customModuleProvider="target">
                                                                             <rect key="frame" x="283" y="39.5" width="31" height="31"/>
                                                                             <color key="backgroundColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
@@ -2166,7 +1884,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <outlet property="delegate" destination="0R4-Fo-qgL" id="pl5-Kh-Mg9"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEL-qW-Y7V" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEL-qW-Y7V" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="312.5" y="761" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -2234,7 +1952,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Story Timer View Controller-->
         <scene sceneID="dBh-Bq-7QT">
             <objects>
-                <viewController id="rxV-aH-5Je" customClass="StoryTimerViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rxV-aH-5Je" customClass="StoryTimerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Nj-WL-ZQ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2292,7 +2010,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28r-p1-uax" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28r-p1-uax" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="80" y="401.5" width="254" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56W-E9-rg9">
@@ -2301,7 +2019,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-RF-Flr" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-RF-Flr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2310,7 +2028,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-uh-ZrX" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-uh-ZrX" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2325,7 +2043,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55R-l6-TMr" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55R-l6-TMr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="149.5" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2334,7 +2052,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oli-g3-4kJ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oli-g3-4kJ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="139.5" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2409,7 +2127,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-ve-eNH" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-ve-eNH" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="80" y="715" width="254" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
@@ -2425,7 +2143,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <action selector="espiarAlibi:" destination="rxV-aH-5Je" eventType="touchUpInside" id="epf-7F-RGw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw2-Fr-B7C" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw2-Fr-B7C" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="312.5" y="717" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -2443,7 +2161,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <action selector="resetScreen:" destination="rxV-aH-5Je" eventType="touchUpInside" id="NKh-Ey-UIS"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PARA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-GF-Sb1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-GF-Sb1">
                                         <rect key="frame" x="80" y="545.5" width="254" height="20"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2489,7 +2207,6 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                     </view>
                     <navigationItem key="navigationItem" id="HDo-1X-Wjb"/>
                     <connections>
-                        <outlet property="TOQUEPRACOMECAR" destination="6fF-GF-Sb1" id="gaO-dC-q90"/>
                         <outlet property="espiearAlibi" destination="duz-ve-eNH" id="0xP-d4-EjC"/>
                         <outlet property="nextPLayerLabel" destination="wYZ-EJ-eHI" id="YKg-tk-5as"/>
                         <outlet property="nextPage" destination="tw2-Fr-B7C" id="M1B-SS-l4G"/>
@@ -2513,7 +2230,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Discussion Timer View Controller-->
         <scene sceneID="q5u-AO-URb">
             <objects>
-                <viewController id="OLK-7h-nhN" customClass="DiscussionTimerViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OLK-7h-nhN" customClass="DiscussionTimerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5f-FJ-HkN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2524,7 +2241,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hEG-7R-4vG">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-J9-dvi" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-J9-dvi" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="83" y="550.5" width="248" height="131.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-gL-a95">
@@ -2533,7 +2250,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjS-M7-6rv" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjS-M7-6rv" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2542,7 +2259,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yuj-8G-IVF" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yuj-8G-IVF" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2557,7 +2274,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-gm-bDQ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-gm-bDQ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="146.5" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2566,7 +2283,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyz-fd-7zO" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyz-fd-7zO" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="136.5" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2634,7 +2351,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <outletCollection property="gestureRecognizers" destination="X7L-BQ-cyR" appends="YES" id="quE-SK-j0V"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-bf-6dv" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-bf-6dv" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="66" y="761" width="282" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -2660,7 +2377,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <action selector="startVoting:" destination="OLK-7h-nhN" eventType="touchUpInside" id="mgN-KS-hax"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PARA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-ZR-BeS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-ZR-BeS">
                                         <rect key="frame" x="83" y="692" width="248" height="20"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2741,7 +2458,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Voting Screen View Controller-->
         <scene sceneID="VnO-gZ-SIv">
             <objects>
-                <viewController storyboardIdentifier="votingScreen" id="3Ne-uc-CQQ" customClass="VotingScreenViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="votingScreen" id="3Ne-uc-CQQ" customClass="VotingScreenViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sjP-d6-OHP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2783,10 +2500,10 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGp-Oy-zZZ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGp-Oy-zZZ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="28.5" y="200.5" width="405.5" height="495"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-ce-gl3" customClass="DesignableImageView" customModule="The_Crook_Game" customModuleProvider="target">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-ce-gl3" customClass="DesignableImageView" customModule="PLOSAT" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="405.5" height="495"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2807,14 +2524,14 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VoteCell" id="soe-jx-jJl" customClass="VotingCollectionViewCell" customModule="The_Crook_Game" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VoteCell" id="soe-jx-jJl" customClass="VotingCollectionViewCell" customModule="PLOSAT" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PVk-90-NgZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Num-Ed-xWb" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Num-Ed-xWb" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selo" translatesAutoresizingMaskIntoConstraints="NO" id="z2T-se-f8q">
@@ -2873,7 +2590,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76T-Zl-3pZ">
                                                 <rect key="frame" x="46.5" y="391" width="292.5" height="74"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y3-mm-bnY" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y3-mm-bnY" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="10" width="282.5" height="64"/>
                                                         <color key="backgroundColor" red="0.20784313725490194" green="0.15686274509803921" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2882,7 +2599,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kte-1X-bnx" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kte-1X-bnx" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="282.5" height="64"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2989,7 +2706,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Results View Controller-->
         <scene sceneID="hNt-gD-VpD">
             <objects>
-                <viewController id="bfW-pe-3kY" customClass="ResultsViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bfW-pe-3kY" customClass="ResultsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gMp-Rb-A8s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3000,7 +2717,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo1" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-TV-vNB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-2R-VZS" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-2R-VZS" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
                                         <rect key="frame" x="83" y="761" width="248" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>

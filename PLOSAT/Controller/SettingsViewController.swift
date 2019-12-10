@@ -19,11 +19,9 @@ class SettingsViewController: UIViewController {
         Model.instance.somLigado = !Model.instance.somLigado
         if Model.instance.somLigado{
             toggleButton.backgroundColor = #colorLiteral(red: 1, green: 0.5215686275, blue: 0.4980392157, alpha: 1)
-            toggleButton.setImage(UIImage(named: "check"), for: .normal)
         }else{
             toggleButton.backgroundColor = . clear
-            toggleButton.setImage(nil, for: .normal)
-            
+
         }
     }
     @IBOutlet weak var pensarLabel: UILabel!
@@ -31,7 +29,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var discutirLabel: UILabel!
     
     let model = Model.instance
-    
+
     var timePensar = Model.instance.timerPensar
     var timeContar = Model.instance.timerContar
     var timeDiscutir = Model.instance.timerDiscutir
@@ -43,12 +41,12 @@ class SettingsViewController: UIViewController {
             return
         }
         pensarLabel.text = converteString(count: timePensar)
-        
+
     }
     @IBAction func plusPensar(_ sender: Any) {
         timePensar += 10
         pensarLabel.text = converteString(count: timePensar)
-        
+
     }
     
     @IBAction func minusContar(_ sender: Any) {
@@ -58,12 +56,12 @@ class SettingsViewController: UIViewController {
             return
         }
         contarLabel.text = converteString(count: timeContar)
-        
+
     }
     @IBAction func plusContar(_ sender: Any) {
         timeContar += 10
         contarLabel.text = converteString(count: timeContar)
-        
+
     }
     @IBAction func minusDiscutir(_ sender: Any) {
         if timeDiscutir > 10{
@@ -72,12 +70,12 @@ class SettingsViewController: UIViewController {
             return
         }
         discutirLabel.text = converteString(count: timeDiscutir)
-        
+
     }
     @IBAction func plusDiscutir(_ sender: Any) {
         timeDiscutir += 10
         discutirLabel.text = converteString(count: timeDiscutir)
-        
+
     }
     
     @IBAction func save(_ sender: Any) {
@@ -92,14 +90,7 @@ class SettingsViewController: UIViewController {
         pensarLabel.text = converteString(count: Model.instance.timerPensar)
         contarLabel.text = converteString(count: Model.instance.timerContar)
         discutirLabel.text = converteString(count: Model.instance.timerDiscutir)
-        if Model.instance.somLigado{
-            toggleButton.backgroundColor = #colorLiteral(red: 1, green: 0.5215686275, blue: 0.4980392157, alpha: 1)
-            toggleButton.setImage(UIImage(named: "check"), for: .normal)
-        }else{
-            toggleButton.backgroundColor = . clear
-            toggleButton.imageView?.isHidden = true
-            
-        }
+        
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -118,7 +109,7 @@ class SettingsViewController: UIViewController {
         let minutos = count/60
         let segundos = count % 60
         
-        let string = String(format: "%02d  :  %02d", minutos, segundos)
+        let string = String(format: "%02d:%02d", minutos, segundos)
         
         return string
     }

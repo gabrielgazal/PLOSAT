@@ -46,7 +46,6 @@
 		5640BC25238EFFD100C75855 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5640BC1F238EFFA700C75855 /* RobotoCondensed-Light.ttf */; };
 		5640BC26238EFFD100C75855 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5640BC1E238EFFA700C75855 /* RobotoCondensed-LightItalic.ttf */; };
 		5640BC27238EFFD100C75855 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5640BC1C238EFFA700C75855 /* RobotoCondensed-Regular.ttf */; };
-		569A1791239EBA380047BA57 /* HintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A1790239EBA380047BA57 /* HintsViewController.swift */; };
 		56BD1DF52391637A007DE382 /* PrepareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD1DF42391637A007DE382 /* PrepareViewController.swift */; };
 		56BD1DF723916F2D007DE382 /* MODALViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BD1DF623916F2D007DE382 /* MODALViewController.swift */; };
 		56C36F66238EDFE40090E1F0 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */; };
@@ -105,7 +104,6 @@
 		5640BC1D238EFFA700C75855 /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
 		5640BC1E238EFFA700C75855 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		5640BC1F238EFFA700C75855 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
-		569A1790239EBA380047BA57 /* HintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintsViewController.swift; sourceTree = "<group>"; };
 		56BD1DF42391637A007DE382 /* PrepareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareViewController.swift; sourceTree = "<group>"; };
 		56BD1DF623916F2D007DE382 /* MODALViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MODALViewController.swift; sourceTree = "<group>"; };
 		56C36F65238EDFE40090E1F0 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 				562400B7238B99140053DE6F /* StoryTimerViewController.swift */,
 				562400C4238D9DBA0053DE6F /* NewPlayerViewController.swift */,
 				56BD1DF623916F2D007DE382 /* MODALViewController.swift */,
-				569A1790239EBA380047BA57 /* HintsViewController.swift */,
 				5618271A23987CF200F5F5A2 /* HowToPlayViewController.swift */,
 				562400B9238B99360053DE6F /* DiscussionTimerViewController.swift */,
 				562400BD238B99760053DE6F /* ResultsViewController.swift */,
@@ -388,7 +385,6 @@
 				562400B0238B78080053DE6F /* DesignableButton.swift in Sources */,
 				562400B2238B98CA0053DE6F /* AddPlayersViewController.swift in Sources */,
 				561827192398721800F5F5A2 /* SettingsViewController.swift in Sources */,
-				569A1791239EBA380047BA57 /* HintsViewController.swift in Sources */,
 				56F0D1DD23999687003BD8C8 /* AudioManager.swift in Sources */,
 				560C18FD238EF1BE00F44CD2 /* EditableButton.swift in Sources */,
 				562400BA238B99360053DE6F /* DiscussionTimerViewController.swift in Sources */,
