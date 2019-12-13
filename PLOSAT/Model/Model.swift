@@ -56,12 +56,17 @@ class Model{
     
     private init (){
         
-        personagem = []
-        lugar = []
-        objeto = []
-        situacao = []
-        acao = []
-        tema = []
+        personagem = ["Um gótico","Freiras idosas","Uma médica cega","Um anão policial", "Ken humano","Um aficionado em OVNIs"]
+        lugar = ["Ilhas Maldivas","Uma sala de cinema abandonado","Um cassino clandestino","Uma loja de bonecas de porcelana","Um criadouro de rãs","A escola onde sua vó estudou"]
+        objeto = ["Uma britadeira","Envelope com carimbo de CONFIDENCIAL","Vinho Bordeaux safra 1968","O primeiro óculos de Silvio Santos","Um balão de vôo"]
+        situacao = ["Baile da terceira idade","Sequestro relâmpago","Ataque de zumbis","Festa de arromba","Briga por demora em um restaurante","Chuva de granizo"]
+        acao = ["Fotografar pessoas","Entrar em um elevador com pessoas molhadas","Casar-se","Subir uma escadaria de joelhos","Matar uma aranha","Pintar um quadro"]
+        tema = [Tema(titulo: "ASSALTO À JOALHERIA", descricao: "A joalheria Dvinit é conhecida por suas peças raras e de alto valor agregado. Na noite de ontem, três colares de diamante amarelo foram furtados. Boatos que alguém com experiência em alta tecnologia burlou o sistema de segurança da loja.\nTodos aqui visitaram à loja no dia de ontem. Qual o motivo de você ter ido à Joalheria Dvinit?"),
+                Tema(titulo: "INVASÃO AO EMAIL DO PRESIDENTE", descricao: "Um grande escândalo envolvendo contatos do presidente foi destaque na mídia. Misteriosamente, todos aqui foram os últimos a escreverem ao presidente antes do ataque virtual. Explique o conteúdo da sua mensagem à vossa excelência e por que isso não tem relação com o hackeamento da sua conta."),
+                Tema(titulo: "PICHAÇÃO NO TEATRO MUNICIPAL", descricao: "No palco do teatro, uma enorme pichação satirizava João Almeida, o diretor do teatro. Por terem todos aqui terem sidos os únicos na plateia a assistir à última sessão da noite anterior, realizada por um ator iniciante. Explique por que se interessou em ver a peça “O monólogo de um gago”."),
+                Tema(titulo: "MUAMBA NA ALFÂNDEGA", descricao: "Na hora de atravessar a fronteira com o Paraguai, o policial da alfândega parou a van onde todos vocês estavam. Junto ao tanque de combustível, havia uma boneca toda recheada de pílulas verdes Autramax, uma droga nova e caríssima que está amplamente disputada pelo tráfico. Todos aqui tem de justificar ao oficial."),
+                Tema(titulo: "ROUBO DE PROTÓTIPO", descricao: "Na Califórnia, os designers engenheiros da Apple trabalham para o lançamento próximo de um novo iPhone. Em um breve descuido na última terça-feira, o protótipo do mais novo aparelho foi furtado. Todos aqui tinham fortes interesses em ter os segredos desse lançamento. Qual é seu álibi para o dia do crime?")
+        ]
         querys()
     }
     

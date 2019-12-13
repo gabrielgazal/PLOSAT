@@ -19,9 +19,11 @@ class SettingsViewController: UIViewController {
         Model.instance.somLigado = !Model.instance.somLigado
         if Model.instance.somLigado{
             toggleButton.backgroundColor = #colorLiteral(red: 1, green: 0.5215686275, blue: 0.4980392157, alpha: 1)
+            toggleButton.setBackgroundImage(UIImage(named: "check"), for: .normal)
         }else{
             toggleButton.backgroundColor = . clear
-
+            toggleButton.setBackgroundImage(nil, for: .normal)
+//            toggleButton.
         }
     }
     @IBOutlet weak var pensarLabel: UILabel!
@@ -35,7 +37,7 @@ class SettingsViewController: UIViewController {
     var timeDiscutir = Model.instance.timerDiscutir
     
     @IBAction func minusPensar(_ sender: Any) {
-        if timePensar > 10{
+        if (timePensar > 10){
             timePensar -= 10
         }else{
             return
@@ -44,7 +46,12 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusPensar(_ sender: Any) {
-        timePensar += 10
+        if (timePensar < 300){
+            timePensar += 10
+        }else{
+            return
+        }
+        
         pensarLabel.text = converteString(count: timePensar)
 
     }
@@ -59,12 +66,16 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusContar(_ sender: Any) {
-        timeContar += 10
+        if (timeContar < 300){
+            timeContar += 10
+        }else{
+            return
+        }
         contarLabel.text = converteString(count: timeContar)
 
     }
     @IBAction func minusDiscutir(_ sender: Any) {
-        if timeDiscutir > 10{
+        if (timeDiscutir > 10){
             timeDiscutir -= 10
         }else{
             return
@@ -73,7 +84,12 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusDiscutir(_ sender: Any) {
-        timeDiscutir += 10
+        
+        if (timeDiscutir < 300){
+            timeDiscutir += 10
+        }else{
+            return
+        }
         discutirLabel.text = converteString(count: timeDiscutir)
 
     }
@@ -109,7 +125,7 @@ class SettingsViewController: UIViewController {
         let minutos = count/60
         let segundos = count % 60
         
-        let string = String(format: "%02d:%02d", minutos, segundos)
+        let string = String(format: "%02d   :   %02d", minutos, segundos)
         
         return string
     }
