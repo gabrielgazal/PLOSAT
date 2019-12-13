@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6w-AH-3Eq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E6w-AH-3Eq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="v9J-SZ-Xa0">
                                         <rect key="frame" x="84" y="575.5" width="246" height="210"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inz-h9-bMO" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inz-h9-bMO" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="246" height="60"/>
                                                 <color key="backgroundColor" red="1" green="0.52156862749999999" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -59,7 +59,7 @@
                                                     <segue destination="cls-Bf-buB" kind="show" id="srF-DH-Pb7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-pw-mdF" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-pw-mdF" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="75" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
@@ -82,7 +82,7 @@
                                                     <segue destination="xLT-wC-Dj2" kind="show" id="oD3-WR-fMO"/>
                                                 </connections>
                                             </button>
-                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-BI-led" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-BI-led" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="150" width="246" height="60"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="20"/>
@@ -145,7 +145,7 @@
         <!--Settings View Controller-->
         <scene sceneID="9UN-tB-OzI">
             <objects>
-                <viewController id="GKo-aP-khp" customClass="SettingsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GKo-aP-khp" customClass="SettingsViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gc-ls-eon">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,7 +382,7 @@
                                 <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-20-jVI" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-20-jVI" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                 <rect key="frame" x="66" y="673" width="282" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Djj-Wd-Cfd"/>
@@ -443,7 +443,7 @@
         <!--How To Play View Controller-->
         <scene sceneID="P2c-8b-BKa">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="xLT-wC-Dj2" customClass="HowToPlayViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="xLT-wC-Dj2" customClass="HowToPlayViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vAE-cR-tud">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -506,7 +506,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-PT-72C" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zya-PT-72C" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="66" y="761" width="282" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -542,14 +542,14 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tutorial" id="Tze-QW-Og3" customClass="TutorialCollectionViewCell" customModule="PLOSAT" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tutorial" id="Tze-QW-Og3" customClass="TutorialCollectionViewCell" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="2" width="228" height="255"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IYd-4X-rVe">
                                                     <rect key="frame" x="0.0" y="0.0" width="228" height="255"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-DN-Pz0" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-DN-Pz0" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                             <rect key="frame" x="1.5" y="0.0" width="225" height="255"/>
                                                             <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
@@ -683,7 +683,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--New Player View Controller-->
         <scene sceneID="9Wv-Lh-AWu">
             <objects>
-                <viewController id="fQi-Ow-wVA" customClass="NewPlayerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fQi-Ow-wVA" customClass="NewPlayerViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qZe-bo-KD5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -694,7 +694,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo1" translatesAutoresizingMaskIntoConstraints="NO" id="Sxh-oM-oIE">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-9A-kcl" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-9A-kcl" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="329" y="25" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -720,7 +720,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-7b-8nM" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-7b-8nM" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="72.5" y="707" width="269" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -834,7 +834,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Prepare View Controller-->
         <scene sceneID="fGw-xC-iPW">
             <objects>
-                <viewController id="4Ri-jM-9J8" customClass="PrepareViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Ri-jM-9J8" customClass="PrepareViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZaO-jv-unc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -857,7 +857,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQS-dg-PDS" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQS-dg-PDS" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="83" y="554" width="248" height="131.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O02-yU-sDj">
@@ -866,7 +866,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7d-Vd-qre" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7d-Vd-qre" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -875,7 +875,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWu-VW-KKb" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWu-VW-KKb" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -890,7 +890,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-Xe-uHW" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zf9-Xe-uHW" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="146.5" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -899,7 +899,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iur-NB-HX4" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iur-NB-HX4" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="136.5" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -926,7 +926,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-RO-OQB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PARA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-RO-OQB">
                                                 <rect key="frame" x="0.0" y="136.5" width="248" height="20"/>
                                                 <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -983,7 +983,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g96-px-zMl" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g96-px-zMl" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="66" y="761" width="282" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ivf-8q-ATK"/>
@@ -1046,6 +1046,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                     <connections>
                         <outlet property="minutosLabel" destination="tIY-1f-cla" id="3B8-Kr-EK0"/>
                         <outlet property="segundosLabel" destination="oI1-c6-JVc" id="OWd-Np-BHL"/>
+                        <outlet property="toquepracomecar" destination="HDQ-RO-OQB" id="bxN-3i-FrK"/>
                         <segue destination="oAx-8F-yVb" kind="presentation" identifier="modalDiscussion" id="AZ0-cI-bce"/>
                         <segue destination="rxV-aH-5Je" kind="show" identifier="nextOne" id="B5g-FJ-8Fl"/>
                     </connections>
@@ -1062,7 +1063,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--View Controller-->
         <scene sceneID="PiU-0Y-QYa">
             <objects>
-                <viewController id="oAx-8F-yVb" customClass="MODALViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oAx-8F-yVb" customClass="MODALViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3NL-wz-Vw6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1085,7 +1086,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-FI-TzJ" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-FI-TzJ" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="66" y="602" width="282" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="964-4l-38i"/>
@@ -1158,7 +1159,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Add Players View Controller-->
         <scene sceneID="T64-Qc-1GT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cls-Bf-buB" customClass="AddPlayersViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="cls-Bf-buB" customClass="AddPlayersViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fY-QA-q9x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1181,7 +1182,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="jogadorCell" rowHeight="120" id="1UE-hx-97k" customClass="JogadoresTableViewCell" customModule="PLOSAT" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="jogadorCell" rowHeight="120" id="1UE-hx-97k" customClass="JogadoresTableViewCell" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="331" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1UE-hx-97k" id="aae-pJ-ZJO">
@@ -1191,7 +1192,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9T-vO-hYf">
                                                             <rect key="frame" x="0.0" y="0.0" width="331" height="120"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-mH-1OW" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-mH-1OW" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                     <rect key="frame" x="10" y="10" width="321" height="110"/>
                                                                     <color key="backgroundColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <userDefinedRuntimeAttributes>
@@ -1206,7 +1207,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XS5-Du-5aJ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XS5-Du-5aJ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="321" height="110"/>
                                                                     <color key="backgroundColor" red="0.25098039220000001" green="0.20000000000000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <userDefinedRuntimeAttributes>
@@ -1295,7 +1296,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <outlet property="delegate" destination="cls-Bf-buB" id="ysi-gC-ryH"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-l3-Pgy" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-l3-Pgy" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="317.5" y="766" width="55" height="55"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1313,7 +1314,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <action selector="StartPLaying:" destination="cls-Bf-buB" eventType="touchUpInside" id="12r-WH-bCS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-El-mQL" customClass="EditableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWT-El-mQL" customClass="EditableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="41.5" y="671" width="331" height="75"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1405,7 +1406,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Story View Controller-->
         <scene sceneID="Mxh-xi-Udb">
             <objects>
-                <viewController id="Oz9-1R-oqD" customClass="StoryViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Oz9-1R-oqD" customClass="StoryViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Us-DF-Fg3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1422,7 +1423,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <constraint firstAttribute="width" secondItem="nyz-1r-Y8T" secondAttribute="height" multiplier="15:12" id="ZdN-su-lFm"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j30-2D-t9N" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j30-2D-t9N" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="317.5" y="766" width="55" height="55"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1500,7 +1501,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Papeis View Controller-->
         <scene sceneID="a2M-Vh-zI3">
             <objects>
-                <viewController storyboardIdentifier="vcDetalhe" id="4yU-fK-M06" customClass="PapeisViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vcDetalhe" id="4yU-fK-M06" customClass="PapeisViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hft-Wq-h6x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1511,7 +1512,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="Sml-4k-Hob">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-ex-tza" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-ex-tza" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="329" y="25" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1541,7 +1542,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vT-5e-eTf" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1vT-5e-eTf" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="41.5" y="203" width="331" height="488.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5a-iq-0Gh">
@@ -1632,7 +1633,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <constraint firstItem="N2v-5B-Tsd" firstAttribute="height" secondItem="Qoa-JH-lrY" secondAttribute="height" id="jcP-wu-I47"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-BM-G5L" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-BM-G5L" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="41.5" y="-5" width="100" height="53.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1jw-y9-xZC">
@@ -1725,7 +1726,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Player Functions View Controller-->
         <scene sceneID="REa-gx-K3E">
             <objects>
-                <viewController id="0R4-Fo-qgL" customClass="PlayerFunctionsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0R4-Fo-qgL" customClass="PlayerFunctionsViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gRZ-Km-Mc1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1748,7 +1749,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="120" id="pMW-hg-UgW" customClass="DetailTableViewCell" customModule="PLOSAT" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="120" id="pMW-hg-UgW" customClass="DetailTableViewCell" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="331" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pMW-hg-UgW" id="6w3-4D-WjH">
@@ -1758,7 +1759,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fZ-CN-og9">
                                                             <rect key="frame" x="0.0" y="0.0" width="331" height="120"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36b-pW-Igh" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36b-pW-Igh" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                     <rect key="frame" x="10" y="10" width="321" height="110"/>
                                                                     <color key="backgroundColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <userDefinedRuntimeAttributes>
@@ -1773,7 +1774,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
                                                                 </view>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NII-a8-RwL" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NII-a8-RwL" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="321" height="110"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do jogador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Fsf-bF-AOg">
@@ -1789,7 +1790,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                                                 <constraint firstAttribute="width" constant="22.5" id="T7V-3F-iZe"/>
                                                                             </constraints>
                                                                         </view>
-                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztN-RW-PXr" customClass="EditableView" customModule="PLOSAT" customModuleProvider="target">
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztN-RW-PXr" customClass="EditableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                             <rect key="frame" x="283" y="39.5" width="31" height="31"/>
                                                                             <color key="backgroundColor" red="0.21568627450980393" green="0.17254901960784313" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
@@ -1884,7 +1885,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <outlet property="delegate" destination="0R4-Fo-qgL" id="pl5-Kh-Mg9"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEL-qW-Y7V" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEL-qW-Y7V" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="312.5" y="761" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1952,7 +1953,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Story Timer View Controller-->
         <scene sceneID="dBh-Bq-7QT">
             <objects>
-                <viewController id="rxV-aH-5Je" customClass="StoryTimerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rxV-aH-5Je" customClass="StoryTimerViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Nj-WL-ZQ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2010,7 +2011,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28r-p1-uax" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28r-p1-uax" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="80" y="401.5" width="254" height="134"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56W-E9-rg9">
@@ -2019,7 +2020,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-RF-Flr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXi-RF-Flr" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2028,7 +2029,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-uh-ZrX" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-uh-ZrX" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2043,7 +2044,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55R-l6-TMr" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55R-l6-TMr" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="149.5" y="10" width="104.5" height="124"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2052,7 +2053,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oli-g3-4kJ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oli-g3-4kJ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="139.5" y="0.0" width="104.5" height="124"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2127,7 +2128,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-ve-eNH" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-ve-eNH" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="80" y="715" width="254" height="62"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
@@ -2143,7 +2144,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <action selector="espiarAlibi:" destination="rxV-aH-5Je" eventType="touchUpInside" id="epf-7F-RGw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw2-Fr-B7C" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw2-Fr-B7C" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="312.5" y="717" width="60" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -2230,7 +2231,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Discussion Timer View Controller-->
         <scene sceneID="q5u-AO-URb">
             <objects>
-                <viewController id="OLK-7h-nhN" customClass="DiscussionTimerViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OLK-7h-nhN" customClass="DiscussionTimerViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5f-FJ-HkN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2241,7 +2242,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hEG-7R-4vG">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-J9-dvi" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-J9-dvi" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="83" y="550.5" width="248" height="131.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERN-gL-a95">
@@ -2250,7 +2251,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                 <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjS-M7-6rv" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjS-M7-6rv" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2259,7 +2260,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yuj-8G-IVF" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yuj-8G-IVF" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2274,7 +2275,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-gm-bDQ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xst-gm-bDQ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="146.5" y="10" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2283,7 +2284,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyz-fd-7zO" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyz-fd-7zO" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="136.5" y="0.0" width="101.5" height="121.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <userDefinedRuntimeAttributes>
@@ -2351,7 +2352,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <outletCollection property="gestureRecognizers" destination="X7L-BQ-cyR" appends="YES" id="quE-SK-j0V"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-bf-6dv" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-bf-6dv" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="66" y="761" width="282" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -2458,7 +2459,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Voting Screen View Controller-->
         <scene sceneID="VnO-gZ-SIv">
             <objects>
-                <viewController storyboardIdentifier="votingScreen" id="3Ne-uc-CQQ" customClass="VotingScreenViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="votingScreen" id="3Ne-uc-CQQ" customClass="VotingScreenViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sjP-d6-OHP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2500,10 +2501,10 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <color key="textColor" red="0.18039215689999999" green="0.1333333333" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGp-Oy-zZZ" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGp-Oy-zZZ" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="28.5" y="200.5" width="405.5" height="495"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-ce-gl3" customClass="DesignableImageView" customModule="PLOSAT" customModuleProvider="target">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo4" translatesAutoresizingMaskIntoConstraints="NO" id="Omp-ce-gl3" customClass="DesignableImageView" customModule="The_Crook_Game" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="405.5" height="495"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2524,14 +2525,14 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VoteCell" id="soe-jx-jJl" customClass="VotingCollectionViewCell" customModule="PLOSAT" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VoteCell" id="soe-jx-jJl" customClass="VotingCollectionViewCell" customModule="The_Crook_Game" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PVk-90-NgZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Num-Ed-xWb" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Num-Ed-xWb" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selo" translatesAutoresizingMaskIntoConstraints="NO" id="z2T-se-f8q">
@@ -2590,7 +2591,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76T-Zl-3pZ">
                                                 <rect key="frame" x="46.5" y="391" width="292.5" height="74"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y3-mm-bnY" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y3-mm-bnY" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                         <rect key="frame" x="10" y="10" width="282.5" height="64"/>
                                                         <color key="backgroundColor" red="0.20784313725490194" green="0.15686274509803921" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2599,7 +2600,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kte-1X-bnx" customClass="DesignableView" customModule="PLOSAT" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kte-1X-bnx" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="282.5" height="64"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
@@ -2706,7 +2707,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
         <!--Results View Controller-->
         <scene sceneID="hNt-gD-VpD">
             <objects>
-                <viewController id="bfW-pe-3kY" customClass="ResultsViewController" customModule="PLOSAT" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bfW-pe-3kY" customClass="ResultsViewController" customModule="The_Crook_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gMp-Rb-A8s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2717,7 +2718,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo1" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-TV-vNB">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-2R-VZS" customClass="DesignableButton" customModule="PLOSAT" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-2R-VZS" customClass="DesignableButton" customModule="The_Crook_Game" customModuleProvider="target">
                                         <rect key="frame" x="83" y="761" width="248" height="60"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>

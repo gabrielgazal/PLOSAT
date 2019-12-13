@@ -12,16 +12,23 @@ class PrepareViewController: UIViewController {
     
     @IBOutlet weak var minutosLabel: UILabel!
     @IBOutlet weak var segundosLabel: UILabel!
+    @IBOutlet weak var toquepracomecar: UILabel!
     var createdTimer = false
     
     @IBAction func StartTimer(_ sender: Any) {
-        AudioManager.shared.play(soundEffect: .button)
-        if createdTimer{
-            return
+        if !createdTimer{
+            AudioManager.shared.play(soundEffect: .button)
+            if createdTimer{
+                return
+            }
+            
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+            createdTimer = true
+            toquepracomecar.text = "TOQUE PARA FINALIZAR"
+        }else{
+            timer.invalidate()
+            performSegue(withIdentifier: "modalDiscussion", sender: nil)
         }
-        
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
-        createdTimer = true
         
     }
     var timer: Timer!
