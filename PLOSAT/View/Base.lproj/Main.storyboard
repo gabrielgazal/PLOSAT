@@ -188,7 +188,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="331" height="117"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-SB-AAs">
-                                                        <rect key="frame" x="60" y="32.5" width="211" height="96"/>
+                                                        <rect key="frame" x="60" y="34.5" width="211" height="96"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5P-gq-X3u" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                 <rect key="frame" x="134.5" y="5" width="76.5" height="91"/>
@@ -272,13 +272,13 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE PREPARAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-Ef-N2w">
-                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
                                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4M-Bf-8WL">
-                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="62.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="8Sz-VF-TGt"/>
@@ -290,7 +290,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3L-rO-11d">
-                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="62.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="o3L-rO-11d" secondAttribute="height" multiplier="1:1" id="yHL-ij-YYI"/>
@@ -301,7 +301,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00   :   00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-OY-oZm">
-                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
+                                                        <rect key="frame" x="60" y="42.5" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="50"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -316,7 +316,7 @@
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" multiplier="2" id="M6t-Go-Tdq"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" id="OY4-I8-ivs"/>
                                                     <constraint firstItem="K4M-Bf-8WL" firstAttribute="leading" secondItem="Spt-rI-9xG" secondAttribute="leading" id="V33-XM-odk"/>
-                                                    <constraint firstItem="UdN-OY-oZm" firstAttribute="top" secondItem="oLN-Ef-N2w" secondAttribute="bottom" constant="10" id="aKI-cH-MmY"/>
+                                                    <constraint firstItem="UdN-OY-oZm" firstAttribute="top" secondItem="oLN-Ef-N2w" secondAttribute="bottom" constant="20" id="aKI-cH-MmY"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="asL-4G-9Qz"/>
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="gL8-Gy-m4Y"/>
                                                     <constraint firstItem="oLN-Ef-N2w" firstAttribute="width" secondItem="Spt-rI-9xG" secondAttribute="width" id="hRR-Nh-iVG"/>
@@ -324,14 +324,14 @@
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="leading" secondItem="UdN-OY-oZm" secondAttribute="trailing" constant="20" id="jgq-tt-G4C"/>
                                                     <constraint firstItem="FeJ-SB-AAs" firstAttribute="height" secondItem="UdN-OY-oZm" secondAttribute="height" multiplier="1.2" id="kCG-3b-nP5"/>
                                                     <constraint firstItem="FeJ-SB-AAs" firstAttribute="width" secondItem="UdN-OY-oZm" secondAttribute="width" id="lid-8X-a2o"/>
-                                                    <constraint firstItem="oLN-Ef-N2w" firstAttribute="top" secondItem="Spt-rI-9xG" secondAttribute="top" constant="8" id="on6-Vk-x7n"/>
+                                                    <constraint firstItem="oLN-Ef-N2w" firstAttribute="top" secondItem="Spt-rI-9xG" secondAttribute="top" id="on6-Vk-x7n"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Faw-XM-Mcd">
                                                 <rect key="frame" x="0.0" y="142" width="331" height="117.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZs-rr-gF3">
-                                                        <rect key="frame" x="60" y="32.5" width="211" height="96"/>
+                                                        <rect key="frame" x="60" y="34.5" width="211" height="96"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuY-8v-ynb" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                 <rect key="frame" x="134.5" y="5" width="76.5" height="91"/>
@@ -415,13 +415,13 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO PARA CONTAR HISTÓRIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-TK-h1l">
-                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
                                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBN-s1-lYo">
-                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="62.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="tBN-s1-lYo" secondAttribute="height" multiplier="1:1" id="KkW-6F-lO3"/>
@@ -433,7 +433,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gr-LE-lrh">
-                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="62.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="4Gr-LE-lrh" secondAttribute="height" multiplier="1:1" id="Xoj-d1-coP"/>
@@ -444,7 +444,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00   :   00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unz-aD-nQT">
-                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
+                                                        <rect key="frame" x="60" y="42.5" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="50"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -461,18 +461,18 @@
                                                     <constraint firstItem="4Gr-LE-lrh" firstAttribute="leading" secondItem="unz-aD-nQT" secondAttribute="trailing" constant="20" id="Sbp-Y6-kvT"/>
                                                     <constraint firstAttribute="trailing" secondItem="4Gr-LE-lrh" secondAttribute="trailing" id="SiN-Wv-mHC"/>
                                                     <constraint firstItem="unz-aD-nQT" firstAttribute="centerY" secondItem="tBN-s1-lYo" secondAttribute="centerY" id="TFh-v6-Fcv"/>
-                                                    <constraint firstItem="unz-aD-nQT" firstAttribute="top" secondItem="3jY-TK-h1l" secondAttribute="bottom" constant="10" id="TfS-Tv-084"/>
+                                                    <constraint firstItem="unz-aD-nQT" firstAttribute="top" secondItem="3jY-TK-h1l" secondAttribute="bottom" constant="20" id="TfS-Tv-084"/>
                                                     <constraint firstItem="gZs-rr-gF3" firstAttribute="centerX" secondItem="unz-aD-nQT" secondAttribute="centerX" id="k5S-9X-cOH"/>
                                                     <constraint firstItem="3jY-TK-h1l" firstAttribute="centerX" secondItem="Faw-XM-Mcd" secondAttribute="centerX" id="pMM-6d-TqI"/>
                                                     <constraint firstItem="gZs-rr-gF3" firstAttribute="centerY" secondItem="unz-aD-nQT" secondAttribute="centerY" id="sLH-es-rdx"/>
-                                                    <constraint firstItem="3jY-TK-h1l" firstAttribute="top" secondItem="Faw-XM-Mcd" secondAttribute="top" constant="8" id="xP9-po-MWd"/>
+                                                    <constraint firstItem="3jY-TK-h1l" firstAttribute="top" secondItem="Faw-XM-Mcd" secondAttribute="top" id="xP9-po-MWd"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-cN-2df">
                                                 <rect key="frame" x="0.0" y="284.5" width="331" height="117"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAd-bJ-CvN">
-                                                        <rect key="frame" x="60" y="32.5" width="211" height="96"/>
+                                                        <rect key="frame" x="60" y="34.5" width="211" height="96"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Vd-dMY" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
                                                                 <rect key="frame" x="134.5" y="5" width="76.5" height="91"/>
@@ -556,13 +556,13 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE DISCUSSÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q59-ye-njl">
-                                                        <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
                                                         <color key="textColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQl-yo-0YT">
-                                                        <rect key="frame" x="0.0" y="60.5" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="62.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="40" id="Cf1-br-Y8c"/>
@@ -574,7 +574,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W09-U7-OUI">
-                                                        <rect key="frame" x="291" y="60.5" width="40" height="40"/>
+                                                        <rect key="frame" x="291" y="62.5" width="40" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="W09-U7-OUI" secondAttribute="height" multiplier="1:1" id="BNU-IS-qfR"/>
@@ -585,7 +585,7 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00   :   00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-iL-iS3">
-                                                        <rect key="frame" x="60" y="40.5" width="211" height="80"/>
+                                                        <rect key="frame" x="60" y="42.5" width="211" height="80"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="50"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -594,7 +594,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="W09-U7-OUI" secondAttribute="trailing" id="1CG-Oc-9AU"/>
-                                                    <constraint firstItem="Q59-ye-njl" firstAttribute="top" secondItem="Wc4-cN-2df" secondAttribute="top" constant="8" id="72h-jD-D1d"/>
+                                                    <constraint firstItem="Q59-ye-njl" firstAttribute="top" secondItem="Wc4-cN-2df" secondAttribute="top" id="72h-jD-D1d"/>
                                                     <constraint firstItem="hQl-yo-0YT" firstAttribute="leading" secondItem="Wc4-cN-2df" secondAttribute="leading" id="9Ia-52-C85"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="centerX" secondItem="Wc4-cN-2df" secondAttribute="centerX" id="Clf-5Y-nQa"/>
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="centerY" secondItem="hQl-yo-0YT" secondAttribute="centerY" id="GPl-EJ-Awk"/>
@@ -604,7 +604,7 @@
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="centerY" secondItem="hQl-yo-0YT" secondAttribute="centerY" id="ZYD-GJ-BXs"/>
                                                     <constraint firstItem="bAd-bJ-CvN" firstAttribute="centerX" secondItem="fnG-iL-iS3" secondAttribute="centerX" id="mvj-9E-qNU"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="height" secondItem="hQl-yo-0YT" secondAttribute="height" id="nYh-Y1-ZXH"/>
-                                                    <constraint firstItem="fnG-iL-iS3" firstAttribute="top" secondItem="Q59-ye-njl" secondAttribute="bottom" constant="10" id="ncp-01-3W5"/>
+                                                    <constraint firstItem="fnG-iL-iS3" firstAttribute="top" secondItem="Q59-ye-njl" secondAttribute="bottom" constant="20" id="ncp-01-3W5"/>
                                                     <constraint firstItem="bAd-bJ-CvN" firstAttribute="centerY" secondItem="fnG-iL-iS3" secondAttribute="centerY" id="qPV-BC-oqn"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="width" secondItem="Wc4-cN-2df" secondAttribute="width" id="vLC-tA-EGU"/>
                                                 </constraints>
@@ -1613,7 +1613,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noplayers" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-xq-1Ew">
-                                        <rect key="frame" x="41.5" y="324" width="331.00000000000006" height="248"/>
+                                        <rect key="frame" x="41.5" y="324" width="331" height="248"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xZc-xq-1Ew" secondAttribute="height" multiplier="4:3" id="zWi-aN-tAX"/>
                                         </constraints>
