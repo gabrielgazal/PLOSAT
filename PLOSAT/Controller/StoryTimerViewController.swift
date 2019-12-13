@@ -12,6 +12,7 @@ class StoryTimerViewController: UIViewController {
     
     
     
+    @IBOutlet weak var toquepracomecar: UILabel!
     @IBOutlet weak var timerCounter: UILabel!
     @IBOutlet weak var secondsLabel: UILabel!
     @IBOutlet weak var espiearAlibi: DesignableButton!
@@ -43,14 +44,21 @@ class StoryTimerViewController: UIViewController {
     @IBAction func resetScreen(_ sender: Any) {
     }
     @IBAction func startTempo(_ sender: Any) {
-        AudioManager.shared.play(soundEffect: .button)
+       
+        if !createdTimer{
+            AudioManager.shared.play(soundEffect: .button)
 
-        if createdTimer{
-            return
+                   if createdTimer{
+                       return
+                   }
+                   createdTimer = true
+            toquepracomecar.text  = "TOQUE PARA FINALIZAR"
+                   guard !endGame else { return }
+                   timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        }else{
+            count = 0
+            
         }
-        createdTimer = true
-        guard !endGame else { return }
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         
     }
     
@@ -77,6 +85,7 @@ class StoryTimerViewController: UIViewController {
         
         #endif
             if ordenacao.count > 0 {
+                toquepracomecar.text =  "TOQUE PARA COMEÇAR"
                 currentPlayer = ordenacao.remove(at: 0)
                 playerImage.image = currentPlayer?.foto
                 seloImage.transform = CGAffineTransform(rotationAngle: -(.pi * 2)/45)

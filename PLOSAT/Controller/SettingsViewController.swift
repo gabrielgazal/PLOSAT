@@ -35,7 +35,7 @@ class SettingsViewController: UIViewController {
     var timeDiscutir = Model.instance.timerDiscutir
     
     @IBAction func minusPensar(_ sender: Any) {
-        if timePensar > 10{
+        if (timePensar > 10){
             timePensar -= 10
         }else{
             return
@@ -44,7 +44,12 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusPensar(_ sender: Any) {
-        timePensar += 10
+        if (timePensar < 300){
+            timePensar += 10
+        }else{
+            return
+        }
+        
         pensarLabel.text = converteString(count: timePensar)
 
     }
@@ -59,12 +64,16 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusContar(_ sender: Any) {
-        timeContar += 10
+        if (timeContar < 300){
+            timeContar += 10
+        }else{
+            return
+        }
         contarLabel.text = converteString(count: timeContar)
 
     }
     @IBAction func minusDiscutir(_ sender: Any) {
-        if timeDiscutir > 10{
+        if (timeDiscutir > 10){
             timeDiscutir -= 10
         }else{
             return
@@ -73,7 +82,12 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func plusDiscutir(_ sender: Any) {
-        timeDiscutir += 10
+        
+        if (timeDiscutir < 300){
+            timeDiscutir += 10
+        }else{
+            return
+        }
         discutirLabel.text = converteString(count: timeDiscutir)
 
     }

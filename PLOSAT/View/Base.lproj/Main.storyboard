@@ -1348,7 +1348,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noplayers" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-xq-1Ew">
-                                        <rect key="frame" x="41.5" y="324" width="331" height="248"/>
+                                        <rect key="frame" x="41.5" y="324" width="331.00000000000006" height="248"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xZc-xq-1Ew" secondAttribute="height" multiplier="4:3" id="zWi-aN-tAX"/>
                                         </constraints>
@@ -2162,7 +2162,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                                             <action selector="resetScreen:" destination="rxV-aH-5Je" eventType="touchUpInside" id="NKh-Ey-UIS"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PRA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-GF-Sb1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOQUE PARA COMEÇAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-GF-Sb1">
                                         <rect key="frame" x="80" y="545.5" width="254" height="20"/>
                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="17"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2216,6 +2216,7 @@ Se um jogador inocente for o preso e o culpado ficar livre, a vitória é do cri
                         <outlet property="secondsLabel" destination="glw-rb-7iE" id="Dea-N7-Ojd"/>
                         <outlet property="seloImage" destination="dKO-WU-YRd" id="ceA-n0-2Xo"/>
                         <outlet property="timerCounter" destination="89Z-oW-xjF" id="0Lg-xW-Bs3"/>
+                        <outlet property="toquepracomecar" destination="6fF-GF-Sb1" id="Eah-vf-jkB"/>
                         <segue destination="OLK-7h-nhN" kind="show" identifier="startDebate" id="lwV-GT-uSf"/>
                     </connections>
                 </viewController>
