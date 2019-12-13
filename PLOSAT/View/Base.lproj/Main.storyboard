@@ -155,10 +155,11 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-cZ-kF6" customClass="DesignableButton" customModule="The_Crook_Game">
                                         <rect key="frame" x="41.5" y="156.5" width="40" height="40"/>
-                                        <color key="backgroundColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Rij-cZ-kF6" secondAttribute="height" multiplier="1:1" id="76S-SA-jEx"/>
                                         </constraints>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="0.0"/>
@@ -186,6 +187,90 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spt-rI-9xG">
                                                 <rect key="frame" x="0.0" y="0.0" width="331" height="117"/>
                                                 <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeJ-SB-AAs">
+                                                        <rect key="frame" x="60" y="32.5" width="211" height="96"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5P-gq-X3u" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="134.5" y="5" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="868-gd-8d7" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="129.5" y="0.0" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="1.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ok1-DI-lkT" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="5" y="5" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="en8-8Q-rYt" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="1.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="868-gd-8d7" firstAttribute="width" secondItem="en8-8Q-rYt" secondAttribute="width" id="4yO-eb-wD0"/>
+                                                            <constraint firstItem="en8-8Q-rYt" firstAttribute="height" secondItem="FeJ-SB-AAs" secondAttribute="height" constant="-5" id="563-z0-6jQ"/>
+                                                            <constraint firstItem="Ok1-DI-lkT" firstAttribute="width" secondItem="en8-8Q-rYt" secondAttribute="width" id="9DX-9T-CDE"/>
+                                                            <constraint firstItem="Ok1-DI-lkT" firstAttribute="height" secondItem="en8-8Q-rYt" secondAttribute="height" id="EWe-gP-enE"/>
+                                                            <constraint firstItem="868-gd-8d7" firstAttribute="top" secondItem="FeJ-SB-AAs" secondAttribute="top" id="TGZ-2e-MW0"/>
+                                                            <constraint firstItem="u5P-gq-X3u" firstAttribute="height" secondItem="en8-8Q-rYt" secondAttribute="height" id="Ygw-RP-xkK"/>
+                                                            <constraint firstItem="u5P-gq-X3u" firstAttribute="width" secondItem="en8-8Q-rYt" secondAttribute="width" id="a7G-vr-Lge"/>
+                                                            <constraint firstAttribute="trailing" secondItem="u5P-gq-X3u" secondAttribute="trailing" id="b7O-DA-yjR"/>
+                                                            <constraint firstItem="en8-8Q-rYt" firstAttribute="leading" secondItem="FeJ-SB-AAs" secondAttribute="leading" id="jyA-n2-qCN"/>
+                                                            <constraint firstItem="en8-8Q-rYt" firstAttribute="top" secondItem="FeJ-SB-AAs" secondAttribute="top" id="lga-dT-mIE"/>
+                                                            <constraint firstItem="Ok1-DI-lkT" firstAttribute="leading" secondItem="FeJ-SB-AAs" secondAttribute="leading" constant="5" id="ojy-g2-heN"/>
+                                                            <constraint firstItem="en8-8Q-rYt" firstAttribute="width" secondItem="FeJ-SB-AAs" secondAttribute="height" multiplier="8:10" id="qox-iZ-t1n"/>
+                                                            <constraint firstAttribute="trailing" secondItem="868-gd-8d7" secondAttribute="trailing" constant="5" id="rtG-oM-HiA"/>
+                                                            <constraint firstAttribute="bottom" secondItem="u5P-gq-X3u" secondAttribute="bottom" id="siH-xq-g9u"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ok1-DI-lkT" secondAttribute="bottom" id="xDk-9j-3w5"/>
+                                                            <constraint firstItem="868-gd-8d7" firstAttribute="height" secondItem="en8-8Q-rYt" secondAttribute="height" id="zRb-GV-CHw"/>
+                                                        </constraints>
+                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE PREPARAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLN-Ef-N2w">
                                                         <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
@@ -215,9 +300,9 @@
                                                             <action selector="plusPensar:" destination="GKo-aP-khp" eventType="touchUpInside" id="rkk-JO-x8u"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-OY-oZm">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00   :   00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdN-OY-oZm">
                                                         <rect key="frame" x="60" y="40.5" width="211" height="80"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="50"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -227,6 +312,7 @@
                                                     <constraint firstItem="oLN-Ef-N2w" firstAttribute="centerX" secondItem="Spt-rI-9xG" secondAttribute="centerX" id="3qN-nK-OmH"/>
                                                     <constraint firstAttribute="trailing" secondItem="o3L-rO-11d" secondAttribute="trailing" id="5pN-b5-fUu"/>
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="leading" secondItem="K4M-Bf-8WL" secondAttribute="trailing" constant="20" id="6iM-59-BLq"/>
+                                                    <constraint firstItem="FeJ-SB-AAs" firstAttribute="centerY" secondItem="UdN-OY-oZm" secondAttribute="centerY" id="IXd-f2-Zr4"/>
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" multiplier="2" id="M6t-Go-Tdq"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="height" secondItem="K4M-Bf-8WL" secondAttribute="height" id="OY4-I8-ivs"/>
                                                     <constraint firstItem="K4M-Bf-8WL" firstAttribute="leading" secondItem="Spt-rI-9xG" secondAttribute="leading" id="V33-XM-odk"/>
@@ -234,13 +320,100 @@
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="asL-4G-9Qz"/>
                                                     <constraint firstItem="UdN-OY-oZm" firstAttribute="centerY" secondItem="K4M-Bf-8WL" secondAttribute="centerY" id="gL8-Gy-m4Y"/>
                                                     <constraint firstItem="oLN-Ef-N2w" firstAttribute="width" secondItem="Spt-rI-9xG" secondAttribute="width" id="hRR-Nh-iVG"/>
+                                                    <constraint firstItem="FeJ-SB-AAs" firstAttribute="centerX" secondItem="UdN-OY-oZm" secondAttribute="centerX" id="ihF-DT-g7u"/>
                                                     <constraint firstItem="o3L-rO-11d" firstAttribute="leading" secondItem="UdN-OY-oZm" secondAttribute="trailing" constant="20" id="jgq-tt-G4C"/>
+                                                    <constraint firstItem="FeJ-SB-AAs" firstAttribute="height" secondItem="UdN-OY-oZm" secondAttribute="height" multiplier="1.2" id="kCG-3b-nP5"/>
+                                                    <constraint firstItem="FeJ-SB-AAs" firstAttribute="width" secondItem="UdN-OY-oZm" secondAttribute="width" id="lid-8X-a2o"/>
                                                     <constraint firstItem="oLN-Ef-N2w" firstAttribute="top" secondItem="Spt-rI-9xG" secondAttribute="top" constant="8" id="on6-Vk-x7n"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Faw-XM-Mcd">
                                                 <rect key="frame" x="0.0" y="142" width="331" height="117.5"/>
                                                 <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZs-rr-gF3">
+                                                        <rect key="frame" x="60" y="32.5" width="211" height="96"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuY-8v-ynb" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="134.5" y="5" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gs-bw-Bje" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="129.5" y="0.0" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="1.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1Y-NM-Q5u" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="5" y="5" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1J9-AG-RxO" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="1.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="1J9-AG-RxO" firstAttribute="leading" secondItem="gZs-rr-gF3" secondAttribute="leading" id="169-ZW-82D"/>
+                                                            <constraint firstItem="3gs-bw-Bje" firstAttribute="height" secondItem="1J9-AG-RxO" secondAttribute="height" id="2wW-p8-ztF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="3gs-bw-Bje" secondAttribute="trailing" constant="5" id="9r2-4Y-GEh"/>
+                                                            <constraint firstItem="h1Y-NM-Q5u" firstAttribute="leading" secondItem="gZs-rr-gF3" secondAttribute="leading" constant="5" id="AUc-7o-w0u"/>
+                                                            <constraint firstItem="h1Y-NM-Q5u" firstAttribute="height" secondItem="1J9-AG-RxO" secondAttribute="height" id="Cev-6C-c1w"/>
+                                                            <constraint firstItem="1J9-AG-RxO" firstAttribute="top" secondItem="gZs-rr-gF3" secondAttribute="top" id="Jc7-yc-RqZ"/>
+                                                            <constraint firstItem="nuY-8v-ynb" firstAttribute="width" secondItem="1J9-AG-RxO" secondAttribute="width" id="Kk7-BJ-Rwx"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nuY-8v-ynb" secondAttribute="bottom" id="QNq-q8-bOx"/>
+                                                            <constraint firstItem="3gs-bw-Bje" firstAttribute="width" secondItem="1J9-AG-RxO" secondAttribute="width" id="SsU-f6-qJE"/>
+                                                            <constraint firstItem="3gs-bw-Bje" firstAttribute="top" secondItem="gZs-rr-gF3" secondAttribute="top" id="VxB-e6-w0T"/>
+                                                            <constraint firstItem="nuY-8v-ynb" firstAttribute="height" secondItem="1J9-AG-RxO" secondAttribute="height" id="Xc6-oz-RNF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="nuY-8v-ynb" secondAttribute="trailing" id="aTD-Bp-wS8"/>
+                                                            <constraint firstAttribute="bottom" secondItem="h1Y-NM-Q5u" secondAttribute="bottom" id="aXW-G3-Mpd"/>
+                                                            <constraint firstItem="1J9-AG-RxO" firstAttribute="width" secondItem="gZs-rr-gF3" secondAttribute="height" multiplier="8:10" id="kRS-Ti-Sc0"/>
+                                                            <constraint firstItem="h1Y-NM-Q5u" firstAttribute="width" secondItem="1J9-AG-RxO" secondAttribute="width" id="vIe-Tz-vIC"/>
+                                                            <constraint firstItem="1J9-AG-RxO" firstAttribute="height" secondItem="gZs-rr-gF3" secondAttribute="height" constant="-5" id="wy7-Eb-Yzy"/>
+                                                        </constraints>
+                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO PARA CONTAR HISTÓRIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-TK-h1l">
                                                         <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
@@ -270,9 +443,9 @@
                                                             <action selector="plusContar:" destination="GKo-aP-khp" eventType="touchUpInside" id="hNJ-rG-kdx"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unz-aD-nQT">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00   :   00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unz-aD-nQT">
                                                         <rect key="frame" x="60" y="40.5" width="211" height="80"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="50"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -289,13 +462,99 @@
                                                     <constraint firstAttribute="trailing" secondItem="4Gr-LE-lrh" secondAttribute="trailing" id="SiN-Wv-mHC"/>
                                                     <constraint firstItem="unz-aD-nQT" firstAttribute="centerY" secondItem="tBN-s1-lYo" secondAttribute="centerY" id="TFh-v6-Fcv"/>
                                                     <constraint firstItem="unz-aD-nQT" firstAttribute="top" secondItem="3jY-TK-h1l" secondAttribute="bottom" constant="10" id="TfS-Tv-084"/>
+                                                    <constraint firstItem="gZs-rr-gF3" firstAttribute="centerX" secondItem="unz-aD-nQT" secondAttribute="centerX" id="k5S-9X-cOH"/>
                                                     <constraint firstItem="3jY-TK-h1l" firstAttribute="centerX" secondItem="Faw-XM-Mcd" secondAttribute="centerX" id="pMM-6d-TqI"/>
+                                                    <constraint firstItem="gZs-rr-gF3" firstAttribute="centerY" secondItem="unz-aD-nQT" secondAttribute="centerY" id="sLH-es-rdx"/>
                                                     <constraint firstItem="3jY-TK-h1l" firstAttribute="top" secondItem="Faw-XM-Mcd" secondAttribute="top" constant="8" id="xP9-po-MWd"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-cN-2df">
                                                 <rect key="frame" x="0.0" y="284.5" width="331" height="117"/>
                                                 <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAd-bJ-CvN">
+                                                        <rect key="frame" x="60" y="32.5" width="211" height="96"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-Vd-dMY" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="134.5" y="5" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="692-AH-5LC" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="129.5" y="0.0" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="1.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zx1-s4-V8h" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="5" y="5" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" red="0.1764705882" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbd-Db-dB4" customClass="DesignableView" customModule="The_Crook_Game" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="91"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="3"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidht">
+                                                                        <real key="value" value="1.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.99607843139999996" green="0.79215686269999996" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="zx1-s4-V8h" secondAttribute="bottom" id="25K-RF-ebR"/>
+                                                            <constraint firstItem="692-AH-5LC" firstAttribute="width" secondItem="qbd-Db-dB4" secondAttribute="width" id="6MU-fS-ceh"/>
+                                                            <constraint firstItem="qbd-Db-dB4" firstAttribute="leading" secondItem="bAd-bJ-CvN" secondAttribute="leading" id="7ES-Bw-Fjb"/>
+                                                            <constraint firstItem="sWe-Vd-dMY" firstAttribute="height" secondItem="qbd-Db-dB4" secondAttribute="height" id="9ao-6R-rED"/>
+                                                            <constraint firstAttribute="bottom" secondItem="sWe-Vd-dMY" secondAttribute="bottom" id="HfT-D9-a4q"/>
+                                                            <constraint firstItem="zx1-s4-V8h" firstAttribute="leading" secondItem="bAd-bJ-CvN" secondAttribute="leading" constant="5" id="Hu5-X0-9rc"/>
+                                                            <constraint firstItem="qbd-Db-dB4" firstAttribute="width" secondItem="bAd-bJ-CvN" secondAttribute="height" multiplier="8:10" id="Kvf-Z4-ttL"/>
+                                                            <constraint firstItem="sWe-Vd-dMY" firstAttribute="width" secondItem="qbd-Db-dB4" secondAttribute="width" id="L4y-OS-ptU"/>
+                                                            <constraint firstItem="zx1-s4-V8h" firstAttribute="height" secondItem="qbd-Db-dB4" secondAttribute="height" id="MF0-DW-cKI"/>
+                                                            <constraint firstItem="692-AH-5LC" firstAttribute="height" secondItem="qbd-Db-dB4" secondAttribute="height" id="Pma-aJ-Sd9"/>
+                                                            <constraint firstAttribute="trailing" secondItem="sWe-Vd-dMY" secondAttribute="trailing" id="QcI-8l-Ubu"/>
+                                                            <constraint firstItem="zx1-s4-V8h" firstAttribute="width" secondItem="qbd-Db-dB4" secondAttribute="width" id="Qvi-46-yTS"/>
+                                                            <constraint firstItem="qbd-Db-dB4" firstAttribute="top" secondItem="bAd-bJ-CvN" secondAttribute="top" id="W2L-DX-mAe"/>
+                                                            <constraint firstAttribute="trailing" secondItem="692-AH-5LC" secondAttribute="trailing" constant="5" id="ife-MH-gDB"/>
+                                                            <constraint firstItem="692-AH-5LC" firstAttribute="top" secondItem="bAd-bJ-CvN" secondAttribute="top" id="jhf-AJ-afN"/>
+                                                            <constraint firstItem="qbd-Db-dB4" firstAttribute="height" secondItem="bAd-bJ-CvN" secondAttribute="height" constant="-5" id="usj-UK-K2t"/>
+                                                        </constraints>
+                                                    </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPO DE DISCUSSÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q59-ye-njl">
                                                         <rect key="frame" x="0.0" y="8" width="331" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="19"/>
@@ -325,9 +584,9 @@
                                                             <action selector="plusDiscutir:" destination="GKo-aP-khp" eventType="touchUpInside" id="8FF-py-x1T"/>
                                                         </connections>
                                                     </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-iL-iS3">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00   :   00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnG-iL-iS3">
                                                         <rect key="frame" x="60" y="40.5" width="211" height="80"/>
-                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="65"/>
+                                                        <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="50"/>
                                                         <color key="textColor" red="0.90196078430000004" green="0.83529411760000005" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -343,14 +602,20 @@
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="height" secondItem="hQl-yo-0YT" secondAttribute="height" multiplier="2" id="SSe-aL-ZV6"/>
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="leading" secondItem="hQl-yo-0YT" secondAttribute="trailing" constant="20" id="UeB-8a-E1S"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="centerY" secondItem="hQl-yo-0YT" secondAttribute="centerY" id="ZYD-GJ-BXs"/>
+                                                    <constraint firstItem="bAd-bJ-CvN" firstAttribute="centerX" secondItem="fnG-iL-iS3" secondAttribute="centerX" id="mvj-9E-qNU"/>
                                                     <constraint firstItem="W09-U7-OUI" firstAttribute="height" secondItem="hQl-yo-0YT" secondAttribute="height" id="nYh-Y1-ZXH"/>
                                                     <constraint firstItem="fnG-iL-iS3" firstAttribute="top" secondItem="Q59-ye-njl" secondAttribute="bottom" constant="10" id="ncp-01-3W5"/>
+                                                    <constraint firstItem="bAd-bJ-CvN" firstAttribute="centerY" secondItem="fnG-iL-iS3" secondAttribute="centerY" id="qPV-BC-oqn"/>
                                                     <constraint firstItem="Q59-ye-njl" firstAttribute="width" secondItem="Wc4-cN-2df" secondAttribute="width" id="vLC-tA-EGU"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="bAd-bJ-CvN" firstAttribute="width" secondItem="FeJ-SB-AAs" secondAttribute="width" id="Drv-uV-gKm"/>
                                             <constraint firstAttribute="height" constant="401.5" id="UK4-AT-aei"/>
+                                            <constraint firstItem="bAd-bJ-CvN" firstAttribute="height" secondItem="FeJ-SB-AAs" secondAttribute="height" id="fb6-KR-CQU"/>
+                                            <constraint firstItem="gZs-rr-gF3" firstAttribute="height" secondItem="FeJ-SB-AAs" secondAttribute="height" id="mcz-wd-wXO"/>
+                                            <constraint firstItem="gZs-rr-gF3" firstAttribute="width" secondItem="FeJ-SB-AAs" secondAttribute="width" id="o6S-1l-8kz"/>
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaY-dJ-ch0">

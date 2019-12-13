@@ -19,9 +19,10 @@ class SettingsViewController: UIViewController {
         Model.instance.somLigado = !Model.instance.somLigado
         if Model.instance.somLigado{
             toggleButton.backgroundColor = #colorLiteral(red: 1, green: 0.5215686275, blue: 0.4980392157, alpha: 1)
+            toggleButton.setImage(UIImage(named: "check"), for: .normal)
         }else{
             toggleButton.backgroundColor = . clear
-
+//            toggleButton.
         }
     }
     @IBOutlet weak var pensarLabel: UILabel!
@@ -123,7 +124,7 @@ class SettingsViewController: UIViewController {
         let minutos = count/60
         let segundos = count % 60
         
-        let string = String(format: "%02d:%02d", minutos, segundos)
+        let string = String(format: "%02d   :   %02d", minutos, segundos)
         
         return string
     }
